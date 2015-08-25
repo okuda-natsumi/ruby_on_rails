@@ -781,3 +781,389 @@ Cannot render console from 192.168.40.1! Allowed networks: 127.0.0.1, ::1, 127.0
 Processing by HelloController#app_var as HTML
   Rendered text template (0.0ms)
 Completed 200 OK in 18ms (Views: 3.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/hello/list" for 192.168.40.1 at 2015-08-26 02:25:32 +0900
+Cannot render console from 192.168.40.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by HelloController#list as HTML
+Completed 500 Internal Server Error in 2ms (ActiveRecord: 0.0ms)
+
+NameError (uninitialized constant HelloController::Book):
+  app/controllers/hello_controller.rb:17:in `list'
+
+
+  Rendered /home/okuda/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (4.2ms)
+  Rendered /home/okuda/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.1ms)
+  Rendered /home/okuda/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.8ms)
+  Rendered /home/okuda/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (23.3ms)
+  [1m[36m (28.8ms)[0m  [1mCREATE TABLE "schema_migrations" ("version" varchar NOT NULL) [0m
+  [1m[35m (0.1ms)[0m  select sqlite_version(*)
+  [1m[36m (6.5ms)[0m  [1mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.1ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+Migrating to CreateBooks (20150825172707)
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.2ms)[0m  CREATE TABLE "books" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "isbn" varchar, "title" varchar, "price" integer, "publish" varchar, "published" date, "cd" boolean, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) 
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20150825172707"]]
+  [1m[35m (26.9ms)[0m  commit transaction
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+
+
+Started GET "/books" for 192.168.40.1 at 2015-08-26 02:27:56 +0900
+Cannot render console from 192.168.40.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[35mActiveRecord::SchemaMigration Load (0.1ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+Processing by BooksController#index as HTML
+  [1m[36mBook Load (0.1ms)[0m  [1mSELECT "books".* FROM "books"[0m
+  Rendered books/index.html.slim within layouts/application (13.3ms)
+Completed 200 OK in 273ms (Views: 270.4ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/scaffolds.self-06cd1d36e6656ff5d67e43c965db5ac9f1308c0567450d53310fa362e0d6d740.css?body=1" for 192.168.40.1 at 2015-08-26 02:27:56 +0900
+Cannot render console from 192.168.40.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/books.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 192.168.40.1 at 2015-08-26 02:27:56 +0900
+Cannot render console from 192.168.40.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/books.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 192.168.40.1 at 2015-08-26 02:27:56 +0900
+Cannot render console from 192.168.40.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/books.json" for 192.168.40.1 at 2015-08-26 02:29:52 +0900
+Cannot render console from 192.168.40.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BooksController#index as JSON
+  [1m[35mBook Load (0.2ms)[0m  SELECT "books".* FROM "books"
+  Rendered books/index.json.jbuilder (4.7ms)
+Completed 200 OK in 9ms (Views: 7.4ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/books" for 192.168.40.1 at 2015-08-26 03:36:50 +0900
+Cannot render console from 192.168.40.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BooksController#index as HTML
+  [1m[36mBook Load (0.3ms)[0m  [1mSELECT "books".* FROM "books"[0m
+  Rendered books/index.html.slim within layouts/application (1.1ms)
+Completed 200 OK in 63ms (Views: 60.9ms | ActiveRecord: 0.3ms)
+  [1m[36m (47.9ms)[0m  [1mCREATE TABLE "schema_migrations" ("version" varchar NOT NULL) [0m
+  [1m[35m (0.2ms)[0m  select sqlite_version(*)
+  [1m[36m (7.7ms)[0m  [1mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.2ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+Migrating to CreateBooks (20150825172707)
+  [1m[36m (0.2ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.7ms)[0m  CREATE TABLE "books" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "isbn" varchar, "title" varchar, "price" integer, "publish" varchar, "published" date, "cd" boolean, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) 
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20150825172707"]]
+  [1m[35m (49.9ms)[0m  commit transaction
+Migrating to CreateJoinTableAuthorBook (20150825193317)
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.7ms)[0m  CREATE TABLE "autors_books" ("autor_id" integer NOT NULL, "book_id" integer NOT NULL) 
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20150825193317"]]
+  [1m[35m (44.1ms)[0m  commit transaction
+Migrating to CreateUsers (20150825193433)
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.5ms)[0m  CREATE TABLE "users" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "username" varchar, "password" varchar, "salt" varchar, "email" varchar, "dm" boolean, "roles" varchar, "reviews_count" integer, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) 
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20150825193433"]]
+  [1m[35m (30.4ms)[0m  commit transaction
+Migrating to CreateAuthors (20150825193549)
+  [1m[36m (0.2ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.4ms)[0m  CREATE TABLE "authors" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "user_id" integer, "name" varchar, "birth" date, "address" text, "ctype" varchar, "photo" blob, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) 
+  [1m[36m (0.2ms)[0m  [1mCREATE  INDEX "index_authors_on_user_id" ON "authors" ("user_id")[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES (?)  [["version", "20150825193549"]]
+  [1m[36m (45.3ms)[0m  [1mcommit transaction[0m
+Migrating to CreateReviews (20150825193630)
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.6ms)[0m  [1mCREATE TABLE "reviews" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "book_id" integer, "user_id" integer, "body" text, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) [0m
+  [1m[35m (0.2ms)[0m  CREATE  INDEX "index_reviews_on_book_id" ON "reviews" ("book_id")
+  [1m[36m (0.1ms)[0m  [1m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_reviews_on_book_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_reviews_on_book_id' AND type='index'
+[0m
+  [1m[35m (0.2ms)[0m  CREATE  INDEX "index_reviews_on_user_id" ON "reviews" ("user_id")
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20150825193630"]]
+  [1m[35m (9.1ms)[0m  commit transaction
+Migrating to CreateFanComments (20150825193713)
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.5ms)[0m  CREATE TABLE "fan_comments" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "author_no" integer, "name" varchar, "body" text, "deleted" boolean, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) 
+  [1m[36mSQL (0.5ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20150825193713"]]
+  [1m[35m (28.7ms)[0m  commit transaction
+Migrating to CreateMemos (20150825193754)
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.5ms)[0m  CREATE TABLE "memos" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "memoable_type" varchar, "memoable_id" integer, "body" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) 
+  [1m[36mSQL (1.0ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20150825193754"]]
+  [1m[35m (20.2ms)[0m  commit transaction
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.2ms)[0m              SELECT sql
+            FROM sqlite_master
+            WHERE name='index_authors_on_user_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_authors_on_user_id' AND type='index'
+
+  [1m[36m (0.2ms)[0m  [1m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_reviews_on_user_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_reviews_on_user_id' AND type='index'
+[0m
+  [1m[35m (0.2ms)[0m              SELECT sql
+            FROM sqlite_master
+            WHERE name='index_reviews_on_book_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_reviews_on_book_id' AND type='index'
+
+  [1m[36m (0.4ms)[0m  [1mbegin transaction[0m
+  [1m[35mFixture Delete (0.2ms)[0m  DELETE FROM "reviews"
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "reviews" ("id", "book_id", "user_id", "body", "created_at", "updated_at") VALUES (1, 1, 2, 'Android開発をするなら、まず、目を通しておきたい本ですね。', '2015-08-25 19:44:40', '2015-08-25 19:44:40')[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "reviews" ("id", "book_id", "user_id", "body", "created_at", "updated_at") VALUES (2, 1, 3, 'Javaの基本を振り返りたいときにはこの本を頼りにしています。', '2015-08-25 19:44:40', '2015-08-25 19:44:40')
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "reviews" ("id", "book_id", "user_id", "body", "created_at", "updated_at") VALUES (3, 2, 2, 'とても役に立ちます。便利なライブラリがたくさん紹介されていてお勧めの一冊です。', '2015-08-25 19:44:40', '2015-08-25 19:44:40')[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "reviews" ("id", "book_id", "user_id", "body", "created_at", "updated_at") VALUES (4, 2, 4, '丁寧に書かれています。サンプルも多く、分かりやすくて良いです。', '2015-08-25 19:44:40', '2015-08-25 19:44:40')
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "reviews" ("id", "book_id", "user_id", "body", "created_at", "updated_at") VALUES (5, 2, 5, '超初心者の私には少し難しいです。でも、真似して書いているうちに少しずつライブラリの良さが分かるようになってきました。', '2015-08-25 19:44:40', '2015-08-25 19:44:40')[0m
+  [1m[35mFixture Insert (0.0ms)[0m  INSERT INTO "reviews" ("id", "book_id", "user_id", "body", "created_at", "updated_at") VALUES (6, 3, 1, '図やサンプルが多くて、初心者でも使えるリファレンスですね。', '2015-08-25 19:44:40', '2015-08-25 19:44:40')
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "reviews" ("id", "book_id", "user_id", "body", "created_at", "updated_at") VALUES (7, 3, 1, '知りたい情報がすぐに引けて嬉しいです。オンラインマニュアルより使いやすいです。', '2015-08-25 19:44:40', '2015-08-25 19:44:40')[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "reviews" ("id", "book_id", "user_id", "body", "created_at", "updated_at") VALUES (8, 4, 5, '初めてデータベースに触ることになり、戸惑っていましたが、SQLはこれでマスターしました。', '2015-08-25 19:44:40', '2015-08-25 19:44:40')
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "reviews" ("id", "book_id", "user_id", "body", "created_at", "updated_at") VALUES (9, 5, 3, '基礎から応用まで、幅広く扱っていて、大方この本1冊で、Androidアプリ開発のノウハウがわかりました。', '2015-08-25 19:44:40', '2015-08-25 19:44:40')[0m
+  [1m[35mFixture Delete (0.1ms)[0m  DELETE FROM "books"
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "books" ("id", "isbn", "title", "price", "publish", "published", "cd", "created_at", "updated_at") VALUES (1, '978-4-7741-5878-5', 'AndroidエンジニアのためのモダンJava', 3360, '技術評論社', '2013-08-20', 'f', '2015-08-25 19:44:40', '2015-08-25 19:44:40')[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "books" ("id", "isbn", "title", "price", "publish", "published", "cd", "created_at", "updated_at") VALUES (2, '978-4-7741-5611-8', 'JavaScriptライブラリ実践活用', 2709, '技術評論社', '2013-03-19', 'f', '2015-08-25 19:44:40', '2015-08-25 19:44:40')
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "books" ("id", "isbn", "title", "price", "publish", "published", "cd", "created_at", "updated_at") VALUES (3, '978-4-7741-4980-6', 'Ruby on Rails 4ポケットリファレンス', 2919, '技術評論社', '2012-01-26', 't', '2015-08-25 19:44:40', '2015-08-25 19:44:40')[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "books" ("id", "isbn", "title", "price", "publish", "published", "cd", "created_at", "updated_at") VALUES (4, '978-4-8222-9621-6', '書き込み式SQLのドリル', 2310, '日経BP社', '2013-04-22', 't', '2015-08-25 19:44:40', '2015-08-25 19:44:40')
+  [1m[36mFixture Insert (0.0ms)[0m  [1mINSERT INTO "books" ("id", "isbn", "title", "price", "publish", "published", "cd", "created_at", "updated_at") VALUES (5, '978-4-7980-3585-7', 'はじめてのAndroidアプリ開発', 3150, '秀和システム', '2012-11-22', 'f', '2015-08-25 19:44:40', '2015-08-25 19:44:40')[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "books" ("id", "isbn", "title", "price", "publish", "published", "cd", "created_at", "updated_at") VALUES (6, '978-4-7981-2631-9', '10日でおぼえるPHP入門教室', 3360, '翔泳社', '2012-09-13', 't', '2015-08-25 19:44:40', '2015-08-25 19:44:40')
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "books" ("id", "isbn", "title", "price", "publish", "published", "cd", "created_at", "updated_at") VALUES (7, '987-4-8222-9612-4', 'アプリを作ろう！HTML5入門', 1995, '日経BP社', '2012-06-07', 'f', '2015-08-25 19:44:40', '2015-08-25 19:44:40')[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "books" ("id", "isbn", "title", "price", "publish", "published", "cd", "created_at", "updated_at") VALUES (8, '978-4-7741-5067-3', 'HTML5 開発ポケットリファレンス', 2709, '翔泳社', '2012-04-17', 'f', '2015-08-25 19:44:40', '2015-08-25 19:44:40')
+  [1m[36mFixture Insert (0.0ms)[0m  [1mINSERT INTO "books" ("id", "isbn", "title", "price", "publish", "published", "cd", "created_at", "updated_at") VALUES (9, '978-4-7981-3049-1', '独習Java サーバサイド編', 3780, '翔泳社', '2013-01-28', 'f', '2015-08-25 19:44:40', '2015-08-25 19:44:40')[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "books" ("id", "isbn", "title", "price", "publish", "published", "cd", "created_at", "updated_at") VALUES (10, '978-4-88337-774-9', 'Flash CSで学ぶ iPhone実践プログラミング', 2625, 'ソシム', '2011-08-16', 'f', '2015-08-25 19:44:40', '2015-08-25 19:44:40')
+  [1m[36mFixture Delete (0.1ms)[0m  [1mDELETE FROM "users"[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "users" ("id", "username", "password", "salt", "email", "dm", "roles", "reviews_count", "created_at", "updated_at") VALUES (1, 'yyamada', '2cf00a11121ad260ed32b290f9aefa01279bd5a2', '5f90a188468f64998c5a', 'yyamada@wings.msn.to', 't', 'admin,manager', 2, '2015-08-25 19:44:40', '2015-08-25 19:44:40')
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "users" ("id", "username", "password", "salt", "email", "dm", "roles", "reviews_count", "created_at", "updated_at") VALUES (2, 'isatou', '9be7f45387af4f7bbe720d16a6f334503b5c4f81', '5f90a188468f64998c5b', 'isatou@wings.msn.to', 'f', 'admin', 2, '2015-08-25 19:44:40', '2015-08-25 19:44:40')[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "users" ("id", "username", "password", "salt", "email", "dm", "roles", "reviews_count", "created_at", "updated_at") VALUES (3, 'hsuzuki', '6cc09597819748465c6a2603a6f7a52d51eb01ef', '5f90a188468f64998c5c', 'hsuzuki@wings.msn.to', 't', 'manager', 2, '2015-08-25 19:44:40', '2015-08-25 19:44:40')
+  [1m[36mFixture Insert (0.0ms)[0m  [1mINSERT INTO "users" ("id", "username", "password", "salt", "email", "dm", "roles", "reviews_count", "created_at", "updated_at") VALUES (4, 'tyamamoto', '06780c9b144eaf8dc0c8c6ded18afb032cac9b5e', '5f90a188468f64998c5d', 'tyamamoto@wings.msn.to', 'f', 'member', 1, '2015-08-25 19:44:40', '2015-08-25 19:44:40')[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "users" ("id", "username", "password", "salt", "email", "dm", "roles", "reviews_count", "created_at", "updated_at") VALUES (5, 'shayashi', '088aac29e5ea1bfd8879eaf3b621bdd3d31f072e', '5f90a188468f64998c5e', 'shayashi@wings.msn.to', 't', 'member', 2, '2015-08-25 19:44:40', '2015-08-25 19:44:40')
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "users" ("id", "username", "password", "salt", "email", "dm", "roles", "reviews_count", "created_at", "updated_at") VALUES (6, 'nkakeya', 'c599f512c00d8bbb9fd883f28b9555213516f88e', '5f90a188468f64998c5f', 'nami-piano@nifty.com', 't', 'manager,member', 0, '2015-08-25 19:44:40', '2015-08-25 19:44:40')[0m
+  [1m[35mFixture Delete (0.1ms)[0m  DELETE FROM "authors"
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "authors" ("id", "user_id", "name", "birth", "address", "created_at", "updated_at") VALUES (1, 1, '山田祥寛', '1975-12-04', '千葉県鎌ケ谷市宝町1-1-1', '2015-08-25 19:44:40', '2015-08-25 19:44:40')[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "authors" ("id", "user_id", "name", "birth", "address", "created_at", "updated_at") VALUES (2, 2, '佐藤一郎', '1977-05-05', '東京都東京市東京町2-2-2', '2015-08-25 19:44:40', '2015-08-25 19:44:40')
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "authors" ("id", "user_id", "name", "birth", "address", "created_at", "updated_at") VALUES (3, 3, '鈴木花子', '1980-03-03', '大阪府大阪市大阪町3-3-3', '2015-08-25 19:44:40', '2015-08-25 19:44:40')[0m
+  [1m[35mFixture Delete (0.0ms)[0m  DELETE FROM "fan_comments"
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "fan_comments" ("author_no", "name", "body", "deleted", "created_at", "updated_at", "id") VALUES (1, '鈴木太郎', '丁寧に解説してくれるので、好んで読んでいます。', 't', '2015-08-25 19:44:40', '2015-08-25 19:44:40', 980190962)[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "fan_comments" ("author_no", "name", "body", "deleted", "created_at", "updated_at", "id") VALUES (1, '山田恵子', 'きちんと順序だてて、基本をしっかり説明してくれるところが良いです。', 'f', '2015-08-25 19:44:40', '2015-08-25 19:44:40', 298486374)
+  [1m[36mFixture Insert (0.0ms)[0m  [1mINSERT INTO "fan_comments" ("author_no", "name", "body", "deleted", "created_at", "updated_at", "id") VALUES (2, '佐藤一郎', '語りかけるような言い回しが気に入っています。これからも応援します。', 'f', '2015-08-25 19:44:40', '2015-08-25 19:44:40', 113629430)[0m
+  [1m[35mFixture Delete (0.0ms)[0m  DELETE FROM "memos"
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "memos" ("memoable_type", "memoable_id", "body", "created_at", "updated_at", "id") VALUES ('MyString', 1, 'MyString', '2015-08-25 19:44:40', '2015-08-25 19:44:40', 980190962)[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "memos" ("memoable_type", "memoable_id", "body", "created_at", "updated_at", "id") VALUES ('MyString', 1, 'MyString', '2015-08-25 19:44:40', '2015-08-25 19:44:40', 298486374)
+  [1m[36mFixture Delete (0.2ms)[0m  [1mDELETE FROM "authors_books"[0m
+SQLite3::SQLException: no such table: authors_books: DELETE FROM "authors_books"
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.4ms)[0m  [1mbegin transaction[0m
+  [1m[35mFixture Delete (0.1ms)[0m  DELETE FROM "reviews"
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "reviews" ("id", "book_id", "user_id", "body", "created_at", "updated_at") VALUES (1, 1, 2, 'Android開発をするなら、まず、目を通しておきたい本ですね。', '2015-08-25 19:45:34', '2015-08-25 19:45:34')[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "reviews" ("id", "book_id", "user_id", "body", "created_at", "updated_at") VALUES (2, 1, 3, 'Javaの基本を振り返りたいときにはこの本を頼りにしています。', '2015-08-25 19:45:34', '2015-08-25 19:45:34')
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "reviews" ("id", "book_id", "user_id", "body", "created_at", "updated_at") VALUES (3, 2, 2, 'とても役に立ちます。便利なライブラリがたくさん紹介されていてお勧めの一冊です。', '2015-08-25 19:45:34', '2015-08-25 19:45:34')[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "reviews" ("id", "book_id", "user_id", "body", "created_at", "updated_at") VALUES (4, 2, 4, '丁寧に書かれています。サンプルも多く、分かりやすくて良いです。', '2015-08-25 19:45:34', '2015-08-25 19:45:34')
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "reviews" ("id", "book_id", "user_id", "body", "created_at", "updated_at") VALUES (5, 2, 5, '超初心者の私には少し難しいです。でも、真似して書いているうちに少しずつライブラリの良さが分かるようになってきました。', '2015-08-25 19:45:34', '2015-08-25 19:45:34')[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "reviews" ("id", "book_id", "user_id", "body", "created_at", "updated_at") VALUES (6, 3, 1, '図やサンプルが多くて、初心者でも使えるリファレンスですね。', '2015-08-25 19:45:34', '2015-08-25 19:45:34')
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "reviews" ("id", "book_id", "user_id", "body", "created_at", "updated_at") VALUES (7, 3, 1, '知りたい情報がすぐに引けて嬉しいです。オンラインマニュアルより使いやすいです。', '2015-08-25 19:45:34', '2015-08-25 19:45:34')[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "reviews" ("id", "book_id", "user_id", "body", "created_at", "updated_at") VALUES (8, 4, 5, '初めてデータベースに触ることになり、戸惑っていましたが、SQLはこれでマスターしました。', '2015-08-25 19:45:34', '2015-08-25 19:45:34')
+  [1m[36mFixture Insert (0.0ms)[0m  [1mINSERT INTO "reviews" ("id", "book_id", "user_id", "body", "created_at", "updated_at") VALUES (9, 5, 3, '基礎から応用まで、幅広く扱っていて、大方この本1冊で、Androidアプリ開発のノウハウがわかりました。', '2015-08-25 19:45:34', '2015-08-25 19:45:34')[0m
+  [1m[35mFixture Delete (0.0ms)[0m  DELETE FROM "books"
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "books" ("id", "isbn", "title", "price", "publish", "published", "cd", "created_at", "updated_at") VALUES (1, '978-4-7741-5878-5', 'AndroidエンジニアのためのモダンJava', 3360, '技術評論社', '2013-08-20', 'f', '2015-08-25 19:45:34', '2015-08-25 19:45:34')[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "books" ("id", "isbn", "title", "price", "publish", "published", "cd", "created_at", "updated_at") VALUES (2, '978-4-7741-5611-8', 'JavaScriptライブラリ実践活用', 2709, '技術評論社', '2013-03-19', 'f', '2015-08-25 19:45:34', '2015-08-25 19:45:34')
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "books" ("id", "isbn", "title", "price", "publish", "published", "cd", "created_at", "updated_at") VALUES (3, '978-4-7741-4980-6', 'Ruby on Rails 4ポケットリファレンス', 2919, '技術評論社', '2012-01-26', 't', '2015-08-25 19:45:34', '2015-08-25 19:45:34')[0m
+  [1m[35mFixture Insert (0.0ms)[0m  INSERT INTO "books" ("id", "isbn", "title", "price", "publish", "published", "cd", "created_at", "updated_at") VALUES (4, '978-4-8222-9621-6', '書き込み式SQLのドリル', 2310, '日経BP社', '2013-04-22', 't', '2015-08-25 19:45:34', '2015-08-25 19:45:34')
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "books" ("id", "isbn", "title", "price", "publish", "published", "cd", "created_at", "updated_at") VALUES (5, '978-4-7980-3585-7', 'はじめてのAndroidアプリ開発', 3150, '秀和システム', '2012-11-22', 'f', '2015-08-25 19:45:34', '2015-08-25 19:45:34')[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "books" ("id", "isbn", "title", "price", "publish", "published", "cd", "created_at", "updated_at") VALUES (6, '978-4-7981-2631-9', '10日でおぼえるPHP入門教室', 3360, '翔泳社', '2012-09-13', 't', '2015-08-25 19:45:34', '2015-08-25 19:45:34')
+  [1m[36mFixture Insert (0.0ms)[0m  [1mINSERT INTO "books" ("id", "isbn", "title", "price", "publish", "published", "cd", "created_at", "updated_at") VALUES (7, '987-4-8222-9612-4', 'アプリを作ろう！HTML5入門', 1995, '日経BP社', '2012-06-07', 'f', '2015-08-25 19:45:34', '2015-08-25 19:45:34')[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "books" ("id", "isbn", "title", "price", "publish", "published", "cd", "created_at", "updated_at") VALUES (8, '978-4-7741-5067-3', 'HTML5 開発ポケットリファレンス', 2709, '翔泳社', '2012-04-17', 'f', '2015-08-25 19:45:34', '2015-08-25 19:45:34')
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "books" ("id", "isbn", "title", "price", "publish", "published", "cd", "created_at", "updated_at") VALUES (9, '978-4-7981-3049-1', '独習Java サーバサイド編', 3780, '翔泳社', '2013-01-28', 'f', '2015-08-25 19:45:34', '2015-08-25 19:45:34')[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "books" ("id", "isbn", "title", "price", "publish", "published", "cd", "created_at", "updated_at") VALUES (10, '978-4-88337-774-9', 'Flash CSで学ぶ iPhone実践プログラミング', 2625, 'ソシム', '2011-08-16', 'f', '2015-08-25 19:45:34', '2015-08-25 19:45:34')
+  [1m[36mFixture Delete (0.0ms)[0m  [1mDELETE FROM "users"[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "users" ("id", "username", "password", "salt", "email", "dm", "roles", "reviews_count", "created_at", "updated_at") VALUES (1, 'yyamada', '2cf00a11121ad260ed32b290f9aefa01279bd5a2', '5f90a188468f64998c5a', 'yyamada@wings.msn.to', 't', 'admin,manager', 2, '2015-08-25 19:45:34', '2015-08-25 19:45:34')
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "users" ("id", "username", "password", "salt", "email", "dm", "roles", "reviews_count", "created_at", "updated_at") VALUES (2, 'isatou', '9be7f45387af4f7bbe720d16a6f334503b5c4f81', '5f90a188468f64998c5b', 'isatou@wings.msn.to', 'f', 'admin', 2, '2015-08-25 19:45:34', '2015-08-25 19:45:34')[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "users" ("id", "username", "password", "salt", "email", "dm", "roles", "reviews_count", "created_at", "updated_at") VALUES (3, 'hsuzuki', '6cc09597819748465c6a2603a6f7a52d51eb01ef', '5f90a188468f64998c5c', 'hsuzuki@wings.msn.to', 't', 'manager', 2, '2015-08-25 19:45:34', '2015-08-25 19:45:34')
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "users" ("id", "username", "password", "salt", "email", "dm", "roles", "reviews_count", "created_at", "updated_at") VALUES (4, 'tyamamoto', '06780c9b144eaf8dc0c8c6ded18afb032cac9b5e', '5f90a188468f64998c5d', 'tyamamoto@wings.msn.to', 'f', 'member', 1, '2015-08-25 19:45:34', '2015-08-25 19:45:34')[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "users" ("id", "username", "password", "salt", "email", "dm", "roles", "reviews_count", "created_at", "updated_at") VALUES (5, 'shayashi', '088aac29e5ea1bfd8879eaf3b621bdd3d31f072e', '5f90a188468f64998c5e', 'shayashi@wings.msn.to', 't', 'member', 2, '2015-08-25 19:45:34', '2015-08-25 19:45:34')
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "users" ("id", "username", "password", "salt", "email", "dm", "roles", "reviews_count", "created_at", "updated_at") VALUES (6, 'nkakeya', 'c599f512c00d8bbb9fd883f28b9555213516f88e', '5f90a188468f64998c5f', 'nami-piano@nifty.com', 't', 'manager,member', 0, '2015-08-25 19:45:34', '2015-08-25 19:45:34')[0m
+  [1m[35mFixture Delete (0.1ms)[0m  DELETE FROM "authors"
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "authors" ("id", "user_id", "name", "birth", "address", "created_at", "updated_at") VALUES (1, 1, '山田祥寛', '1975-12-04', '千葉県鎌ケ谷市宝町1-1-1', '2015-08-25 19:45:34', '2015-08-25 19:45:34')[0m
+  [1m[35mFixture Insert (0.0ms)[0m  INSERT INTO "authors" ("id", "user_id", "name", "birth", "address", "created_at", "updated_at") VALUES (2, 2, '佐藤一郎', '1977-05-05', '東京都東京市東京町2-2-2', '2015-08-25 19:45:34', '2015-08-25 19:45:34')
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "authors" ("id", "user_id", "name", "birth", "address", "created_at", "updated_at") VALUES (3, 3, '鈴木花子', '1980-03-03', '大阪府大阪市大阪町3-3-3', '2015-08-25 19:45:34', '2015-08-25 19:45:34')[0m
+  [1m[35mFixture Delete (0.0ms)[0m  DELETE FROM "fan_comments"
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "fan_comments" ("author_no", "name", "body", "deleted", "created_at", "updated_at", "id") VALUES (1, '鈴木太郎', '丁寧に解説してくれるので、好んで読んでいます。', 't', '2015-08-25 19:45:34', '2015-08-25 19:45:34', 980190962)[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "fan_comments" ("author_no", "name", "body", "deleted", "created_at", "updated_at", "id") VALUES (1, '山田恵子', 'きちんと順序だてて、基本をしっかり説明してくれるところが良いです。', 'f', '2015-08-25 19:45:34', '2015-08-25 19:45:34', 298486374)
+  [1m[36mFixture Insert (0.0ms)[0m  [1mINSERT INTO "fan_comments" ("author_no", "name", "body", "deleted", "created_at", "updated_at", "id") VALUES (2, '佐藤一郎', '語りかけるような言い回しが気に入っています。これからも応援します。', 'f', '2015-08-25 19:45:34', '2015-08-25 19:45:34', 113629430)[0m
+  [1m[35mFixture Delete (0.0ms)[0m  DELETE FROM "memos"
+  [1m[36mFixture Insert (0.0ms)[0m  [1mINSERT INTO "memos" ("memoable_type", "memoable_id", "body", "created_at", "updated_at", "id") VALUES ('MyString', 1, 'MyString', '2015-08-25 19:45:34', '2015-08-25 19:45:34', 980190962)[0m
+  [1m[35mFixture Insert (0.0ms)[0m  INSERT INTO "memos" ("memoable_type", "memoable_id", "body", "created_at", "updated_at", "id") VALUES ('MyString', 1, 'MyString', '2015-08-25 19:45:34', '2015-08-25 19:45:34', 298486374)
+  [1m[36mFixture Delete (0.3ms)[0m  [1mDELETE FROM "authors_books"[0m
+SQLite3::SQLException: no such table: authors_books: DELETE FROM "authors_books"
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.1ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+  [1m[36m (0.1ms)[0m  [1m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_authors_on_user_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_authors_on_user_id' AND type='index'
+[0m
+  [1m[35m (0.1ms)[0m              SELECT sql
+            FROM sqlite_master
+            WHERE name='index_reviews_on_user_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_reviews_on_user_id' AND type='index'
+
+  [1m[36m (0.1ms)[0m  [1m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_reviews_on_book_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_reviews_on_book_id' AND type='index'
+[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.1ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+  [1m[36m (0.1ms)[0m  [1m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_authors_on_user_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_authors_on_user_id' AND type='index'
+[0m
+  [1m[35m (0.1ms)[0m              SELECT sql
+            FROM sqlite_master
+            WHERE name='index_reviews_on_user_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_reviews_on_user_id' AND type='index'
+
+  [1m[36m (0.1ms)[0m  [1m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_reviews_on_book_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_reviews_on_book_id' AND type='index'
+[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Migrating to CreateJoinTableAuthorBook (20150825194816)
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.5ms)[0m  [1mCREATE TABLE "authors_books" ("author_id" integer NOT NULL, "book_id" integer NOT NULL) [0m
+  [1m[35m (0.1ms)[0m  select sqlite_version(*)
+  [1m[36m (0.1ms)[0m  [1mCREATE  INDEX "index_authors_books_on_author_id_and_book_id" ON "authors_books" ("author_id", "book_id")[0m
+  [1m[35m (0.1ms)[0m              SELECT sql
+            FROM sqlite_master
+            WHERE name='index_authors_books_on_author_id_and_book_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_authors_books_on_author_id_and_book_id' AND type='index'
+
+  [1m[36m (0.1ms)[0m  [1mCREATE  INDEX "index_authors_books_on_book_id_and_author_id" ON "authors_books" ("book_id", "author_id")[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES (?)  [["version", "20150825194816"]]
+  [1m[36m (15.0ms)[0m  [1mcommit transaction[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.1ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+  [1m[36m (0.1ms)[0m  [1m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_authors_on_user_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_authors_on_user_id' AND type='index'
+[0m
+  [1m[35m (0.1ms)[0m              SELECT sql
+            FROM sqlite_master
+            WHERE name='index_authors_books_on_book_id_and_author_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_authors_books_on_book_id_and_author_id' AND type='index'
+
+  [1m[36m (0.1ms)[0m  [1m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_authors_books_on_author_id_and_book_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_authors_books_on_author_id_and_book_id' AND type='index'
+[0m
+  [1m[35m (0.1ms)[0m              SELECT sql
+            FROM sqlite_master
+            WHERE name='index_reviews_on_user_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_reviews_on_user_id' AND type='index'
+
+  [1m[36m (0.1ms)[0m  [1m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_reviews_on_book_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_reviews_on_book_id' AND type='index'
+[0m
+  [1m[36m (0.4ms)[0m  [1mbegin transaction[0m
+  [1m[35mFixture Delete (0.1ms)[0m  DELETE FROM "reviews"
+  [1m[36mFixture Insert (0.2ms)[0m  [1mINSERT INTO "reviews" ("id", "book_id", "user_id", "body", "created_at", "updated_at") VALUES (1, 1, 2, 'Android開発をするなら、まず、目を通しておきたい本ですね。', '2015-08-25 19:49:25', '2015-08-25 19:49:25')[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "reviews" ("id", "book_id", "user_id", "body", "created_at", "updated_at") VALUES (2, 1, 3, 'Javaの基本を振り返りたいときにはこの本を頼りにしています。', '2015-08-25 19:49:25', '2015-08-25 19:49:25')
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "reviews" ("id", "book_id", "user_id", "body", "created_at", "updated_at") VALUES (3, 2, 2, 'とても役に立ちます。便利なライブラリがたくさん紹介されていてお勧めの一冊です。', '2015-08-25 19:49:25', '2015-08-25 19:49:25')[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "reviews" ("id", "book_id", "user_id", "body", "created_at", "updated_at") VALUES (4, 2, 4, '丁寧に書かれています。サンプルも多く、分かりやすくて良いです。', '2015-08-25 19:49:25', '2015-08-25 19:49:25')
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "reviews" ("id", "book_id", "user_id", "body", "created_at", "updated_at") VALUES (5, 2, 5, '超初心者の私には少し難しいです。でも、真似して書いているうちに少しずつライブラリの良さが分かるようになってきました。', '2015-08-25 19:49:25', '2015-08-25 19:49:25')[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "reviews" ("id", "book_id", "user_id", "body", "created_at", "updated_at") VALUES (6, 3, 1, '図やサンプルが多くて、初心者でも使えるリファレンスですね。', '2015-08-25 19:49:25', '2015-08-25 19:49:25')
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "reviews" ("id", "book_id", "user_id", "body", "created_at", "updated_at") VALUES (7, 3, 1, '知りたい情報がすぐに引けて嬉しいです。オンラインマニュアルより使いやすいです。', '2015-08-25 19:49:25', '2015-08-25 19:49:25')[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "reviews" ("id", "book_id", "user_id", "body", "created_at", "updated_at") VALUES (8, 4, 5, '初めてデータベースに触ることになり、戸惑っていましたが、SQLはこれでマスターしました。', '2015-08-25 19:49:25', '2015-08-25 19:49:25')
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "reviews" ("id", "book_id", "user_id", "body", "created_at", "updated_at") VALUES (9, 5, 3, '基礎から応用まで、幅広く扱っていて、大方この本1冊で、Androidアプリ開発のノウハウがわかりました。', '2015-08-25 19:49:25', '2015-08-25 19:49:25')[0m
+  [1m[35mFixture Delete (0.1ms)[0m  DELETE FROM "books"
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "books" ("id", "isbn", "title", "price", "publish", "published", "cd", "created_at", "updated_at") VALUES (1, '978-4-7741-5878-5', 'AndroidエンジニアのためのモダンJava', 3360, '技術評論社', '2013-08-20', 'f', '2015-08-25 19:49:25', '2015-08-25 19:49:25')[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "books" ("id", "isbn", "title", "price", "publish", "published", "cd", "created_at", "updated_at") VALUES (2, '978-4-7741-5611-8', 'JavaScriptライブラリ実践活用', 2709, '技術評論社', '2013-03-19', 'f', '2015-08-25 19:49:25', '2015-08-25 19:49:25')
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "books" ("id", "isbn", "title", "price", "publish", "published", "cd", "created_at", "updated_at") VALUES (3, '978-4-7741-4980-6', 'Ruby on Rails 4ポケットリファレンス', 2919, '技術評論社', '2012-01-26', 't', '2015-08-25 19:49:25', '2015-08-25 19:49:25')[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "books" ("id", "isbn", "title", "price", "publish", "published", "cd", "created_at", "updated_at") VALUES (4, '978-4-8222-9621-6', '書き込み式SQLのドリル', 2310, '日経BP社', '2013-04-22', 't', '2015-08-25 19:49:25', '2015-08-25 19:49:25')
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "books" ("id", "isbn", "title", "price", "publish", "published", "cd", "created_at", "updated_at") VALUES (5, '978-4-7980-3585-7', 'はじめてのAndroidアプリ開発', 3150, '秀和システム', '2012-11-22', 'f', '2015-08-25 19:49:25', '2015-08-25 19:49:25')[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "books" ("id", "isbn", "title", "price", "publish", "published", "cd", "created_at", "updated_at") VALUES (6, '978-4-7981-2631-9', '10日でおぼえるPHP入門教室', 3360, '翔泳社', '2012-09-13', 't', '2015-08-25 19:49:25', '2015-08-25 19:49:25')
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "books" ("id", "isbn", "title", "price", "publish", "published", "cd", "created_at", "updated_at") VALUES (7, '987-4-8222-9612-4', 'アプリを作ろう！HTML5入門', 1995, '日経BP社', '2012-06-07', 'f', '2015-08-25 19:49:25', '2015-08-25 19:49:25')[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "books" ("id", "isbn", "title", "price", "publish", "published", "cd", "created_at", "updated_at") VALUES (8, '978-4-7741-5067-3', 'HTML5 開発ポケットリファレンス', 2709, '翔泳社', '2012-04-17', 'f', '2015-08-25 19:49:25', '2015-08-25 19:49:25')
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "books" ("id", "isbn", "title", "price", "publish", "published", "cd", "created_at", "updated_at") VALUES (9, '978-4-7981-3049-1', '独習Java サーバサイド編', 3780, '翔泳社', '2013-01-28', 'f', '2015-08-25 19:49:25', '2015-08-25 19:49:25')[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "books" ("id", "isbn", "title", "price", "publish", "published", "cd", "created_at", "updated_at") VALUES (10, '978-4-88337-774-9', 'Flash CSで学ぶ iPhone実践プログラミング', 2625, 'ソシム', '2011-08-16', 'f', '2015-08-25 19:49:25', '2015-08-25 19:49:25')
+  [1m[36mFixture Delete (0.1ms)[0m  [1mDELETE FROM "users"[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "users" ("id", "username", "password", "salt", "email", "dm", "roles", "reviews_count", "created_at", "updated_at") VALUES (1, 'yyamada', '2cf00a11121ad260ed32b290f9aefa01279bd5a2', '5f90a188468f64998c5a', 'yyamada@wings.msn.to', 't', 'admin,manager', 2, '2015-08-25 19:49:25', '2015-08-25 19:49:25')
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "users" ("id", "username", "password", "salt", "email", "dm", "roles", "reviews_count", "created_at", "updated_at") VALUES (2, 'isatou', '9be7f45387af4f7bbe720d16a6f334503b5c4f81', '5f90a188468f64998c5b', 'isatou@wings.msn.to', 'f', 'admin', 2, '2015-08-25 19:49:25', '2015-08-25 19:49:25')[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "users" ("id", "username", "password", "salt", "email", "dm", "roles", "reviews_count", "created_at", "updated_at") VALUES (3, 'hsuzuki', '6cc09597819748465c6a2603a6f7a52d51eb01ef', '5f90a188468f64998c5c', 'hsuzuki@wings.msn.to', 't', 'manager', 2, '2015-08-25 19:49:25', '2015-08-25 19:49:25')
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "users" ("id", "username", "password", "salt", "email", "dm", "roles", "reviews_count", "created_at", "updated_at") VALUES (4, 'tyamamoto', '06780c9b144eaf8dc0c8c6ded18afb032cac9b5e', '5f90a188468f64998c5d', 'tyamamoto@wings.msn.to', 'f', 'member', 1, '2015-08-25 19:49:25', '2015-08-25 19:49:25')[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "users" ("id", "username", "password", "salt", "email", "dm", "roles", "reviews_count", "created_at", "updated_at") VALUES (5, 'shayashi', '088aac29e5ea1bfd8879eaf3b621bdd3d31f072e', '5f90a188468f64998c5e', 'shayashi@wings.msn.to', 't', 'member', 2, '2015-08-25 19:49:25', '2015-08-25 19:49:25')
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "users" ("id", "username", "password", "salt", "email", "dm", "roles", "reviews_count", "created_at", "updated_at") VALUES (6, 'nkakeya', 'c599f512c00d8bbb9fd883f28b9555213516f88e', '5f90a188468f64998c5f', 'nami-piano@nifty.com', 't', 'manager,member', 0, '2015-08-25 19:49:25', '2015-08-25 19:49:25')[0m
+  [1m[35mFixture Delete (0.1ms)[0m  DELETE FROM "authors"
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "authors" ("id", "user_id", "name", "birth", "address", "created_at", "updated_at") VALUES (1, 1, '山田祥寛', '1975-12-04', '千葉県鎌ケ谷市宝町1-1-1', '2015-08-25 19:49:25', '2015-08-25 19:49:25')[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "authors" ("id", "user_id", "name", "birth", "address", "created_at", "updated_at") VALUES (2, 2, '佐藤一郎', '1977-05-05', '東京都東京市東京町2-2-2', '2015-08-25 19:49:25', '2015-08-25 19:49:25')
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "authors" ("id", "user_id", "name", "birth", "address", "created_at", "updated_at") VALUES (3, 3, '鈴木花子', '1980-03-03', '大阪府大阪市大阪町3-3-3', '2015-08-25 19:49:25', '2015-08-25 19:49:25')[0m
+  [1m[35mFixture Delete (0.0ms)[0m  DELETE FROM "fan_comments"
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "fan_comments" ("author_no", "name", "body", "deleted", "created_at", "updated_at", "id") VALUES (1, '鈴木太郎', '丁寧に解説してくれるので、好んで読んでいます。', 't', '2015-08-25 19:49:25', '2015-08-25 19:49:25', 980190962)[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "fan_comments" ("author_no", "name", "body", "deleted", "created_at", "updated_at", "id") VALUES (1, '山田恵子', 'きちんと順序だてて、基本をしっかり説明してくれるところが良いです。', 'f', '2015-08-25 19:49:25', '2015-08-25 19:49:25', 298486374)
+  [1m[36mFixture Insert (0.0ms)[0m  [1mINSERT INTO "fan_comments" ("author_no", "name", "body", "deleted", "created_at", "updated_at", "id") VALUES (2, '佐藤一郎', '語りかけるような言い回しが気に入っています。これからも応援します。', 'f', '2015-08-25 19:49:25', '2015-08-25 19:49:25', 113629430)[0m
+  [1m[35mFixture Delete (0.0ms)[0m  DELETE FROM "memos"
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "memos" ("memoable_type", "memoable_id", "body", "created_at", "updated_at", "id") VALUES ('MyString', 1, 'MyString', '2015-08-25 19:49:25', '2015-08-25 19:49:25', 980190962)[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "memos" ("memoable_type", "memoable_id", "body", "created_at", "updated_at", "id") VALUES ('MyString', 1, 'MyString', '2015-08-25 19:49:25', '2015-08-25 19:49:25', 298486374)
+  [1m[36mFixture Delete (0.1ms)[0m  [1mDELETE FROM "authors_books"[0m
+  [1m[35mFixture Insert (0.0ms)[0m  INSERT INTO "authors_books" ("book_id", "author_id") VALUES (1, 1)
+  [1m[36mFixture Insert (0.0ms)[0m  [1mINSERT INTO "authors_books" ("book_id", "author_id") VALUES (2, 1)[0m
+  [1m[35mFixture Insert (0.0ms)[0m  INSERT INTO "authors_books" ("book_id", "author_id") VALUES (2, 2)
+  [1m[36mFixture Insert (0.0ms)[0m  [1mINSERT INTO "authors_books" ("book_id", "author_id") VALUES (3, 2)[0m
+  [1m[35mFixture Insert (0.0ms)[0m  INSERT INTO "authors_books" ("book_id", "author_id") VALUES (4, 2)
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "authors_books" ("book_id", "author_id") VALUES (5, 1)[0m
+  [1m[35mFixture Insert (0.0ms)[0m  INSERT INTO "authors_books" ("book_id", "author_id") VALUES (6, 3)
+  [1m[36mFixture Insert (0.0ms)[0m  [1mINSERT INTO "authors_books" ("book_id", "author_id") VALUES (7, 3)[0m
+  [1m[35mFixture Insert (0.0ms)[0m  INSERT INTO "authors_books" ("book_id", "author_id") VALUES (8, 1)
+  [1m[36mFixture Insert (0.0ms)[0m  [1mINSERT INTO "authors_books" ("book_id", "author_id") VALUES (9, 1)[0m
+  [1m[35mFixture Insert (0.0ms)[0m  INSERT INTO "authors_books" ("book_id", "author_id") VALUES (10, 3)
+  [1m[36m (71.2ms)[0m  [1mcommit transaction[0m
