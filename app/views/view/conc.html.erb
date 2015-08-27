@@ -10,7 +10,11 @@
 			<%= book.isbn %></td>
 		<td style="background-color:<%= current_cycle %>">
 		<td><%= book.title %></td>
-		<td><%= book.price %></td>
+		<td><%= book.price %>円
+			<% if book.price >= 3000 %>
+				<%= image_tag 'expensive.gif' %>
+			<% end %>
+		</td>
 		<td><%= book.publish %></td>
 		<td><%= book.published %></td>
 		<td><%= book.cd %></td>

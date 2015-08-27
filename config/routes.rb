@@ -1,5 +1,6 @@
 Rails.application.routes.draw do
   
+  resources :books
   resources :fan_comments
   resources :reviews
   resources :authors

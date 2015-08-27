@@ -14,7 +14,7 @@ gem 'coffee-rails', '~> 4.1.0'
 # See https://github.com/rails/execjs#readme for more supported runtimes
 gem 'therubyracer', platforms: :ruby
 
-gem 'slim-rails'
+#gem 'slim-rails'
 
 # Use jquery as the JavaScript library
 gem 'jquery-rails'
@@ -43,5 +43,15 @@ group :development, :test do
 
   # Spring speeds up development by keeping your application running in the background. Read more: https://github.com/rails/spring
   gem 'spring'
+	# 高機能コンソール
+  gem 'pry-rails'
+
+  # デバッガー
+  gem 'pry-byebug'
+  gem 'pry-stack_explorer'
+
+  # PryでのSQLの結果を綺麗に表示
+  gem 'hirb'
+  gem 'hirb-unicode'
 end
 
