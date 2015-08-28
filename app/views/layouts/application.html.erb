@@ -1,14 +1,17 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Railsbook</title>
+<title><%= @title ? @title : 'Rails入門' %></title>
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
+  <%= auto_discovery_link_tag(:rss, { controller: :books, action: :index, id: :rails }, title: 'サーバサイドの学び舎 - WINGS -') %>  
+  <%= favicon_link_tag %>
 </head>
 <body>
 
-<%= yield %>
+<%#= yield :extend_menu %>
+<%= content_for?(:content) ? yield(:content) : yield %>
 
 </body>
 </html>
