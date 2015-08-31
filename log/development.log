@@ -17262,3 +17262,969 @@ ActionController::RoutingError (No route matches [GET] "/javascripts/defaults.js
   Rendered /home/okuda/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.0ms)
   Rendered /home/okuda/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.9ms)
   Rendered /home/okuda/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (37.7ms)
+
+
+Started GET "/ctrl/para?id=108" for 192.168.40.1 at 2015-08-31 16:23:24 +0900
+Cannot render console from 192.168.40.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by CtrlController#para as HTML
+  Parameters: {"id"=>"108"}
+  Rendered text template (0.0ms)
+Completed 200 OK in 1ms (Views: 0.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/ctrl/para_array?category[]=hoge&category[]=fuga" for 192.168.40.1 at 2015-08-31 16:25:14 +0900
+Cannot render console from 192.168.40.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by CtrlController#para_array as HTML
+  Parameters: {"category"=>["hoge", "fuga"]}
+  Rendered text template (0.0ms)
+Completed 200 OK in 1ms (Views: 0.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/ctrl/para_array?category[a]&category[]=fuga" for 192.168.40.1 at 2015-08-31 16:25:24 +0900
+Cannot render console from 192.168.40.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+ActionController::BadRequest (Invalid query parameters: expected Array (got Rack::Utils::KeySpaceConstrainedParams) for param `category'):
+  rack (1.6.4) lib/rack/utils.rb:149:in `normalize_params'
+  rack (1.6.4) lib/rack/utils.rb:122:in `block in parse_nested_query'
+  rack (1.6.4) lib/rack/utils.rb:119:in `each'
+  rack (1.6.4) lib/rack/utils.rb:119:in `parse_nested_query'
+  rack (1.6.4) lib/rack/request.rb:371:in `parse_query'
+  actionpack (4.2.1) lib/action_dispatch/http/request.rb:339:in `parse_query'
+  rack (1.6.4) lib/rack/request.rb:191:in `GET'
+  actionpack (4.2.1) lib/action_dispatch/http/request.rb:300:in `GET'
+  actionpack (4.2.1) lib/action_dispatch/http/parameters.rb:14:in `parameters'
+  actionpack (4.2.1) lib/action_dispatch/http/filter_parameters.rb:37:in `filtered_parameters'
+  actionpack (4.2.1) lib/action_controller/metal/instrumentation.rb:22:in `process_action'
+  actionpack (4.2.1) lib/action_controller/metal/params_wrapper.rb:250:in `process_action'
+  activerecord (4.2.1) lib/active_record/railties/controller_runtime.rb:18:in `process_action'
+  actionpack (4.2.1) lib/abstract_controller/base.rb:137:in `process'
+  actionview (4.2.1) lib/action_view/rendering.rb:30:in `process'
+  actionpack (4.2.1) lib/action_controller/metal.rb:196:in `dispatch'
+  actionpack (4.2.1) lib/action_controller/metal/rack_delegation.rb:13:in `dispatch'
+  actionpack (4.2.1) lib/action_controller/metal.rb:237:in `block in action'
+  actionpack (4.2.1) lib/action_dispatch/routing/route_set.rb:74:in `call'
+  actionpack (4.2.1) lib/action_dispatch/routing/route_set.rb:74:in `dispatch'
+  actionpack (4.2.1) lib/action_dispatch/routing/route_set.rb:43:in `serve'
+  actionpack (4.2.1) lib/action_dispatch/journey/router.rb:43:in `block in serve'
+  actionpack (4.2.1) lib/action_dispatch/journey/router.rb:30:in `each'
+  actionpack (4.2.1) lib/action_dispatch/journey/router.rb:30:in `serve'
+  actionpack (4.2.1) lib/action_dispatch/routing/route_set.rb:819:in `call'
+  rack (1.6.4) lib/rack/etag.rb:24:in `call'
+  rack (1.6.4) lib/rack/conditionalget.rb:25:in `call'
+  rack (1.6.4) lib/rack/head.rb:13:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/params_parser.rb:27:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/flash.rb:260:in `call'
+  rack (1.6.4) lib/rack/session/abstract/id.rb:225:in `context'
+  rack (1.6.4) lib/rack/session/abstract/id.rb:220:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/cookies.rb:560:in `call'
+  activerecord (4.2.1) lib/active_record/query_cache.rb:36:in `call'
+  activerecord (4.2.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:649:in `call'
+  activerecord (4.2.1) lib/active_record/migration.rb:378:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.2.1) lib/active_support/callbacks.rb:88:in `call'
+  activesupport (4.2.1) lib/active_support/callbacks.rb:88:in `_run_callbacks'
+  activesupport (4.2.1) lib/active_support/callbacks.rb:776:in `_run_call_callbacks'
+  activesupport (4.2.1) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (4.2.1) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/reloader.rb:73:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/remote_ip.rb:78:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  web-console (2.2.1) lib/web_console/middleware.rb:31:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.1) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.1) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.1) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.1) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.1) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.1) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/static.rb:113:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.1) lib/rails/engine.rb:518:in `call'
+  railties (4.2.1) lib/rails/application.rb:164:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.4) lib/rack/handler/webrick.rb:88:in `service'
+  /home/okuda/.rbenv/versions/2.2.2/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /home/okuda/.rbenv/versions/2.2.2/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /home/okuda/.rbenv/versions/2.2.2/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+  Rendered /home/okuda/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (5.0ms)
+
+
+Started GET "/ctrl/req_head" for 192.168.40.1 at 2015-08-31 16:33:17 +0900
+Cannot render console from 192.168.40.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by CtrlController#req_head as HTML
+  Rendered text template (0.0ms)
+Completed 200 OK in 2ms (Views: 0.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/ctrl/req_head2" for 192.168.40.1 at 2015-08-31 16:34:43 +0900
+Cannot render console from 192.168.40.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by CtrlController#req_head2 as HTML
+  Rendered ctrl/req_head2.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 57ms (Views: 56.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/ctrl/upload" for 192.168.40.1 at 2015-08-31 16:45:20 +0900
+Cannot render console from 192.168.40.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by CtrlController#upload as HTML
+  Rendered ctrl/upload.html.erb within layouts/application (2.6ms)
+Completed 200 OK in 80ms (Views: 78.6ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/ctrl/upload_process" for 192.168.40.1 at 2015-08-31 16:45:33 +0900
+Cannot render console from 192.168.40.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by CtrlController#upload_process as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"AF65M7knGfpOJEqQJ9wvsJtz7/5GdWQBo/dGbFTfe4XBL6q3qMylHOZWSPotGVT3DUorQj8muSkkWVk3Xcx8KQ==", "upfile"=>#<ActionDispatch::Http::UploadedFile:0x007ff44d68fd00 @tempfile=#<Tempfile:/tmp/RackMultipart20150831-2714-1amxhmu.jpg>, @original_filename="OKAfes.jpg", @content_type="image/jpeg", @headers="Content-Disposition: form-data; name=\"upfile\"; filename=\"OKAfes.jpg\"\r\nContent-Type: image/jpeg\r\n">, "commit"=>"upload"}
+Completed 500 Internal Server Error in 3ms (ActiveRecord: 0.0ms)
+
+NoMethodError (undefined method `original_filename' for nil:NilClass):
+  app/controllers/ctrl_controller.rb:21:in `upload_process'
+
+
+  Rendered /home/okuda/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (6.4ms)
+  Rendered /home/okuda/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.1ms)
+  Rendered /home/okuda/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.7ms)
+  Rendered /home/okuda/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (25.9ms)
+
+
+Started POST "/ctrl/upload_process" for 192.168.40.1 at 2015-08-31 16:48:04 +0900
+Cannot render console from 192.168.40.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by CtrlController#upload_process as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"AF65M7knGfpOJEqQJ9wvsJtz7/5GdWQBo/dGbFTfe4XBL6q3qMylHOZWSPotGVT3DUorQj8muSkkWVk3Xcx8KQ==", "upfile"=>#<ActionDispatch::Http::UploadedFile:0x007ff44d427180 @tempfile=#<Tempfile:/tmp/RackMultipart20150831-2714-1a2he9q.jpg>, @original_filename="11913048_703274596482576_488920232_n.jpg", @content_type="image/jpeg", @headers="Content-Disposition: form-data; name=\"upfile\"; filename=\"11913048_703274596482576_488920232_n.jpg\"\r\nContent-Type: image/jpeg\r\n">, "commit"=>"upload"}
+Completed 500 Internal Server Error in 2ms (ActiveRecord: 0.0ms)
+
+NoMethodError (undefined method `original_filename' for nil:NilClass):
+  app/controllers/ctrl_controller.rb:21:in `upload_process'
+
+
+  Rendered /home/okuda/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (4.5ms)
+  Rendered /home/okuda/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.0ms)
+  Rendered /home/okuda/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.8ms)
+  Rendered /home/okuda/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (21.6ms)
+
+
+Started POST "/ctrl/upload_process" for 192.168.40.1 at 2015-08-31 16:49:56 +0900
+Cannot render console from 192.168.40.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by CtrlController#upload_process as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"AF65M7knGfpOJEqQJ9wvsJtz7/5GdWQBo/dGbFTfe4XBL6q3qMylHOZWSPotGVT3DUorQj8muSkkWVk3Xcx8KQ==", "upfile"=>#<ActionDispatch::Http::UploadedFile:0x007ff44d64cb68 @tempfile=#<Tempfile:/tmp/RackMultipart20150831-2714-16ev4j3.jpg>, @original_filename="11913048_703274596482576_488920232_n.jpg", @content_type="image/jpeg", @headers="Content-Disposition: form-data; name=\"upfile\"; filename=\"11913048_703274596482576_488920232_n.jpg\"\r\nContent-Type: image/jpeg\r\n">, "commit"=>"upload"}
+Completed 500 Internal Server Error in 1ms (ActiveRecord: 0.0ms)
+
+Errno::ENOENT (No such file or directory @ rb_sysopen - publish/docs/11913048_703274596482576_488920232_n.jpg):
+  app/controllers/ctrl_controller.rb:29:in `initialize'
+  app/controllers/ctrl_controller.rb:29:in `open'
+  app/controllers/ctrl_controller.rb:29:in `upload_process'
+
+
+  Rendered /home/okuda/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (4.5ms)
+  Rendered /home/okuda/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.9ms)
+  Rendered /home/okuda/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.8ms)
+  Rendered /home/okuda/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (21.1ms)
+
+
+Started POST "/ctrl/upload_process" for 192.168.40.1 at 2015-08-31 16:51:43 +0900
+Cannot render console from 192.168.40.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by CtrlController#upload_process as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"AF65M7knGfpOJEqQJ9wvsJtz7/5GdWQBo/dGbFTfe4XBL6q3qMylHOZWSPotGVT3DUorQj8muSkkWVk3Xcx8KQ==", "upfile"=>#<ActionDispatch::Http::UploadedFile:0x007ff46c67ca88 @tempfile=#<Tempfile:/tmp/RackMultipart20150831-2714-6vli1j.jpg>, @original_filename="11913048_703274596482576_488920232_n.jpg", @content_type="image/jpeg", @headers="Content-Disposition: form-data; name=\"upfile\"; filename=\"11913048_703274596482576_488920232_n.jpg\"\r\nContent-Type: image/jpeg\r\n">, "commit"=>"upload"}
+Completed 500 Internal Server Error in 2ms (ActiveRecord: 0.0ms)
+
+Errno::ENOENT (No such file or directory @ rb_sysopen - publish/docs/11913048_703274596482576_488920232_n.jpg):
+  app/controllers/ctrl_controller.rb:29:in `initialize'
+  app/controllers/ctrl_controller.rb:29:in `open'
+  app/controllers/ctrl_controller.rb:29:in `upload_process'
+
+
+  Rendered /home/okuda/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (4.5ms)
+  Rendered /home/okuda/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.8ms)
+  Rendered /home/okuda/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.9ms)
+  Rendered /home/okuda/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (21.2ms)
+
+
+Started POST "/ctrl/upload_process" for 192.168.40.1 at 2015-08-31 16:52:13 +0900
+Cannot render console from 192.168.40.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by CtrlController#upload_process as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"AF65M7knGfpOJEqQJ9wvsJtz7/5GdWQBo/dGbFTfe4XBL6q3qMylHOZWSPotGVT3DUorQj8muSkkWVk3Xcx8KQ==", "upfile"=>#<ActionDispatch::Http::UploadedFile:0x007ff4501a8550 @tempfile=#<Tempfile:/tmp/RackMultipart20150831-2714-d2vmnk.jpg>, @original_filename="11934222_703273749815994_890581498_n.jpg", @content_type="image/jpeg", @headers="Content-Disposition: form-data; name=\"upfile\"; filename=\"11934222_703273749815994_890581498_n.jpg\"\r\nContent-Type: image/jpeg\r\n">, "commit"=>"upload"}
+Completed 500 Internal Server Error in 3ms (ActiveRecord: 0.0ms)
+
+Errno::ENOENT (No such file or directory @ rb_sysopen - publish/docs/11934222_703273749815994_890581498_n.jpg):
+  app/controllers/ctrl_controller.rb:29:in `initialize'
+  app/controllers/ctrl_controller.rb:29:in `open'
+  app/controllers/ctrl_controller.rb:29:in `upload_process'
+
+
+  Rendered /home/okuda/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (4.2ms)
+  Rendered /home/okuda/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.8ms)
+  Rendered /home/okuda/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.8ms)
+  Rendered /home/okuda/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (20.8ms)
+
+
+Started POST "/ctrl/upload_process" for 192.168.40.1 at 2015-08-31 16:52:49 +0900
+Cannot render console from 192.168.40.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by CtrlController#upload_process as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"AF65M7knGfpOJEqQJ9wvsJtz7/5GdWQBo/dGbFTfe4XBL6q3qMylHOZWSPotGVT3DUorQj8muSkkWVk3Xcx8KQ==", "upfile"=>#<ActionDispatch::Http::UploadedFile:0x007ff46cbba608 @tempfile=#<Tempfile:/tmp/RackMultipart20150831-2714-1r275o0.jpg>, @original_filename="11934222_703273749815994_890581498_n.jpg", @content_type="image/jpeg", @headers="Content-Disposition: form-data; name=\"upfile\"; filename=\"11934222_703273749815994_890581498_n.jpg\"\r\nContent-Type: image/jpeg\r\n">, "commit"=>"upload"}
+Completed 500 Internal Server Error in 3ms (ActiveRecord: 0.0ms)
+
+Errno::ENOENT (No such file or directory @ rb_sysopen - publish/docs/11934222_703273749815994_890581498_n.jpg):
+  app/controllers/ctrl_controller.rb:29:in `initialize'
+  app/controllers/ctrl_controller.rb:29:in `open'
+  app/controllers/ctrl_controller.rb:29:in `upload_process'
+
+
+  Rendered /home/okuda/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (4.0ms)
+  Rendered /home/okuda/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.8ms)
+  Rendered /home/okuda/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.8ms)
+  Rendered /home/okuda/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (21.6ms)
+
+
+Started POST "/ctrl/upload_process" for 192.168.40.1 at 2015-08-31 16:53:30 +0900
+Cannot render console from 192.168.40.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by CtrlController#upload_process as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"AF65M7knGfpOJEqQJ9wvsJtz7/5GdWQBo/dGbFTfe4XBL6q3qMylHOZWSPotGVT3DUorQj8muSkkWVk3Xcx8KQ==", "upfile"=>#<ActionDispatch::Http::UploadedFile:0x007ff44c90a9f0 @tempfile=#<Tempfile:/tmp/RackMultipart20150831-2714-10ogpe3.jpg>, @original_filename="11934222_703273749815994_890581498_n.jpg", @content_type="image/jpeg", @headers="Content-Disposition: form-data; name=\"upfile\"; filename=\"11934222_703273749815994_890581498_n.jpg\"\r\nContent-Type: image/jpeg\r\n">, "commit"=>"upload"}
+Completed 500 Internal Server Error in 1ms (ActiveRecord: 0.0ms)
+
+Errno::ENOENT (No such file or directory @ rb_sysopen - public/docs/11934222_703273749815994_890581498_n.jpg):
+  app/controllers/ctrl_controller.rb:29:in `initialize'
+  app/controllers/ctrl_controller.rb:29:in `open'
+  app/controllers/ctrl_controller.rb:29:in `upload_process'
+
+
+  Rendered /home/okuda/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (4.1ms)
+  Rendered /home/okuda/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (9.3ms)
+  Rendered /home/okuda/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.9ms)
+  Rendered /home/okuda/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (28.5ms)
+
+
+Started POST "/ctrl/upload_process" for 192.168.40.1 at 2015-08-31 16:53:55 +0900
+Cannot render console from 192.168.40.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by CtrlController#upload_process as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"AF65M7knGfpOJEqQJ9wvsJtz7/5GdWQBo/dGbFTfe4XBL6q3qMylHOZWSPotGVT3DUorQj8muSkkWVk3Xcx8KQ==", "upfile"=>#<ActionDispatch::Http::UploadedFile:0x007ff450659f68 @tempfile=#<Tempfile:/tmp/RackMultipart20150831-2714-ntsb07.jpg>, @original_filename="11934222_703273749815994_890581498_n.jpg", @content_type="image/jpeg", @headers="Content-Disposition: form-data; name=\"upfile\"; filename=\"11934222_703273749815994_890581498_n.jpg\"\r\nContent-Type: image/jpeg\r\n">, "commit"=>"upload"}
+  Rendered text template (0.0ms)
+Completed 200 OK in 2ms (Views: 0.7ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/ctrl/upload_process" for 192.168.40.1 at 2015-08-31 17:34:03 +0900
+Cannot render console from 192.168.40.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by CtrlController#upload_process as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"AF65M7knGfpOJEqQJ9wvsJtz7/5GdWQBo/dGbFTfe4XBL6q3qMylHOZWSPotGVT3DUorQj8muSkkWVk3Xcx8KQ==", "upfile"=>#<ActionDispatch::Http::UploadedFile:0x007ff4502e0c60 @tempfile=#<Tempfile:/tmp/RackMultipart20150831-2714-hso6dz.reg>, @original_filename="solarized_dark.reg", @content_type="application/octet-stream", @headers="Content-Disposition: form-data; name=\"upfile\"; filename=\"solarized_dark.reg\"\r\nContent-Type: application/octet-stream\r\n">, "commit"=>"upload"}
+  Rendered text template (0.0ms)
+Completed 200 OK in 4ms (Views: 0.8ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/ctrl/upload_process" for 192.168.40.1 at 2015-08-31 17:34:34 +0900
+Cannot render console from 192.168.40.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by CtrlController#upload_process as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"AF65M7knGfpOJEqQJ9wvsJtz7/5GdWQBo/dGbFTfe4XBL6q3qMylHOZWSPotGVT3DUorQj8muSkkWVk3Xcx8KQ==", "upfile"=>#<ActionDispatch::Http::UploadedFile:0x007ff4501dc030 @tempfile=#<Tempfile:/tmp/RackMultipart20150831-2714-15xb7lk.jpg>, @original_filename="OKAfes.jpg", @content_type="image/jpeg", @headers="Content-Disposition: form-data; name=\"upfile\"; filename=\"OKAfes.jpg\"\r\nContent-Type: image/jpeg\r\n">, "commit"=>"upload"}
+  Rendered text template (0.0ms)
+Completed 200 OK in 5ms (Views: 0.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/ctrl/updb" for 192.168.40.1 at 2015-08-31 17:40:43 +0900
+Cannot render console from 192.168.40.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by CtrlController#updb as HTML
+  [1m[35mAuthor Load (0.2ms)[0m  SELECT  "authors".* FROM "authors" WHERE "authors"."id" = ? LIMIT 1  [["id", nil]]
+Completed 404 Not Found in 9ms (ActiveRecord: 0.7ms)
+
+ActiveRecord::RecordNotFound (Couldn't find Author with 'id'=):
+  app/controllers/ctrl_controller.rb:36:in `updb'
+
+
+  Rendered /home/okuda/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (4.4ms)
+  Rendered /home/okuda/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.8ms)
+  Rendered /home/okuda/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.7ms)
+  Rendered /home/okuda/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (20.9ms)
+
+
+Started GET "/ctrl/updb/100" for 192.168.40.1 at 2015-08-31 17:41:42 +0900
+Cannot render console from 192.168.40.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by CtrlController#updb as HTML
+  Parameters: {"id"=>"100"}
+  [1m[36mAuthor Load (0.2ms)[0m  [1mSELECT  "authors".* FROM "authors" WHERE "authors"."id" = ? LIMIT 1[0m  [["id", 100]]
+Completed 404 Not Found in 4ms (ActiveRecord: 0.2ms)
+
+ActiveRecord::RecordNotFound (Couldn't find Author with 'id'=100):
+  app/controllers/ctrl_controller.rb:36:in `updb'
+
+
+  Rendered /home/okuda/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (4.2ms)
+  Rendered /home/okuda/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.9ms)
+  Rendered /home/okuda/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.7ms)
+  Rendered /home/okuda/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (20.9ms)
+
+
+Started GET "/ctrl/updb/108" for 192.168.40.1 at 2015-08-31 17:41:52 +0900
+Cannot render console from 192.168.40.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by CtrlController#updb as HTML
+  Parameters: {"id"=>"108"}
+  [1m[35mAuthor Load (0.1ms)[0m  SELECT  "authors".* FROM "authors" WHERE "authors"."id" = ? LIMIT 1  [["id", 108]]
+Completed 404 Not Found in 5ms (ActiveRecord: 0.1ms)
+
+ActiveRecord::RecordNotFound (Couldn't find Author with 'id'=108):
+  app/controllers/ctrl_controller.rb:36:in `updb'
+
+
+  Rendered /home/okuda/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (4.2ms)
+  Rendered /home/okuda/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.7ms)
+  Rendered /home/okuda/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.7ms)
+  Rendered /home/okuda/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (20.2ms)
+  [1m[36mAuthor Load (1.1ms)[0m  [1mSELECT "authors".* FROM "authors"[0m
+
+
+Started GET "/ctrl/updb/1" for 192.168.40.1 at 2015-08-31 17:42:24 +0900
+Cannot render console from 192.168.40.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by CtrlController#updb as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mAuthor Load (0.2ms)[0m  [1mSELECT  "authors".* FROM "authors" WHERE "authors"."id" = ? LIMIT 1[0m  [["id", 1]]
+  Rendered ctrl/updb.html.erb within layouts/application (23.1ms)
+Completed 200 OK in 94ms (Views: 80.6ms | ActiveRecord: 0.2ms)
+
+
+Started PATCH "/ctrl/updb_process/1" for 192.168.40.1 at 2015-08-31 17:42:35 +0900
+Cannot render console from 192.168.40.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by CtrlController#updb_process as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"3sjnU3NBa7PlhJXGlnVvKGMbSFJ+xdbCGya52jQrJ+QfufTXYqrXVU32l6ycsBRv9SKM7geWC+qciKaBPTggSA==", "author"=>{"data"=>#<ActionDispatch::Http::UploadedFile:0x007ff44c75f998 @tempfile=#<Tempfile:/tmp/RackMultipart20150831-2714-exu2kx.jpg>, @original_filename="11934222_703273749815994_890581498_n.jpg", @content_type="image/jpeg", @headers="Content-Disposition: form-data; name=\"author[data]\"; filename=\"11934222_703273749815994_890581498_n.jpg\"\r\nContent-Type: image/jpeg\r\n">}, "commit"=>"upload", "id"=>"1"}
+  [1m[35mAuthor Load (0.2ms)[0m  SELECT  "authors".* FROM "authors" WHERE "authors"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+Completed 500 Internal Server Error in 9ms (ActiveRecord: 0.4ms)
+
+ActiveRecord::UnknownAttributeError (unknown attribute 'data' for Author.):
+  app/controllers/ctrl_controller.rb:41:in `updb_process'
+
+
+  Rendered /home/okuda/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (4.7ms)
+  Rendered /home/okuda/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.9ms)
+  Rendered /home/okuda/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.9ms)
+  Rendered /home/okuda/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (21.4ms)
+
+
+Started PATCH "/ctrl/updb_process/1" for 192.168.40.1 at 2015-08-31 17:44:27 +0900
+Cannot render console from 192.168.40.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by CtrlController#updb_process as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"3sjnU3NBa7PlhJXGlnVvKGMbSFJ+xdbCGya52jQrJ+QfufTXYqrXVU32l6ycsBRv9SKM7geWC+qciKaBPTggSA==", "author"=>{"data"=>#<ActionDispatch::Http::UploadedFile:0x007ff450022668 @tempfile=#<Tempfile:/tmp/RackMultipart20150831-2714-18kdt0h.jpg>, @original_filename="11934222_703273749815994_890581498_n.jpg", @content_type="image/jpeg", @headers="Content-Disposition: form-data; name=\"author[data]\"; filename=\"11934222_703273749815994_890581498_n.jpg\"\r\nContent-Type: image/jpeg\r\n">}, "commit"=>"upload", "id"=>"1"}
+  [1m[36mAuthor Load (0.1ms)[0m  [1mSELECT  "authors".* FROM "authors" WHERE "authors"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35m (0.2ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (2.0ms)[0m  begin transaction
+  [1m[36m (0.8ms)[0m  [1mrollback transaction[0m
+Completed 500 Internal Server Error in 5690509ms (ActiveRecord: 3.7ms)
+
+ActiveRecord::UnknownAttributeError (unknown attribute 'data' for Author.):
+  app/controllers/ctrl_controller.rb:42:in `updb_process'
+
+
+  Rendered /home/okuda/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (130.8ms)
+  Rendered /home/okuda/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (31.1ms)
+  Rendered /home/okuda/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (3.5ms)
+  Rendered /home/okuda/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (195.3ms)
+
+
+Started PATCH "/ctrl/updb_process/1" for 192.168.40.1 at 2015-08-31 19:20:06 +0900
+Cannot render console from 192.168.40.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by CtrlController#updb_process as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"3sjnU3NBa7PlhJXGlnVvKGMbSFJ+xdbCGya52jQrJ+QfufTXYqrXVU32l6ycsBRv9SKM7geWC+qciKaBPTggSA==", "author"=>{"data"=>#<ActionDispatch::Http::UploadedFile:0x007ff44c4b8d98 @tempfile=#<Tempfile:/tmp/RackMultipart20150831-2714-j2ib6k.jpg>, @original_filename="11934222_703273749815994_890581498_n.jpg", @content_type="image/jpeg", @headers="Content-Disposition: form-data; name=\"author[data]\"; filename=\"11934222_703273749815994_890581498_n.jpg\"\r\nContent-Type: image/jpeg\r\n">}, "commit"=>"upload", "id"=>"1"}
+  [1m[35mAuthor Load (0.5ms)[0m  SELECT  "authors".* FROM "authors" WHERE "authors"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36m (0.3ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.3ms)[0m  rollback transaction
+Completed 500 Internal Server Error in 89ms (ActiveRecord: 3.0ms)
+
+ActiveRecord::UnknownAttributeError (unknown attribute 'data' for Author.):
+  app/controllers/ctrl_controller.rb:42:in `updb_process'
+
+
+  Rendered /home/okuda/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (145.8ms)
+  Rendered /home/okuda/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (31.2ms)
+  Rendered /home/okuda/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (3.7ms)
+  Rendered /home/okuda/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (202.8ms)
+
+
+Started PATCH "/ctrl/updb_process/1" for 192.168.40.1 at 2015-08-31 19:20:22 +0900
+Cannot render console from 192.168.40.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by CtrlController#updb_process as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"3sjnU3NBa7PlhJXGlnVvKGMbSFJ+xdbCGya52jQrJ+QfufTXYqrXVU32l6ycsBRv9SKM7geWC+qciKaBPTggSA==", "author"=>{"data"=>#<ActionDispatch::Http::UploadedFile:0x007ff44ca14260 @tempfile=#<Tempfile:/tmp/RackMultipart20150831-2714-bpiabw.jpg>, @original_filename="11934222_703273749815994_890581498_n.jpg", @content_type="image/jpeg", @headers="Content-Disposition: form-data; name=\"author[data]\"; filename=\"11934222_703273749815994_890581498_n.jpg\"\r\nContent-Type: image/jpeg\r\n">}, "commit"=>"upload", "id"=>"1"}
+  [1m[36mAuthor Load (0.8ms)[0m  [1mSELECT  "authors".* FROM "authors" WHERE "authors"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35m (1.2ms)[0m  begin transaction
+  [1m[36m (0.7ms)[0m  [1mrollback transaction[0m
+Completed 500 Internal Server Error in 200493ms (ActiveRecord: 5.3ms)
+
+ActiveRecord::UnknownAttributeError (unknown attribute 'data' for Author.):
+  app/controllers/ctrl_controller.rb:42:in `updb_process'
+
+
+  Rendered /home/okuda/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (136.5ms)
+  Rendered /home/okuda/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (40.3ms)
+  Rendered /home/okuda/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (3.6ms)
+  Rendered /home/okuda/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (201.8ms)
+
+
+Started PATCH "/ctrl/updb_process/1" for 192.168.40.1 at 2015-08-31 19:23:55 +0900
+Cannot render console from 192.168.40.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by CtrlController#updb_process as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"3sjnU3NBa7PlhJXGlnVvKGMbSFJ+xdbCGya52jQrJ+QfufTXYqrXVU32l6ycsBRv9SKM7geWC+qciKaBPTggSA==", "author"=>{"data"=>#<ActionDispatch::Http::UploadedFile:0x007faff01e6d90 @tempfile=#<Tempfile:/tmp/RackMultipart20150831-4961-hwosbm.jpg>, @original_filename="11934222_703273749815994_890581498_n.jpg", @content_type="image/jpeg", @headers="Content-Disposition: form-data; name=\"author[data]\"; filename=\"11934222_703273749815994_890581498_n.jpg\"\r\nContent-Type: image/jpeg\r\n">}, "commit"=>"upload", "id"=>"1"}
+  [1m[35mAuthor Load (0.2ms)[0m  SELECT  "authors".* FROM "authors" WHERE "authors"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36m (1.5ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.5ms)[0m  rollback transaction
+Completed 500 Internal Server Error in 60291ms (ActiveRecord: 2.4ms)
+
+ActiveRecord::UnknownAttributeError (unknown attribute 'data' for Author.):
+  app/controllers/ctrl_controller.rb:42:in `updb_process'
+
+
+  Rendered /home/okuda/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (99.1ms)
+  Rendered /home/okuda/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (25.6ms)
+  Rendered /home/okuda/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (3.3ms)
+  Rendered /home/okuda/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (149.6ms)
+
+
+Started PATCH "/ctrl/updb_process/1" for 192.168.40.1 at 2015-08-31 19:24:59 +0900
+Cannot render console from 192.168.40.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by CtrlController#updb_process as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"3sjnU3NBa7PlhJXGlnVvKGMbSFJ+xdbCGya52jQrJ+QfufTXYqrXVU32l6ycsBRv9SKM7geWC+qciKaBPTggSA==", "author"=>{"data"=>#<ActionDispatch::Http::UploadedFile:0x007fafc943c3a0 @tempfile=#<Tempfile:/tmp/RackMultipart20150831-4961-qqfz4b.jpg>, @original_filename="11934222_703273749815994_890581498_n.jpg", @content_type="image/jpeg", @headers="Content-Disposition: form-data; name=\"author[data]\"; filename=\"11934222_703273749815994_890581498_n.jpg\"\r\nContent-Type: image/jpeg\r\n">}, "commit"=>"upload", "id"=>"1"}
+  [1m[36mAuthor Load (1.0ms)[0m  [1mSELECT  "authors".* FROM "authors" WHERE "authors"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35m (1.8ms)[0m  begin transaction
+  [1m[36mSQL (1.4ms)[0m  [1mUPDATE "authors" SET "ctype" = ?, "photo" = ?, "updated_at" = ? WHERE "authors"."id" = ?[0m  [["ctype", "image/jpeg"], ["photo", "<93297 bytes of binary data>"], ["updated_at", "2015-08-31 10:25:03.705444"], ["id", 1]]
+  [1m[35m (62.6ms)[0m  commit transaction
+  Rendered text template (0.6ms)
+Completed 200 OK in 3554ms (Views: 12.2ms | ActiveRecord: 69.1ms)
+  [1m[35mAuthor Load (1.1ms)[0m  SELECT "authors".* FROM "authors"
+
+
+Started GET "/ctrl/show_photo/1" for 192.168.40.1 at 2015-08-31 19:33:12 +0900
+Cannot render console from 192.168.40.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by CtrlController#show_photo as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mAuthor Load (0.9ms)[0m  [1mSELECT  "authors".* FROM "authors" WHERE "authors"."id" = ? LIMIT 1[0m  [["id", 1]]
+  Rendered text template (0.2ms)
+Sent data  (8.2ms)
+Completed 200 OK in 91ms (Views: 7.3ms | ActiveRecord: 2.9ms)
+
+
+Started GET "/ctrl/get_xml" for 192.168.40.1 at 2015-08-31 19:41:03 +0900
+Cannot render console from 192.168.40.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by CtrlController#get_xml as HTML
+  [1m[35mBook Load (0.9ms)[0m  SELECT "books".* FROM "books"
+Completed 200 OK in 310ms (Views: 266.9ms | ActiveRecord: 2.6ms)
+
+
+Started GET "/ctrl/get_json" for 192.168.40.1 at 2015-08-31 19:41:58 +0900
+Cannot render console from 192.168.40.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by CtrlController#get_json as HTML
+  [1m[36mBook Load (1.0ms)[0m  [1mSELECT "books".* FROM "books"[0m
+Completed 200 OK in 117ms (Views: 73.3ms | ActiveRecord: 2.8ms)
+
+
+Started GET "/books" for 192.168.40.1 at 2015-08-31 19:50:36 +0900
+Cannot render console from 192.168.40.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BooksController#index as HTML
+  [1m[35mBook Load (0.7ms)[0m  SELECT "books".* FROM "books"
+  Rendered books/index.html.erb within layouts/product (57.4ms)
+Completed 200 OK in 1003ms (Views: 997.3ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/stylesheets/all.css" for 192.168.40.1 at 2015-08-31 19:50:37 +0900
+Cannot render console from 192.168.40.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+ActionController::RoutingError (No route matches [GET] "/stylesheets/all.css"):
+  actionpack (4.2.1) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.2.1) lib/web_console/middleware.rb:31:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.1) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.1) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.1) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.1) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.1) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.1) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/static.rb:113:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.1) lib/rails/engine.rb:518:in `call'
+  railties (4.2.1) lib/rails/application.rb:164:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.4) lib/rack/handler/webrick.rb:88:in `service'
+  /home/okuda/.rbenv/versions/2.2.2/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /home/okuda/.rbenv/versions/2.2.2/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /home/okuda/.rbenv/versions/2.2.2/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+  Rendered /home/okuda/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (11.1ms)
+  Rendered /home/okuda/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/routes/_route.html.erb (59.6ms)
+  Rendered /home/okuda/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/routes/_table.html.erb (21.3ms)
+  Rendered /home/okuda/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (5.6ms)
+  Rendered /home/okuda/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (499.0ms)
+
+
+Started GET "/javascripts/defaults.js" for 192.168.40.1 at 2015-08-31 19:50:38 +0900
+Cannot render console from 192.168.40.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+ActionController::RoutingError (No route matches [GET] "/javascripts/defaults.js"):
+  actionpack (4.2.1) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.2.1) lib/web_console/middleware.rb:31:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.1) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.1) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.1) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.1) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.1) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.1) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/static.rb:113:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.1) lib/rails/engine.rb:518:in `call'
+  railties (4.2.1) lib/rails/application.rb:164:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.4) lib/rack/handler/webrick.rb:88:in `service'
+  /home/okuda/.rbenv/versions/2.2.2/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /home/okuda/.rbenv/versions/2.2.2/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /home/okuda/.rbenv/versions/2.2.2/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+  Rendered /home/okuda/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (19.3ms)
+  Rendered /home/okuda/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/routes/_route.html.erb (61.2ms)
+  Rendered /home/okuda/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/routes/_table.html.erb (5.3ms)
+  Rendered /home/okuda/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (13.4ms)
+  Rendered /home/okuda/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (473.2ms)
+
+
+Started GET "/books/index.atom" for 192.168.40.1 at 2015-08-31 19:50:44 +0900
+Cannot render console from 192.168.40.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BooksController#show as ATOM
+  Parameters: {"id"=>"index"}
+  [1m[36mBook Load (0.7ms)[0m  [1mSELECT  "books".* FROM "books" WHERE "books"."id" = ? LIMIT 1[0m  [["id", 0]]
+Completed 404 Not Found in 20ms (ActiveRecord: 0.7ms)
+
+ActiveRecord::RecordNotFound (Couldn't find Book with 'id'=index):
+  app/controllers/books_controller.rb:68:in `set_book'
+
+
+  Rendered /home/okuda/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (153.2ms)
+  Rendered /home/okuda/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (42.8ms)
+  Rendered /home/okuda/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (3.7ms)
+  Rendered /home/okuda/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (224.2ms)
+
+
+Started GET "/books/index" for 192.168.40.1 at 2015-08-31 19:51:33 +0900
+Cannot render console from 192.168.40.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BooksController#show as HTML
+  Parameters: {"id"=>"index"}
+  [1m[35mBook Load (0.4ms)[0m  SELECT  "books".* FROM "books" WHERE "books"."id" = ? LIMIT 1  [["id", 0]]
+Completed 404 Not Found in 19ms (ActiveRecord: 0.4ms)
+
+ActiveRecord::RecordNotFound (Couldn't find Book with 'id'=index):
+  app/controllers/books_controller.rb:68:in `set_book'
+
+
+  Rendered /home/okuda/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (153.0ms)
+  Rendered /home/okuda/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (35.0ms)
+  Rendered /home/okuda/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (3.8ms)
+  Rendered /home/okuda/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (215.7ms)
+
+
+Started GET "/books" for 192.168.40.1 at 2015-08-31 19:53:17 +0900
+Cannot render console from 192.168.40.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BooksController#index as HTML
+  [1m[36mBook Load (0.9ms)[0m  [1mSELECT "books".* FROM "books"[0m
+  Rendered books/index.html.erb within layouts/product (112.0ms)
+Completed 200 OK in 277ms (Views: 219.5ms | ActiveRecord: 3.1ms)
+
+
+Started GET "/books" for 192.168.40.1 at 2015-08-31 19:53:19 +0900
+Cannot render console from 192.168.40.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BooksController#index as HTML
+  [1m[35mBook Load (0.7ms)[0m  SELECT "books".* FROM "books"
+  Rendered books/index.html.erb within layouts/product (57.0ms)
+Completed 200 OK in 152ms (Views: 147.7ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/javascripts/defaults.js" for 192.168.40.1 at 2015-08-31 19:53:19 +0900
+Cannot render console from 192.168.40.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+ActionController::RoutingError (No route matches [GET] "/javascripts/defaults.js"):
+  actionpack (4.2.1) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.2.1) lib/web_console/middleware.rb:31:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.1) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.1) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.1) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.1) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.1) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.1) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/static.rb:113:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.1) lib/rails/engine.rb:518:in `call'
+  railties (4.2.1) lib/rails/application.rb:164:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.4) lib/rack/handler/webrick.rb:88:in `service'
+  /home/okuda/.rbenv/versions/2.2.2/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /home/okuda/.rbenv/versions/2.2.2/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /home/okuda/.rbenv/versions/2.2.2/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+  Rendered /home/okuda/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (10.7ms)
+  Rendered /home/okuda/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/routes/_route.html.erb (56.2ms)
+  Rendered /home/okuda/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/routes/_table.html.erb (4.7ms)
+  Rendered /home/okuda/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (5.0ms)
+  Rendered /home/okuda/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (443.6ms)
+
+
+Started GET "/stylesheets/all.css" for 192.168.40.1 at 2015-08-31 19:53:20 +0900
+Cannot render console from 192.168.40.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+ActionController::RoutingError (No route matches [GET] "/stylesheets/all.css"):
+  actionpack (4.2.1) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.2.1) lib/web_console/middleware.rb:31:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.1) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.1) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.1) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.1) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.1) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.1) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/static.rb:113:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.1) lib/rails/engine.rb:518:in `call'
+  railties (4.2.1) lib/rails/application.rb:164:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.4) lib/rack/handler/webrick.rb:88:in `service'
+  /home/okuda/.rbenv/versions/2.2.2/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /home/okuda/.rbenv/versions/2.2.2/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /home/okuda/.rbenv/versions/2.2.2/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+  Rendered /home/okuda/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (9.5ms)
+  Rendered /home/okuda/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/routes/_route.html.erb (56.8ms)
+  Rendered /home/okuda/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/routes/_table.html.erb (4.2ms)
+  Rendered /home/okuda/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (5.0ms)
+  Rendered /home/okuda/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (421.1ms)
+
+
+Started GET "/books.atom" for 192.168.40.1 at 2015-08-31 19:53:23 +0900
+Cannot render console from 192.168.40.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BooksController#index as ATOM
+  [1m[36mBook Load (9.1ms)[0m  [1mSELECT  "books".* FROM "books"  ORDER BY "books"."id" DESC LIMIT 1[0m
+  [1m[35mBook Load (0.7ms)[0m  SELECT "books".* FROM "books"
+  [1m[36mAuthor Load (1.0ms)[0m  [1mSELECT "authors".* FROM "authors" INNER JOIN "authors_books" ON "authors"."id" = "authors_books"."author_id" WHERE "authors_books"."book_id" = ?[0m  [["book_id", 1]]
+  [1m[35mAuthor Load (0.7ms)[0m  SELECT "authors".* FROM "authors" INNER JOIN "authors_books" ON "authors"."id" = "authors_books"."author_id" WHERE "authors_books"."book_id" = ?  [["book_id", 2]]
+  [1m[36mAuthor Load (0.5ms)[0m  [1mSELECT "authors".* FROM "authors" INNER JOIN "authors_books" ON "authors"."id" = "authors_books"."author_id" WHERE "authors_books"."book_id" = ?[0m  [["book_id", 3]]
+  [1m[35mAuthor Load (0.6ms)[0m  SELECT "authors".* FROM "authors" INNER JOIN "authors_books" ON "authors"."id" = "authors_books"."author_id" WHERE "authors_books"."book_id" = ?  [["book_id", 4]]
+  [1m[36mAuthor Load (0.6ms)[0m  [1mSELECT "authors".* FROM "authors" INNER JOIN "authors_books" ON "authors"."id" = "authors_books"."author_id" WHERE "authors_books"."book_id" = ?[0m  [["book_id", 5]]
+  [1m[35mAuthor Load (0.4ms)[0m  SELECT "authors".* FROM "authors" INNER JOIN "authors_books" ON "authors"."id" = "authors_books"."author_id" WHERE "authors_books"."book_id" = ?  [["book_id", 6]]
+  [1m[36mAuthor Load (0.4ms)[0m  [1mSELECT "authors".* FROM "authors" INNER JOIN "authors_books" ON "authors"."id" = "authors_books"."author_id" WHERE "authors_books"."book_id" = ?[0m  [["book_id", 7]]
+  [1m[35mAuthor Load (0.9ms)[0m  SELECT "authors".* FROM "authors" INNER JOIN "authors_books" ON "authors"."id" = "authors_books"."author_id" WHERE "authors_books"."book_id" = ?  [["book_id", 8]]
+  [1m[36mAuthor Load (0.5ms)[0m  [1mSELECT "authors".* FROM "authors" INNER JOIN "authors_books" ON "authors"."id" = "authors_books"."author_id" WHERE "authors_books"."book_id" = ?[0m  [["book_id", 9]]
+  [1m[35mAuthor Load (0.4ms)[0m  SELECT "authors".* FROM "authors" INNER JOIN "authors_books" ON "authors"."id" = "authors_books"."author_id" WHERE "authors_books"."book_id" = ?  [["book_id", 10]]
+  Rendered books/index.atom.builder (460.6ms)
+Completed 200 OK in 477ms (Views: 454.2ms | ActiveRecord: 17.9ms)
+
+
+Started GET "/download" for 192.168.40.1 at 2015-08-31 20:39:41 +0900
+Cannot render console from 192.168.40.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+ActionController::RoutingError (No route matches [GET] "/download"):
+  actionpack (4.2.1) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.2.1) lib/web_console/middleware.rb:31:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.1) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.1) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.1) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.1) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.1) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.1) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/static.rb:113:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.1) lib/rails/engine.rb:518:in `call'
+  railties (4.2.1) lib/rails/application.rb:164:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.4) lib/rack/handler/webrick.rb:88:in `service'
+  /home/okuda/.rbenv/versions/2.2.2/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /home/okuda/.rbenv/versions/2.2.2/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /home/okuda/.rbenv/versions/2.2.2/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+  Rendered /home/okuda/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (19.5ms)
+  Rendered /home/okuda/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/routes/_route.html.erb (62.8ms)
+  Rendered /home/okuda/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/routes/_table.html.erb (5.0ms)
+  Rendered /home/okuda/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (6.0ms)
+  Rendered /home/okuda/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (552.2ms)
+
+
+Started GET "/download.csv" for 192.168.40.1 at 2015-08-31 20:39:55 +0900
+Cannot render console from 192.168.40.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+ActionController::RoutingError (No route matches [GET] "/download.csv"):
+  actionpack (4.2.1) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.2.1) lib/web_console/middleware.rb:31:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.1) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.1) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.1) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.1) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.1) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.1) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/static.rb:113:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.1) lib/rails/engine.rb:518:in `call'
+  railties (4.2.1) lib/rails/application.rb:164:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.4) lib/rack/handler/webrick.rb:88:in `service'
+  /home/okuda/.rbenv/versions/2.2.2/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /home/okuda/.rbenv/versions/2.2.2/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /home/okuda/.rbenv/versions/2.2.2/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+  Rendered /home/okuda/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (19.5ms)
+  Rendered /home/okuda/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/routes/_route.html.erb (71.4ms)
+  Rendered /home/okuda/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/routes/_table.html.erb (5.0ms)
+  Rendered /home/okuda/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (6.3ms)
+  Rendered /home/okuda/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (515.7ms)
+
+
+Started GET "/ctrl/download.csv" for 192.168.40.1 at 2015-08-31 20:40:23 +0900
+Cannot render console from 192.168.40.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by CtrlController#download as CSV
+  Rendered ctrl/download.csv.ruby (25.3ms)
+Completed 500 Internal Server Error in 89ms (ActiveRecord: 1.4ms)
+
+ActionView::Template::Error (undefined method `json' for #<Array:0x007fafc93b64a8>):
+    1: require 'kconv'
+    2: 
+    3: result = ''
+    4: result << @books.attribute_names.json(',')
+    5: result << "\r"
+    6: @books.each do |b|
+    7:   result << b.attributes.values.join(',')
+  app/views/ctrl/download.csv.ruby:4:in `_app_views_ctrl_download_csv_ruby___826061913992124154_70196484629380'
+
+
+  Rendered /home/okuda/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (230.8ms)
+  Rendered /home/okuda/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (54.7ms)
+  Rendered /home/okuda/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (3.5ms)
+  Rendered /home/okuda/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (330.0ms)
+
+
+Started GET "/ctrl/download.csv" for 192.168.40.1 at 2015-08-31 20:40:46 +0900
+Cannot render console from 192.168.40.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by CtrlController#download as CSV
+  [1m[36mBook Load (0.7ms)[0m  [1mSELECT "books".* FROM "books"[0m
+  Rendered ctrl/download.csv.ruby (79.4ms)
+Completed 200 OK in 99ms (Views: 83.8ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/ctrl/cookie" for 192.168.40.1 at 2015-08-31 20:56:59 +0900
+Cannot render console from 192.168.40.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by CtrlController#cookie as HTML
+  Rendered ctrl/cookie.html.erb within layouts/application (32.6ms)
+Completed 200 OK in 775ms (Views: 732.5ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/ctrl/cookie_rec" for 192.168.40.1 at 2015-08-31 20:57:09 +0900
+Cannot render console from 192.168.40.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by CtrlController#cookie_rec as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"6zB+szg+Bwps9615a3A154q1lRYOd6aI3Pil/GJva8YqQW03KdW77MSFrxNhtU6gHIxRqncke6BbVrqna3xsag==", "email"=>"okuda.natsumi72@gmail.com", "commit"=>"保存"}
+  Rendered text template (0.2ms)
+Completed 200 OK in 10ms (Views: 2.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/ctrl/session_show" for 192.168.40.1 at 2015-08-31 21:15:03 +0900
+Cannot render console from 192.168.40.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by CtrlController#session_show as HTML
+  Rendered ctrl/session_show.html.erb within layouts/application (16.4ms)
+Completed 200 OK in 921ms (Views: 915.5ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/ctrl/session_rec" for 192.168.40.1 at 2015-08-31 21:15:11 +0900
+Cannot render console from 192.168.40.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+AbstractController::ActionNotFound (The action 'session_rec' could not be found for CtrlController):
+  actionpack (4.2.1) lib/abstract_controller/base.rb:132:in `process'
+  actionview (4.2.1) lib/action_view/rendering.rb:30:in `process'
+  actionpack (4.2.1) lib/action_controller/metal.rb:196:in `dispatch'
+  actionpack (4.2.1) lib/action_controller/metal/rack_delegation.rb:13:in `dispatch'
+  actionpack (4.2.1) lib/action_controller/metal.rb:237:in `block in action'
+  actionpack (4.2.1) lib/action_dispatch/routing/route_set.rb:74:in `call'
+  actionpack (4.2.1) lib/action_dispatch/routing/route_set.rb:74:in `dispatch'
+  actionpack (4.2.1) lib/action_dispatch/routing/route_set.rb:43:in `serve'
+  actionpack (4.2.1) lib/action_dispatch/journey/router.rb:43:in `block in serve'
+  actionpack (4.2.1) lib/action_dispatch/journey/router.rb:30:in `each'
+  actionpack (4.2.1) lib/action_dispatch/journey/router.rb:30:in `serve'
+  actionpack (4.2.1) lib/action_dispatch/routing/route_set.rb:819:in `call'
+  rack (1.6.4) lib/rack/etag.rb:24:in `call'
+  rack (1.6.4) lib/rack/conditionalget.rb:38:in `call'
+  rack (1.6.4) lib/rack/head.rb:13:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/params_parser.rb:27:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/flash.rb:260:in `call'
+  rack (1.6.4) lib/rack/session/abstract/id.rb:225:in `context'
+  rack (1.6.4) lib/rack/session/abstract/id.rb:220:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/cookies.rb:560:in `call'
+  activerecord (4.2.1) lib/active_record/query_cache.rb:36:in `call'
+  activerecord (4.2.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:649:in `call'
+  activerecord (4.2.1) lib/active_record/migration.rb:378:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.2.1) lib/active_support/callbacks.rb:88:in `call'
+  activesupport (4.2.1) lib/active_support/callbacks.rb:88:in `_run_callbacks'
+  activesupport (4.2.1) lib/active_support/callbacks.rb:776:in `_run_call_callbacks'
+  activesupport (4.2.1) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (4.2.1) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/reloader.rb:73:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/remote_ip.rb:78:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  web-console (2.2.1) lib/web_console/middleware.rb:31:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.1) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.1) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.1) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.1) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.1) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.1) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/static.rb:113:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.1) lib/rails/engine.rb:518:in `call'
+  railties (4.2.1) lib/rails/application.rb:164:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.4) lib/rack/handler/webrick.rb:88:in `service'
+  /home/okuda/.rbenv/versions/2.2.2/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /home/okuda/.rbenv/versions/2.2.2/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /home/okuda/.rbenv/versions/2.2.2/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+  Rendered /home/okuda/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/unknown_action.html.erb within rescues/layout (4.0ms)
+
+
+Started POST "/ctrl/session_rec" for 192.168.40.1 at 2015-08-31 21:16:22 +0900
+Cannot render console from 192.168.40.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+AbstractController::ActionNotFound (The action 'session_rec' could not be found for CtrlController):
+  actionpack (4.2.1) lib/abstract_controller/base.rb:132:in `process'
+  actionview (4.2.1) lib/action_view/rendering.rb:30:in `process'
+  actionpack (4.2.1) lib/action_controller/metal.rb:196:in `dispatch'
+  actionpack (4.2.1) lib/action_controller/metal/rack_delegation.rb:13:in `dispatch'
+  actionpack (4.2.1) lib/action_controller/metal.rb:237:in `block in action'
+  actionpack (4.2.1) lib/action_dispatch/routing/route_set.rb:74:in `call'
+  actionpack (4.2.1) lib/action_dispatch/routing/route_set.rb:74:in `dispatch'
+  actionpack (4.2.1) lib/action_dispatch/routing/route_set.rb:43:in `serve'
+  actionpack (4.2.1) lib/action_dispatch/journey/router.rb:43:in `block in serve'
+  actionpack (4.2.1) lib/action_dispatch/journey/router.rb:30:in `each'
+  actionpack (4.2.1) lib/action_dispatch/journey/router.rb:30:in `serve'
+  actionpack (4.2.1) lib/action_dispatch/routing/route_set.rb:819:in `call'
+  rack (1.6.4) lib/rack/etag.rb:24:in `call'
+  rack (1.6.4) lib/rack/conditionalget.rb:38:in `call'
+  rack (1.6.4) lib/rack/head.rb:13:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/params_parser.rb:27:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/flash.rb:260:in `call'
+  rack (1.6.4) lib/rack/session/abstract/id.rb:225:in `context'
+  rack (1.6.4) lib/rack/session/abstract/id.rb:220:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/cookies.rb:560:in `call'
+  activerecord (4.2.1) lib/active_record/query_cache.rb:36:in `call'
+  activerecord (4.2.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:649:in `call'
+  activerecord (4.2.1) lib/active_record/migration.rb:378:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.2.1) lib/active_support/callbacks.rb:88:in `call'
+  activesupport (4.2.1) lib/active_support/callbacks.rb:88:in `_run_callbacks'
+  activesupport (4.2.1) lib/active_support/callbacks.rb:776:in `_run_call_callbacks'
+  activesupport (4.2.1) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (4.2.1) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/reloader.rb:73:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/remote_ip.rb:78:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  web-console (2.2.1) lib/web_console/middleware.rb:31:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.1) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.1) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.1) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.1) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.1) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.1) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/static.rb:113:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.1) lib/rails/engine.rb:518:in `call'
+  railties (4.2.1) lib/rails/application.rb:164:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.4) lib/rack/handler/webrick.rb:88:in `service'
+  /home/okuda/.rbenv/versions/2.2.2/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /home/okuda/.rbenv/versions/2.2.2/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /home/okuda/.rbenv/versions/2.2.2/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+  Rendered /home/okuda/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/unknown_action.html.erb within rescues/layout (1.8ms)
+
+
+Started POST "/ctrl/session_rec" for 192.168.40.1 at 2015-08-31 21:16:47 +0900
+Cannot render console from 192.168.40.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by CtrlController#session_rec as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"HMEe+ftItBhE9f73uhAM9cxuZimpd5oOO6xMmuL3uJzdsA196qMI/uyH/J2w1XeyWleildAkRya8AlPB6+S/MA==", "email"=>"okuda.natsumi72@gmail.com", "commit"=>"save"}
+  Rendered text template (0.2ms)
+Completed 200 OK in 19ms (Views: 3.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/ctrl/session_show" for 192.168.40.1 at 2015-08-31 21:17:17 +0900
+Cannot render console from 192.168.40.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by CtrlController#session_show as HTML
+  Rendered ctrl/session_show.html.erb within layouts/application (26.2ms)
+Completed 200 OK in 781ms (Views: 768.5ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/ctrl/session_rec" for 192.168.40.1 at 2015-08-31 21:17:26 +0900
+Cannot render console from 192.168.40.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by CtrlController#session_rec as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"yjWwvNkcB3pCu9MtNJBx2H1SVXjpSKhi6YsTJF5dPpwLRKM4yPe7nOrJ0Uc+VQqf62uRxJAbdUpuJQx/V045MA==", "email"=>"okuda@hoge", "commit"=>"save"}
+  Rendered text template (0.2ms)
+Completed 200 OK in 8ms (Views: 3.1ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/ctrl/session_rec" for 192.168.40.1 at 2015-08-31 21:17:32 +0900
+Cannot render console from 192.168.40.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by CtrlController#session_rec as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"yjWwvNkcB3pCu9MtNJBx2H1SVXjpSKhi6YsTJF5dPpwLRKM4yPe7nOrJ0Uc+VQqf62uRxJAbdUpuJQx/V045MA==", "email"=>"okuda@hoge", "commit"=>"save"}
+  Rendered text template (0.2ms)
+Completed 200 OK in 9ms (Views: 3.5ms | ActiveRecord: 0.0ms)
