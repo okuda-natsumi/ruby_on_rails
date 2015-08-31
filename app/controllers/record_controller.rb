@@ -185,5 +185,52 @@ class RecordController < ApplicationController
 		rescue => e
 		render text: 'トランザクションは成功しました'
 	end
+
+  def belongs
+    @review = Review.find(3)
+  end
+
+  def hasmany
+    @book = Book.find_by(isbn: '978-4-7741-5878-5')
+  end
+
+  def hasone
+    @user = User.find_by(username: 'yyamada')
+  end
+
+  def has_and_belongs
+    @book = Book.find_by(isbn: '978-4-7741-5611-8')
+  end
+
+  def has_many_through
+    @user = User.find_by(username: 'isatou')
+  end
+
+  def memorize
+    @book = Book.find(1)
+    @memo = @book.memos.build({ body: 'あとで買う' })
+    if @memo.save
+      render text: 'メモを作成しました'
+    else
+      render text: @memo.errors.full_messages[0]
+    end
+  end
+
+  def assoc_join
+    @books = Book.joins(:reviews, :authors).order('books.title, reviews.updated_at').select('books.*, reviews.body, authors.name')
+  end
+
+  def assoc_join2
+    @books = Book.joins(reviews: :user).select('books.*, reviews.body, users.username')
+  end
+
+  def assoc_join3
+    @books = Book.joins('left join reviews on reviews.book_id = books.id').select('books.*, reviews.body')
+  end
+
+  def assoc_includes
+    @books = Book.includes(:authors).all
+  end
+
 end
 
