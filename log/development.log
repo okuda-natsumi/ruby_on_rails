@@ -11005,3 +11005,2276 @@ Cannot render console from 192.168.40.1! Allowed networks: 127.0.0.1, ::1, 127.0
 
 Started GET "/assets/favicon-e7a669637e9dae789f1e41ddf44ba30e66f8236ef77e99dee8701ab6b1befe82.ico" for 192.168.40.1 at 2015-08-28 17:54:15 +0900
 Cannot render console from 192.168.40.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/record/find" for ::1 at 2015-08-29 17:45:13 +0900
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+
+ActiveRecord::PendingMigrationError (
+
+Migrations are pending. To resolve this issue, run:
+
+	bin/rake db:migrate RAILS_ENV=development
+
+):
+  activerecord (4.2.1) lib/active_record/migration.rb:393:in `check_pending!'
+  activerecord (4.2.1) lib/active_record/migration.rb:374:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.2.1) lib/active_support/callbacks.rb:88:in `call'
+  activesupport (4.2.1) lib/active_support/callbacks.rb:88:in `_run_callbacks'
+  activesupport (4.2.1) lib/active_support/callbacks.rb:776:in `_run_call_callbacks'
+  activesupport (4.2.1) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (4.2.1) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/reloader.rb:73:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/remote_ip.rb:78:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  web-console (2.2.1) lib/web_console/middleware.rb:39:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.1) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.1) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.1) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.1) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.1) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.1) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/static.rb:113:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.1) lib/rails/engine.rb:518:in `call'
+  railties (4.2.1) lib/rails/application.rb:164:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.4) lib/rack/handler/webrick.rb:88:in `service'
+  /Users/okuda_natsumi/.rbenv/versions/2.2.2/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /Users/okuda_natsumi/.rbenv/versions/2.2.2/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /Users/okuda_natsumi/.rbenv/versions/2.2.2/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+  Rendered /Users/okuda_natsumi/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (2.0ms)
+  Rendered /Users/okuda_natsumi/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.3ms)
+  Rendered /Users/okuda_natsumi/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.9ms)
+  Rendered /Users/okuda_natsumi/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (72.4ms)
+  Rendered /Users/okuda_natsumi/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (0.4ms)
+  Rendered /Users/okuda_natsumi/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/okuda_natsumi/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/okuda_natsumi/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/okuda_natsumi/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (62.0ms)
+  Rendered /Users/okuda_natsumi/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /Users/okuda_natsumi/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/okuda_natsumi/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (139.7ms)
+
+
+Started GET "/record/find" for ::1 at 2015-08-29 17:46:02 +0900
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+
+ActiveRecord::PendingMigrationError (
+
+Migrations are pending. To resolve this issue, run:
+
+	bin/rake db:migrate RAILS_ENV=development
+
+):
+  activerecord (4.2.1) lib/active_record/migration.rb:393:in `check_pending!'
+  activerecord (4.2.1) lib/active_record/migration.rb:374:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.2.1) lib/active_support/callbacks.rb:88:in `call'
+  activesupport (4.2.1) lib/active_support/callbacks.rb:88:in `_run_callbacks'
+  activesupport (4.2.1) lib/active_support/callbacks.rb:776:in `_run_call_callbacks'
+  activesupport (4.2.1) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (4.2.1) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/reloader.rb:73:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/remote_ip.rb:78:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  web-console (2.2.1) lib/web_console/middleware.rb:39:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.1) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.1) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.1) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.1) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.1) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.1) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/static.rb:113:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.1) lib/rails/engine.rb:518:in `call'
+  railties (4.2.1) lib/rails/application.rb:164:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.4) lib/rack/handler/webrick.rb:88:in `service'
+  /Users/okuda_natsumi/.rbenv/versions/2.2.2/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /Users/okuda_natsumi/.rbenv/versions/2.2.2/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /Users/okuda_natsumi/.rbenv/versions/2.2.2/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+  Rendered /Users/okuda_natsumi/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (1.9ms)
+  Rendered /Users/okuda_natsumi/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.2ms)
+  Rendered /Users/okuda_natsumi/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.1ms)
+  Rendered /Users/okuda_natsumi/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (54.9ms)
+  Rendered /Users/okuda_natsumi/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (0.6ms)
+  Rendered /Users/okuda_natsumi/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/okuda_natsumi/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/okuda_natsumi/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/okuda_natsumi/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (60.3ms)
+  Rendered /Users/okuda_natsumi/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/okuda_natsumi/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/okuda_natsumi/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (133.6ms)
+  [1m[36m (0.3ms)[0m  [1mbegin transaction[0m
+  [1m[35mFixture Delete (0.3ms)[0m  DELETE FROM "authors"
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "authors" ("id", "user_id", "name", "birth", "address", "created_at", "updated_at") VALUES (1, 1, '山田祥寛', '1975-12-04', '千葉県鎌ケ谷市宝町1-1-1', '2015-08-29 08:48:16', '2015-08-29 08:48:16')[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "authors" ("id", "user_id", "name", "birth", "address", "created_at", "updated_at") VALUES (2, 2, '佐藤一郎', '1977-05-05', '東京都東京市東京町2-2-2', '2015-08-29 08:48:16', '2015-08-29 08:48:16')
+  [1m[36mFixture Insert (0.0ms)[0m  [1mINSERT INTO "authors" ("id", "user_id", "name", "birth", "address", "created_at", "updated_at") VALUES (3, 3, '鈴木花子', '1980-03-03', '大阪府大阪市大阪町3-3-3', '2015-08-29 08:48:16', '2015-08-29 08:48:16')[0m
+  [1m[35mFixture Delete (0.1ms)[0m  DELETE FROM "authors_books"
+  [1m[36mFixture Insert (0.0ms)[0m  [1mINSERT INTO "authors_books" ("book_id", "author_id") VALUES (1, 1)[0m
+  [1m[35mFixture Insert (0.0ms)[0m  INSERT INTO "authors_books" ("book_id", "author_id") VALUES (2, 1)
+  [1m[36mFixture Insert (0.0ms)[0m  [1mINSERT INTO "authors_books" ("book_id", "author_id") VALUES (2, 2)[0m
+  [1m[35mFixture Insert (0.0ms)[0m  INSERT INTO "authors_books" ("book_id", "author_id") VALUES (3, 2)
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "authors_books" ("book_id", "author_id") VALUES (4, 2)[0m
+  [1m[35mFixture Insert (0.0ms)[0m  INSERT INTO "authors_books" ("book_id", "author_id") VALUES (5, 1)
+  [1m[36mFixture Insert (0.0ms)[0m  [1mINSERT INTO "authors_books" ("book_id", "author_id") VALUES (6, 3)[0m
+  [1m[35mFixture Insert (0.0ms)[0m  INSERT INTO "authors_books" ("book_id", "author_id") VALUES (7, 3)
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "authors_books" ("book_id", "author_id") VALUES (8, 1)[0m
+  [1m[35mFixture Insert (0.0ms)[0m  INSERT INTO "authors_books" ("book_id", "author_id") VALUES (9, 1)
+  [1m[36mFixture Insert (0.0ms)[0m  [1mINSERT INTO "authors_books" ("book_id", "author_id") VALUES (10, 3)[0m
+  [1m[35mFixture Delete (0.1ms)[0m  DELETE FROM "books"
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "books" ("id", "isbn", "title", "price", "publish", "published", "cd", "created_at", "updated_at") VALUES (1, '978-4-7741-5878-5', 'AndroidエンジニアのためのモダンJava', 3360, '技術評論社', '2013-08-20', 'f', '2015-08-29 08:48:16', '2015-08-29 08:48:16')[0m
+  [1m[35mFixture Insert (0.0ms)[0m  INSERT INTO "books" ("id", "isbn", "title", "price", "publish", "published", "cd", "created_at", "updated_at") VALUES (2, '978-4-7741-5611-8', 'JavaScriptライブラリ実践活用', 2709, '技術評論社', '2013-03-19', 'f', '2015-08-29 08:48:16', '2015-08-29 08:48:16')
+  [1m[36mFixture Insert (0.0ms)[0m  [1mINSERT INTO "books" ("id", "isbn", "title", "price", "publish", "published", "cd", "created_at", "updated_at") VALUES (3, '978-4-7741-4980-6', 'Ruby on Rails 4ポケットリファレンス', 2919, '技術評論社', '2012-01-26', 't', '2015-08-29 08:48:16', '2015-08-29 08:48:16')[0m
+  [1m[35mFixture Insert (0.0ms)[0m  INSERT INTO "books" ("id", "isbn", "title", "price", "publish", "published", "cd", "created_at", "updated_at") VALUES (4, '978-4-8222-9621-6', '書き込み式SQLのドリル', 2310, '日経BP社', '2013-04-22', 't', '2015-08-29 08:48:16', '2015-08-29 08:48:16')
+  [1m[36mFixture Insert (0.0ms)[0m  [1mINSERT INTO "books" ("id", "isbn", "title", "price", "publish", "published", "cd", "created_at", "updated_at") VALUES (5, '978-4-7980-3585-7', 'はじめてのAndroidアプリ開発', 3150, '秀和システム', '2012-11-22', 'f', '2015-08-29 08:48:16', '2015-08-29 08:48:16')[0m
+  [1m[35mFixture Insert (0.0ms)[0m  INSERT INTO "books" ("id", "isbn", "title", "price", "publish", "published", "cd", "created_at", "updated_at") VALUES (6, '978-4-7981-2631-9', '10日でおぼえるPHP入門教室', 3360, '翔泳社', '2012-09-13', 't', '2015-08-29 08:48:16', '2015-08-29 08:48:16')
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "books" ("id", "isbn", "title", "price", "publish", "published", "cd", "created_at", "updated_at") VALUES (7, '987-4-8222-9612-4', 'アプリを作ろう！HTML5入門', 1995, '日経BP社', '2012-06-07', 'f', '2015-08-29 08:48:16', '2015-08-29 08:48:16')[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "books" ("id", "isbn", "title", "price", "publish", "published", "cd", "created_at", "updated_at") VALUES (8, '978-4-7741-5067-3', 'HTML5 開発ポケットリファレンス', 2709, '翔泳社', '2012-04-17', 'f', '2015-08-29 08:48:16', '2015-08-29 08:48:16')
+  [1m[36mFixture Insert (0.0ms)[0m  [1mINSERT INTO "books" ("id", "isbn", "title", "price", "publish", "published", "cd", "created_at", "updated_at") VALUES (9, '978-4-7981-3049-1', '独習Java サーバサイド編', 3780, '翔泳社', '2013-01-28', 'f', '2015-08-29 08:48:16', '2015-08-29 08:48:16')[0m
+  [1m[35mFixture Insert (0.0ms)[0m  INSERT INTO "books" ("id", "isbn", "title", "price", "publish", "published", "cd", "created_at", "updated_at") VALUES (10, '978-4-88337-774-9', 'Flash CSで学ぶ iPhone実践プログラミング', 2625, 'ソシム', '2011-08-16', 'f', '2015-08-29 08:48:16', '2015-08-29 08:48:16')
+  [1m[36mFixture Delete (0.1ms)[0m  [1mDELETE FROM "fan_comments"[0m
+  [1m[35mFixture Insert (0.0ms)[0m  INSERT INTO "fan_comments" ("author_no", "name", "body", "deleted", "created_at", "updated_at", "id") VALUES (1, '鈴木太郎', '丁寧に解説してくれるので、好んで読んでいます。', 't', '2015-08-29 08:48:16', '2015-08-29 08:48:16', 980190962)
+  [1m[36mFixture Insert (0.0ms)[0m  [1mINSERT INTO "fan_comments" ("author_no", "name", "body", "deleted", "created_at", "updated_at", "id") VALUES (1, '山田恵子', 'きちんと順序だてて、基本をしっかり説明してくれるところが良いです。', 'f', '2015-08-29 08:48:16', '2015-08-29 08:48:16', 298486374)[0m
+  [1m[35mFixture Insert (0.0ms)[0m  INSERT INTO "fan_comments" ("author_no", "name", "body", "deleted", "created_at", "updated_at", "id") VALUES (2, '佐藤一郎', '語りかけるような言い回しが気に入っています。これからも応援します。', 'f', '2015-08-29 08:48:16', '2015-08-29 08:48:16', 113629430)
+  [1m[36mFixture Delete (0.0ms)[0m  [1mDELETE FROM "memos"[0m
+  [1m[35mFixture Insert (0.0ms)[0m  INSERT INTO "memos" ("memoable_type", "memoable_id", "body", "created_at", "updated_at", "id") VALUES ('MyString', 1, 'MyString', '2015-08-29 08:48:16', '2015-08-29 08:48:16', 980190962)
+  [1m[36mFixture Insert (0.0ms)[0m  [1mINSERT INTO "memos" ("memoable_type", "memoable_id", "body", "created_at", "updated_at", "id") VALUES ('MyString', 1, 'MyString', '2015-08-29 08:48:16', '2015-08-29 08:48:16', 298486374)[0m
+  [1m[35mFixture Delete (0.1ms)[0m  DELETE FROM "reviews"
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "reviews" ("id", "book_id", "user_id", "body", "created_at", "updated_at") VALUES (1, 1, 2, 'Android開発をするなら、まず、目を通しておきたい本ですね。', '2015-08-29 08:48:16', '2015-08-29 08:48:16')[0m
+  [1m[35mFixture Insert (0.0ms)[0m  INSERT INTO "reviews" ("id", "book_id", "user_id", "body", "created_at", "updated_at") VALUES (2, 1, 3, 'Javaの基本を振り返りたいときにはこの本を頼りにしています。', '2015-08-29 08:48:16', '2015-08-29 08:48:16')
+  [1m[36mFixture Insert (0.0ms)[0m  [1mINSERT INTO "reviews" ("id", "book_id", "user_id", "body", "created_at", "updated_at") VALUES (3, 2, 2, 'とても役に立ちます。便利なライブラリがたくさん紹介されていてお勧めの一冊です。', '2015-08-29 08:48:16', '2015-08-29 08:48:16')[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "reviews" ("id", "book_id", "user_id", "body", "created_at", "updated_at") VALUES (4, 2, 4, '丁寧に書かれています。サンプルも多く、分かりやすくて良いです。', '2015-08-29 08:48:16', '2015-08-29 08:48:16')
+  [1m[36mFixture Insert (0.0ms)[0m  [1mINSERT INTO "reviews" ("id", "book_id", "user_id", "body", "created_at", "updated_at") VALUES (5, 2, 5, '超初心者の私には少し難しいです。でも、真似して書いているうちに少しずつライブラリの良さが分かるようになってきました。', '2015-08-29 08:48:16', '2015-08-29 08:48:16')[0m
+  [1m[35mFixture Insert (0.0ms)[0m  INSERT INTO "reviews" ("id", "book_id", "user_id", "body", "created_at", "updated_at") VALUES (6, 3, 1, '図やサンプルが多くて、初心者でも使えるリファレンスですね。', '2015-08-29 08:48:16', '2015-08-29 08:48:16')
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "reviews" ("id", "book_id", "user_id", "body", "created_at", "updated_at") VALUES (7, 3, 1, '知りたい情報がすぐに引けて嬉しいです。オンラインマニュアルより使いやすいです。', '2015-08-29 08:48:16', '2015-08-29 08:48:16')[0m
+  [1m[35mFixture Insert (0.0ms)[0m  INSERT INTO "reviews" ("id", "book_id", "user_id", "body", "created_at", "updated_at") VALUES (8, 4, 5, '初めてデータベースに触ることになり、戸惑っていましたが、SQLはこれでマスターしました。', '2015-08-29 08:48:16', '2015-08-29 08:48:16')
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "reviews" ("id", "book_id", "user_id", "body", "created_at", "updated_at") VALUES (9, 5, 3, '基礎から応用まで、幅広く扱っていて、大方この本1冊で、Androidアプリ開発のノウハウがわかりました。', '2015-08-29 08:48:16', '2015-08-29 08:48:16')[0m
+  [1m[35mFixture Delete (0.0ms)[0m  DELETE FROM "users"
+  [1m[36mFixture Insert (0.0ms)[0m  [1mINSERT INTO "users" ("id", "username", "password", "salt", "email", "dm", "roles", "reviews_count", "created_at", "updated_at") VALUES (1, 'yyamada', '2cf00a11121ad260ed32b290f9aefa01279bd5a2', '5f90a188468f64998c5a', 'yyamada@wings.msn.to', 't', 'admin,manager', 2, '2015-08-29 08:48:16', '2015-08-29 08:48:16')[0m
+  [1m[35mFixture Insert (0.0ms)[0m  INSERT INTO "users" ("id", "username", "password", "salt", "email", "dm", "roles", "reviews_count", "created_at", "updated_at") VALUES (2, 'isatou', '9be7f45387af4f7bbe720d16a6f334503b5c4f81', '5f90a188468f64998c5b', 'isatou@wings.msn.to', 'f', 'admin', 2, '2015-08-29 08:48:16', '2015-08-29 08:48:16')
+  [1m[36mFixture Insert (0.0ms)[0m  [1mINSERT INTO "users" ("id", "username", "password", "salt", "email", "dm", "roles", "reviews_count", "created_at", "updated_at") VALUES (3, 'hsuzuki', '6cc09597819748465c6a2603a6f7a52d51eb01ef', '5f90a188468f64998c5c', 'hsuzuki@wings.msn.to', 't', 'manager', 2, '2015-08-29 08:48:16', '2015-08-29 08:48:16')[0m
+  [1m[35mFixture Insert (0.0ms)[0m  INSERT INTO "users" ("id", "username", "password", "salt", "email", "dm", "roles", "reviews_count", "created_at", "updated_at") VALUES (4, 'tyamamoto', '06780c9b144eaf8dc0c8c6ded18afb032cac9b5e', '5f90a188468f64998c5d', 'tyamamoto@wings.msn.to', 'f', 'member', 1, '2015-08-29 08:48:16', '2015-08-29 08:48:16')
+  [1m[36mFixture Insert (0.0ms)[0m  [1mINSERT INTO "users" ("id", "username", "password", "salt", "email", "dm", "roles", "reviews_count", "created_at", "updated_at") VALUES (5, 'shayashi', '088aac29e5ea1bfd8879eaf3b621bdd3d31f072e', '5f90a188468f64998c5e', 'shayashi@wings.msn.to', 't', 'member', 2, '2015-08-29 08:48:16', '2015-08-29 08:48:16')[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "users" ("id", "username", "password", "salt", "email", "dm", "roles", "reviews_count", "created_at", "updated_at") VALUES (6, 'nkakeya', 'c599f512c00d8bbb9fd883f28b9555213516f88e', '5f90a188468f64998c5f', 'nami-piano@nifty.com', 't', 'manager,member', 0, '2015-08-29 08:48:16', '2015-08-29 08:48:16')
+  [1m[36m (1.6ms)[0m  [1mcommit transaction[0m
+
+
+Started GET "/record/find" for ::1 at 2015-08-29 17:48:20 +0900
+  [1m[35mActiveRecord::SchemaMigration Load (0.1ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+
+ActiveRecord::PendingMigrationError (
+
+Migrations are pending. To resolve this issue, run:
+
+	bin/rake db:migrate RAILS_ENV=development
+
+):
+  activerecord (4.2.1) lib/active_record/migration.rb:393:in `check_pending!'
+  activerecord (4.2.1) lib/active_record/migration.rb:374:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.2.1) lib/active_support/callbacks.rb:88:in `call'
+  activesupport (4.2.1) lib/active_support/callbacks.rb:88:in `_run_callbacks'
+  activesupport (4.2.1) lib/active_support/callbacks.rb:776:in `_run_call_callbacks'
+  activesupport (4.2.1) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (4.2.1) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/reloader.rb:73:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/remote_ip.rb:78:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  web-console (2.2.1) lib/web_console/middleware.rb:39:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.1) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.1) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.1) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.1) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.1) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.1) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/static.rb:113:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.1) lib/rails/engine.rb:518:in `call'
+  railties (4.2.1) lib/rails/application.rb:164:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.4) lib/rack/handler/webrick.rb:88:in `service'
+  /Users/okuda_natsumi/.rbenv/versions/2.2.2/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /Users/okuda_natsumi/.rbenv/versions/2.2.2/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /Users/okuda_natsumi/.rbenv/versions/2.2.2/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+  Rendered /Users/okuda_natsumi/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (2.0ms)
+  Rendered /Users/okuda_natsumi/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.3ms)
+  Rendered /Users/okuda_natsumi/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.1ms)
+  Rendered /Users/okuda_natsumi/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (54.8ms)
+  Rendered /Users/okuda_natsumi/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (0.4ms)
+  Rendered /Users/okuda_natsumi/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/okuda_natsumi/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/okuda_natsumi/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/okuda_natsumi/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (46.5ms)
+  Rendered /Users/okuda_natsumi/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /Users/okuda_natsumi/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/okuda_natsumi/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (110.3ms)
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.1ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+  [1m[36m (0.1ms)[0m  [1m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_authors_on_user_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_authors_on_user_id' AND type='index'
+[0m
+  [1m[35m (0.1ms)[0m              SELECT sql
+            FROM sqlite_master
+            WHERE name='index_authors_books_on_book_id_and_author_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_authors_books_on_book_id_and_author_id' AND type='index'
+
+  [1m[36m (0.1ms)[0m  [1m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_authors_books_on_author_id_and_book_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_authors_books_on_author_id_and_book_id' AND type='index'
+[0m
+  [1m[35m (0.1ms)[0m              SELECT sql
+            FROM sqlite_master
+            WHERE name='index_reviews_on_user_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_reviews_on_user_id' AND type='index'
+
+  [1m[36m (0.1ms)[0m  [1m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_reviews_on_book_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_reviews_on_book_id' AND type='index'
+[0m
+
+
+Started GET "/record/find" for ::1 at 2015-08-29 17:51:00 +0900
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+
+SyntaxError (/Users/okuda_natsumi/ruby_on_rails/app/controllers/record_controller.rb:7: syntax error, unexpected end-of-input, expecting keyword_end):
+  app/controllers/record_controller.rb:7: syntax error, unexpected end-of-input, expecting keyword_end
+
+
+  Rendered /Users/okuda_natsumi/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (3.5ms)
+  Rendered /Users/okuda_natsumi/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.6ms)
+  Rendered /Users/okuda_natsumi/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (10.6ms)
+  Rendered /Users/okuda_natsumi/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (99.9ms)
+  Rendered /Users/okuda_natsumi/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (0.3ms)
+  Rendered /Users/okuda_natsumi/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/okuda_natsumi/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/okuda_natsumi/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/okuda_natsumi/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (53.8ms)
+  Rendered /Users/okuda_natsumi/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /Users/okuda_natsumi/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/okuda_natsumi/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (119.3ms)
+
+
+Started GET "/record/find" for ::1 at 2015-08-29 17:51:39 +0900
+Processing by RecordController#find as HTML
+  [1m[35mBook Load (0.2ms)[0m  SELECT "books".* FROM "books" WHERE "books"."id" IN (2, 5, 10)
+  Rendered hello/list.html.erb within layouts/application (12.3ms)
+Completed 200 OK in 652ms (Views: 624.8ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/assets/fan_comments.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-08-29 17:51:40 +0900
+
+
+Started GET "/assets/books.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-08-29 17:51:40 +0900
+
+
+Started GET "/assets/hello.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-08-29 17:51:40 +0900
+
+
+Started GET "/assets/reviews.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-08-29 17:51:40 +0900
+
+
+Started GET "/assets/authors.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-08-29 17:51:40 +0900
+
+
+Started GET "/assets/users.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-08-29 17:51:40 +0900
+
+
+Started GET "/assets/scaffolds.self-30ec6cfef9aef97477b967b376433e27081b633287b7abdf422be36f515dd7bf.css?body=1" for ::1 at 2015-08-29 17:51:40 +0900
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2015-08-29 17:51:40 +0900
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for ::1 at 2015-08-29 17:51:40 +0900
+
+
+Started GET "/assets/jquery_ujs.self-ca5248a2fad13d6bd58ea121318d642f195f0b2dd818b30615f785ff365e8d1f.js?body=1" for ::1 at 2015-08-29 17:51:40 +0900
+
+
+Started GET "/assets/hello.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-08-29 17:51:40 +0900
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2015-08-29 17:51:40 +0900
+
+
+Started GET "/assets/books.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-08-29 17:51:40 +0900
+
+
+Started GET "/assets/fan_comments.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-08-29 17:51:40 +0900
+
+
+Started GET "/assets/authors.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-08-29 17:51:40 +0900
+
+
+Started GET "/assets/reviews.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-08-29 17:51:40 +0900
+
+
+Started GET "/assets/users.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-08-29 17:51:40 +0900
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2015-08-29 17:51:40 +0900
+
+
+Started GET "/assets/favicon-e7a669637e9dae789f1e41ddf44ba30e66f8236ef77e99dee8701ab6b1befe82.ico" for ::1 at 2015-08-29 17:51:40 +0900
+
+
+Started GET "/book/show" for ::1 at 2015-08-29 18:16:40 +0900
+
+ActionController::RoutingError (No route matches [GET] "/book/show"):
+  actionpack (4.2.1) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.2.1) lib/web_console/middleware.rb:39:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.1) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.1) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.1) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.1) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.1) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.1) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/static.rb:113:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.1) lib/rails/engine.rb:518:in `call'
+  railties (4.2.1) lib/rails/application.rb:164:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.4) lib/rack/handler/webrick.rb:88:in `service'
+  /Users/okuda_natsumi/.rbenv/versions/2.2.2/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /Users/okuda_natsumi/.rbenv/versions/2.2.2/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /Users/okuda_natsumi/.rbenv/versions/2.2.2/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+  Rendered /Users/okuda_natsumi/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.0ms)
+  Rendered /Users/okuda_natsumi/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/routes/_route.html.erb (3.9ms)
+  Rendered /Users/okuda_natsumi/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/routes/_table.html.erb (25.5ms)
+  Rendered /Users/okuda_natsumi/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.8ms)
+  Rendered /Users/okuda_natsumi/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (117.8ms)
+  Rendered /Users/okuda_natsumi/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (0.4ms)
+  Rendered /Users/okuda_natsumi/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.7ms)
+  Rendered /Users/okuda_natsumi/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/okuda_natsumi/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/okuda_natsumi/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (100.9ms)
+  Rendered /Users/okuda_natsumi/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /Users/okuda_natsumi/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.7ms)
+  Rendered /Users/okuda_natsumi/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (169.0ms)
+
+
+Started GET "/books/show" for ::1 at 2015-08-29 18:16:45 +0900
+Processing by BooksController#show as HTML
+  Parameters: {"id"=>"show"}
+  [1m[36mBook Load (0.1ms)[0m  [1mSELECT  "books".* FROM "books" WHERE "books"."id" = ? LIMIT 1[0m  [["id", 0]]
+Completed 404 Not Found in 6ms (ActiveRecord: 1.0ms)
+
+ActiveRecord::RecordNotFound (Couldn't find Book with 'id'=show):
+  app/controllers/books_controller.rb:68:in `set_book'
+
+
+  Rendered /Users/okuda_natsumi/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (3.5ms)
+  Rendered /Users/okuda_natsumi/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.9ms)
+  Rendered /Users/okuda_natsumi/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.8ms)
+  Rendered /Users/okuda_natsumi/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (53.0ms)
+  Rendered /Users/okuda_natsumi/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (0.4ms)
+  Rendered /Users/okuda_natsumi/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/okuda_natsumi/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/okuda_natsumi/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/okuda_natsumi/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (77.4ms)
+  Rendered /Users/okuda_natsumi/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /Users/okuda_natsumi/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/okuda_natsumi/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (148.6ms)
+
+
+Started GET "/record/find_by" for ::1 at 2015-08-29 18:16:59 +0900
+Processing by RecordController#find_by as HTML
+  [1m[35mBook Load (0.2ms)[0m  SELECT  "books".* FROM "books" WHERE "books"."publish" = ? LIMIT 1  [["publish", "技術評論社"]]
+  Rendered books/show.html.erb within layouts/application (2.3ms)
+Completed 500 Internal Server Error in 15ms (ActiveRecord: 0.2ms)
+
+ActionView::Template::Error (undefined method `isbn' for nil:NilClass):
+    2: 
+    3: <p>
+    4:   <strong>Isbn:</strong>
+    5:   <%= @book.isbn %>
+    6: </p>
+    7: 
+    8: <p>
+  app/views/books/show.html.erb:5:in `_app_views_books_show_html_erb__886386440043322791_70311368673180'
+  app/controllers/record_controller.rb:11:in `find_by'
+
+
+  Rendered /Users/okuda_natsumi/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (4.9ms)
+  Rendered /Users/okuda_natsumi/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.1ms)
+  Rendered /Users/okuda_natsumi/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.8ms)
+  Rendered /Users/okuda_natsumi/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (56.3ms)
+  Rendered /Users/okuda_natsumi/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (0.3ms)
+  Rendered /Users/okuda_natsumi/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.7ms)
+  Rendered /Users/okuda_natsumi/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/okuda_natsumi/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/okuda_natsumi/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (100.7ms)
+  Rendered /Users/okuda_natsumi/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /Users/okuda_natsumi/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.6ms)
+  Rendered /Users/okuda_natsumi/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (166.5ms)
+
+
+Started GET "/record/find_by" for ::1 at 2015-08-29 18:17:55 +0900
+Processing by RecordController#find_by as HTML
+  [1m[36mBook Load (0.1ms)[0m  [1mSELECT  "books".* FROM "books" WHERE "books"."publish" = ? LIMIT 1[0m  [["publish", "技術評論社"]]
+  Rendered books/show.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 101ms (Views: 93.8ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/assets/authors.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-08-29 18:17:55 +0900
+
+
+Started GET "/assets/reviews.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-08-29 18:17:55 +0900
+
+
+Started GET "/assets/scaffolds.self-30ec6cfef9aef97477b967b376433e27081b633287b7abdf422be36f515dd7bf.css?body=1" for ::1 at 2015-08-29 18:17:55 +0900
+
+
+Started GET "/assets/fan_comments.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-08-29 18:17:55 +0900
+
+
+Started GET "/assets/books.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-08-29 18:17:55 +0900
+
+
+Started GET "/assets/hello.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-08-29 18:17:55 +0900
+
+
+Started GET "/assets/users.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-08-29 18:17:55 +0900
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2015-08-29 18:17:55 +0900
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for ::1 at 2015-08-29 18:17:55 +0900
+
+
+Started GET "/assets/jquery_ujs.self-ca5248a2fad13d6bd58ea121318d642f195f0b2dd818b30615f785ff365e8d1f.js?body=1" for ::1 at 2015-08-29 18:17:55 +0900
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2015-08-29 18:17:55 +0900
+
+
+Started GET "/assets/authors.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-08-29 18:17:55 +0900
+
+
+Started GET "/assets/books.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-08-29 18:17:55 +0900
+
+
+Started GET "/assets/fan_comments.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-08-29 18:17:55 +0900
+
+
+Started GET "/assets/hello.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-08-29 18:17:55 +0900
+
+
+Started GET "/assets/reviews.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-08-29 18:17:55 +0900
+
+
+Started GET "/assets/users.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-08-29 18:17:55 +0900
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2015-08-29 18:17:55 +0900
+
+
+Started GET "/record/find_by2" for ::1 at 2015-08-29 18:19:21 +0900
+Processing by RecordController#find_by2 as HTML
+  [1m[35mBook Load (0.1ms)[0m  SELECT  "books".* FROM "books" WHERE "books"."publish" = ? AND "books"."price" = ? LIMIT 1  [["publish", "技術評論社"], ["price", 2019]]
+  Rendered books/show.html.erb within layouts/application (1.7ms)
+Completed 500 Internal Server Error in 8ms (ActiveRecord: 0.5ms)
+
+ActionView::Template::Error (undefined method `isbn' for nil:NilClass):
+    2: 
+    3: <p>
+    4:   <strong>Isbn:</strong>
+    5:   <%= @book.isbn %>
+    6: </p>
+    7: 
+    8: <p>
+  app/views/books/show.html.erb:5:in `_app_views_books_show_html_erb__886386440043322791_70311368673180'
+  app/controllers/record_controller.rb:16:in `find_by2'
+
+
+  Rendered /Users/okuda_natsumi/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (5.2ms)
+  Rendered /Users/okuda_natsumi/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.2ms)
+  Rendered /Users/okuda_natsumi/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.4ms)
+  Rendered /Users/okuda_natsumi/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (57.4ms)
+  Rendered /Users/okuda_natsumi/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (0.6ms)
+  Rendered /Users/okuda_natsumi/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/okuda_natsumi/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/okuda_natsumi/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/okuda_natsumi/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (56.3ms)
+  Rendered /Users/okuda_natsumi/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /Users/okuda_natsumi/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/okuda_natsumi/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (153.7ms)
+
+
+Started GET "/record/find_by2" for ::1 at 2015-08-29 18:20:18 +0900
+Processing by RecordController#find_by2 as HTML
+  [1m[36mBook Load (0.1ms)[0m  [1mSELECT  "books".* FROM "books" WHERE "books"."publish" = ? AND "books"."price" = ? LIMIT 1[0m  [["publish", "技術評論社"], ["price", 2019]]
+  [1m[35mBook Load (0.2ms)[0m  SELECT "books".* FROM "books" WHERE "books"."publish" = ?  [["publish", ""]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "books".* FROM "books" WHERE "books"."publish" = ?[0m  [["publish", ""]]
+  Rendered books/show.html.erb within layouts/application (11.4ms)
+Completed 500 Internal Server Error in 95781ms (ActiveRecord: 0.6ms)
+
+ActionView::Template::Error (undefined method `isbn' for nil:NilClass):
+    2: 
+    3: <p>
+    4:   <strong>Isbn:</strong>
+    5:   <%= @book.isbn %>
+    6: </p>
+    7: 
+    8: <p>
+  app/views/books/show.html.erb:5:in `_app_views_books_show_html_erb__886386440043322791_70311368673180'
+  app/controllers/record_controller.rb:17:in `find_by2'
+
+
+  Rendered /Users/okuda_natsumi/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (171.1ms)
+  Rendered /Users/okuda_natsumi/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (37.9ms)
+  Rendered /Users/okuda_natsumi/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (3.8ms)
+  Rendered /Users/okuda_natsumi/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (272.9ms)
+  Rendered /Users/okuda_natsumi/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (1.5ms)
+  Rendered /Users/okuda_natsumi/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (1.2ms)
+  Rendered /Users/okuda_natsumi/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.9ms)
+  Rendered /Users/okuda_natsumi/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (1.4ms)
+  Rendered /Users/okuda_natsumi/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (76.2ms)
+  Rendered /Users/okuda_natsumi/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.9ms)
+  Rendered /Users/okuda_natsumi/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (1.0ms)
+  Rendered /Users/okuda_natsumi/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (151.8ms)
+
+
+Started GET "/record/find_by2" for ::1 at 2015-08-29 18:22:09 +0900
+Processing by RecordController#find_by2 as HTML
+  [1m[35mBook Load (0.8ms)[0m  SELECT  "books".* FROM "books" WHERE "books"."publish" = ? AND "books"."price" = ? LIMIT 1  [["publish", "技術評論社"], ["price", 2019]]
+  Rendered books/show.html.erb within layouts/application (17.7ms)
+Completed 500 Internal Server Error in 73ms (ActiveRecord: 1.7ms)
+
+ActionView::Template::Error (undefined method `isbn' for nil:NilClass):
+    2: 
+    3: <p>
+    4:   <strong>Isbn:</strong>
+    5:   <%= @book.isbn %>
+    6: </p>
+    7: 
+    8: <p>
+  app/views/books/show.html.erb:5:in `_app_views_books_show_html_erb__886386440043322791_70311368673180'
+  app/controllers/record_controller.rb:16:in `find_by2'
+
+
+  Rendered /Users/okuda_natsumi/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (288.3ms)
+  Rendered /Users/okuda_natsumi/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (62.0ms)
+  Rendered /Users/okuda_natsumi/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (4.0ms)
+  Rendered /Users/okuda_natsumi/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (437.6ms)
+  Rendered /Users/okuda_natsumi/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (8.8ms)
+  Rendered /Users/okuda_natsumi/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (1.5ms)
+  Rendered /Users/okuda_natsumi/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (1.3ms)
+  Rendered /Users/okuda_natsumi/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (1.4ms)
+  Rendered /Users/okuda_natsumi/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (78.3ms)
+  Rendered /Users/okuda_natsumi/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (8.3ms)
+  Rendered /Users/okuda_natsumi/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (1.6ms)
+  Rendered /Users/okuda_natsumi/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (173.0ms)
+
+
+Started GET "/record/find_by2" for ::1 at 2015-08-29 18:22:26 +0900
+Processing by RecordController#find_by2 as HTML
+  [1m[36mBook Load (0.8ms)[0m  [1mSELECT  "books".* FROM "books" WHERE "books"."publish" = ? AND "books"."price" = ? LIMIT 1[0m  [["publish", "技術評論社"], ["price", 2919]]
+  Rendered books/show.html.erb within layouts/application (5.2ms)
+Completed 200 OK in 861ms (Views: 785.8ms | ActiveRecord: 3.8ms)
+
+
+Started GET "/assets/reviews.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-08-29 18:22:28 +0900
+
+
+Started GET "/assets/authors.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-08-29 18:22:28 +0900
+
+
+Started GET "/assets/books.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-08-29 18:22:28 +0900
+
+
+Started GET "/assets/hello.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-08-29 18:22:28 +0900
+
+
+Started GET "/assets/fan_comments.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-08-29 18:22:28 +0900
+
+
+Started GET "/assets/scaffolds.self-30ec6cfef9aef97477b967b376433e27081b633287b7abdf422be36f515dd7bf.css?body=1" for ::1 at 2015-08-29 18:22:29 +0900
+
+
+Started GET "/assets/users.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-08-29 18:22:29 +0900
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2015-08-29 18:22:29 +0900
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for ::1 at 2015-08-29 18:22:29 +0900
+
+
+Started GET "/assets/jquery_ujs.self-ca5248a2fad13d6bd58ea121318d642f195f0b2dd818b30615f785ff365e8d1f.js?body=1" for ::1 at 2015-08-29 18:22:29 +0900
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2015-08-29 18:22:29 +0900
+
+
+Started GET "/assets/authors.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-08-29 18:22:29 +0900
+
+
+Started GET "/assets/fan_comments.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-08-29 18:22:29 +0900
+
+
+Started GET "/assets/hello.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-08-29 18:22:29 +0900
+
+
+Started GET "/assets/books.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-08-29 18:22:29 +0900
+
+
+Started GET "/assets/reviews.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-08-29 18:22:29 +0900
+
+
+Started GET "/assets/users.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-08-29 18:22:29 +0900
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2015-08-29 18:22:29 +0900
+
+
+Started GET "/record/where" for ::1 at 2015-08-29 18:30:07 +0900
+Processing by RecordController#where as HTML
+  [1m[35mBook Load (1.0ms)[0m  SELECT "books".* FROM "books" WHERE "books"."publish" = ?  [["publish", "技術評論社"]]
+  Rendered hello/list.html.erb within layouts/application (274.9ms)
+Completed 200 OK in 1292ms (Views: 1248.4ms | ActiveRecord: 3.8ms)
+
+
+Started GET "/record/keyword" for ::1 at 2015-08-29 18:48:13 +0900
+
+AbstractController::ActionNotFound (The action 'keyword' could not be found for RecordController):
+  actionpack (4.2.1) lib/abstract_controller/base.rb:132:in `process'
+  actionview (4.2.1) lib/action_view/rendering.rb:30:in `process'
+  actionpack (4.2.1) lib/action_controller/metal.rb:196:in `dispatch'
+  actionpack (4.2.1) lib/action_controller/metal/rack_delegation.rb:13:in `dispatch'
+  actionpack (4.2.1) lib/action_controller/metal.rb:237:in `block in action'
+  actionpack (4.2.1) lib/action_dispatch/routing/route_set.rb:74:in `call'
+  actionpack (4.2.1) lib/action_dispatch/routing/route_set.rb:74:in `dispatch'
+  actionpack (4.2.1) lib/action_dispatch/routing/route_set.rb:43:in `serve'
+  actionpack (4.2.1) lib/action_dispatch/journey/router.rb:43:in `block in serve'
+  actionpack (4.2.1) lib/action_dispatch/journey/router.rb:30:in `each'
+  actionpack (4.2.1) lib/action_dispatch/journey/router.rb:30:in `serve'
+  actionpack (4.2.1) lib/action_dispatch/routing/route_set.rb:819:in `call'
+  rack (1.6.4) lib/rack/etag.rb:24:in `call'
+  rack (1.6.4) lib/rack/conditionalget.rb:25:in `call'
+  rack (1.6.4) lib/rack/head.rb:13:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/params_parser.rb:27:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/flash.rb:260:in `call'
+  rack (1.6.4) lib/rack/session/abstract/id.rb:225:in `context'
+  rack (1.6.4) lib/rack/session/abstract/id.rb:220:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/cookies.rb:560:in `call'
+  activerecord (4.2.1) lib/active_record/query_cache.rb:36:in `call'
+  activerecord (4.2.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:649:in `call'
+  activerecord (4.2.1) lib/active_record/migration.rb:378:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.2.1) lib/active_support/callbacks.rb:88:in `call'
+  activesupport (4.2.1) lib/active_support/callbacks.rb:88:in `_run_callbacks'
+  activesupport (4.2.1) lib/active_support/callbacks.rb:776:in `_run_call_callbacks'
+  activesupport (4.2.1) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (4.2.1) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/reloader.rb:73:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/remote_ip.rb:78:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  web-console (2.2.1) lib/web_console/middleware.rb:39:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.1) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.1) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.1) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.1) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.1) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.1) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/static.rb:113:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.1) lib/rails/engine.rb:518:in `call'
+  railties (4.2.1) lib/rails/application.rb:164:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.4) lib/rack/handler/webrick.rb:88:in `service'
+  /Users/okuda_natsumi/.rbenv/versions/2.2.2/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /Users/okuda_natsumi/.rbenv/versions/2.2.2/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /Users/okuda_natsumi/.rbenv/versions/2.2.2/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+  Rendered /Users/okuda_natsumi/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/unknown_action.html.erb within rescues/layout (8.9ms)
+  Rendered /Users/okuda_natsumi/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (1.9ms)
+  Rendered /Users/okuda_natsumi/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (1.9ms)
+  Rendered /Users/okuda_natsumi/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (1.9ms)
+  Rendered /Users/okuda_natsumi/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (1.8ms)
+  Rendered /Users/okuda_natsumi/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (88.6ms)
+  Rendered /Users/okuda_natsumi/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (2.8ms)
+  Rendered /Users/okuda_natsumi/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (1.5ms)
+  Rendered /Users/okuda_natsumi/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (205.4ms)
+
+
+Started GET "/record/keyword" for ::1 at 2015-08-29 18:48:59 +0900
+Processing by RecordController#keyword as HTML
+  Rendered record/keyword.html.erb within layouts/application (31.0ms)
+Completed 200 OK in 871ms (Views: 858.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/fan_comments.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-08-29 18:49:02 +0900
+
+
+Started GET "/assets/authors.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-08-29 18:49:02 +0900
+
+
+Started GET "/assets/reviews.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-08-29 18:49:02 +0900
+
+
+Started GET "/assets/scaffolds.self-30ec6cfef9aef97477b967b376433e27081b633287b7abdf422be36f515dd7bf.css?body=1" for ::1 at 2015-08-29 18:49:02 +0900
+
+
+Started GET "/assets/books.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-08-29 18:49:02 +0900
+
+
+Started GET "/assets/hello.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-08-29 18:49:02 +0900
+
+
+Started GET "/assets/users.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-08-29 18:49:02 +0900
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for ::1 at 2015-08-29 18:49:02 +0900
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2015-08-29 18:49:02 +0900
+
+
+Started GET "/assets/jquery_ujs.self-ca5248a2fad13d6bd58ea121318d642f195f0b2dd818b30615f785ff365e8d1f.js?body=1" for ::1 at 2015-08-29 18:49:02 +0900
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2015-08-29 18:49:02 +0900
+
+
+Started GET "/assets/authors.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-08-29 18:49:02 +0900
+
+
+Started GET "/assets/books.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-08-29 18:49:02 +0900
+
+
+Started GET "/assets/fan_comments.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-08-29 18:49:02 +0900
+
+
+Started GET "/assets/hello.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-08-29 18:49:02 +0900
+
+
+Started GET "/assets/reviews.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-08-29 18:49:03 +0900
+
+
+Started GET "/assets/users.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-08-29 18:49:03 +0900
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2015-08-29 18:49:03 +0900
+
+
+Started POST "/record/ph1" for ::1 at 2015-08-29 18:49:21 +0900
+Processing by RecordController#ph1 as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"xYITkUbBp2M3n9Em5rsE/Mbk4t2Zaaj1PEgFJneaY3lxyA3kyAY/rgpqG/nC0BZplFj5n+S+Fq4lAwPstry1fg==", "publish"=>"", "price"=>"1000", "commit"=>"検索"}
+  [1m[36mBook Load (0.9ms)[0m  [1mSELECT "books".* FROM "books" WHERE (publish = '' and price = '1000')[0m
+  Rendered hello/list.html.erb within layouts/application (27.2ms)
+Completed 200 OK in 980ms (Views: 961.8ms | ActiveRecord: 1.7ms)
+
+
+Started POST "/record/ph1" for ::1 at 2015-08-29 18:49:36 +0900
+Processing by RecordController#ph1 as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"xYITkUbBp2M3n9Em5rsE/Mbk4t2Zaaj1PEgFJneaY3lxyA3kyAY/rgpqG/nC0BZplFj5n+S+Fq4lAwPstry1fg==", "publish"=>"評論社", "price"=>"", "commit"=>"検索"}
+  [1m[35mBook Load (0.4ms)[0m  SELECT "books".* FROM "books" WHERE (publish = '評論社' and price = '')
+  Rendered hello/list.html.erb within layouts/application (5.2ms)
+Completed 200 OK in 516ms (Views: 503.4ms | ActiveRecord: 0.4ms)
+
+
+Started POST "/record/ph1" for ::1 at 2015-08-29 18:49:41 +0900
+Processing by RecordController#ph1 as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"xYITkUbBp2M3n9Em5rsE/Mbk4t2Zaaj1PEgFJneaY3lxyA3kyAY/rgpqG/nC0BZplFj5n+S+Fq4lAwPstry1fg==", "publish"=>"出版評論社", "price"=>"", "commit"=>"検索"}
+  [1m[36mBook Load (1.0ms)[0m  [1mSELECT "books".* FROM "books" WHERE (publish = '出版評論社' and price = '')[0m
+  Rendered hello/list.html.erb within layouts/application (16.1ms)
+Completed 200 OK in 978ms (Views: 960.6ms | ActiveRecord: 1.0ms)
+
+
+Started POST "/record/ph1" for ::1 at 2015-08-29 18:49:55 +0900
+Processing by RecordController#ph1 as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"xYITkUbBp2M3n9Em5rsE/Mbk4t2Zaaj1PEgFJneaY3lxyA3kyAY/rgpqG/nC0BZplFj5n+S+Fq4lAwPstry1fg==", "publish"=>"技術評論社", "price"=>"", "commit"=>"検索"}
+  [1m[35mBook Load (0.9ms)[0m  SELECT "books".* FROM "books" WHERE (publish = '技術評論社' and price = '')
+  Rendered hello/list.html.erb within layouts/application (7.5ms)
+Completed 200 OK in 954ms (Views: 945.4ms | ActiveRecord: 0.9ms)
+
+
+Started POST "/record/ph1" for ::1 at 2015-08-29 18:50:51 +0900
+Processing by RecordController#ph1 as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"xYITkUbBp2M3n9Em5rsE/Mbk4t2Zaaj1PEgFJneaY3lxyA3kyAY/rgpqG/nC0BZplFj5n+S+Fq4lAwPstry1fg==", "publish"=>"", "price"=>"1000", "commit"=>"検索"}
+  [1m[36mBook Load (0.8ms)[0m  [1mSELECT "books".* FROM "books" WHERE (publish = '' and price >= '1000')[0m
+  Rendered hello/list.html.erb within layouts/application (16.1ms)
+Completed 200 OK in 823ms (Views: 807.9ms | ActiveRecord: 1.5ms)
+
+
+Started POST "/record/ph1" for ::1 at 2015-08-29 18:52:21 +0900
+Processing by RecordController#ph1 as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"xYITkUbBp2M3n9Em5rsE/Mbk4t2Zaaj1PEgFJneaY3lxyA3kyAY/rgpqG/nC0BZplFj5n+S+Fq4lAwPstry1fg==", "publish"=>"hoge", "price"=>"1000", "commit"=>"検索"}
+  [1m[35mBook Load (0.3ms)[0m  SELECT "books".* FROM "books" WHERE (publish = 'hoge' and price >= '1000')
+  [1m[36mCACHE (0.2ms)[0m  [1mSELECT "books".* FROM "books" WHERE (publish = 'hoge' and price >= '1000')[0m
+  Rendered hello/list.html.erb within layouts/application (7.9ms)
+Completed 200 OK in 75117385ms (Views: 609.3ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/record/keyword" for ::1 at 2015-08-30 15:44:45 +0900
+  [1m[36mActiveRecord::SchemaMigration Load (0.5ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by RecordController#keyword as HTML
+  Rendered record/keyword.html.erb within layouts/application (3.8ms)
+Completed 200 OK in 282ms (Views: 270.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/fan_comments.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-08-30 15:44:46 +0900
+
+
+Started GET "/assets/books.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-08-30 15:44:46 +0900
+
+
+Started GET "/assets/hello.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-08-30 15:44:46 +0900
+
+
+Started GET "/assets/authors.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-08-30 15:44:46 +0900
+
+
+Started GET "/assets/scaffolds.self-30ec6cfef9aef97477b967b376433e27081b633287b7abdf422be36f515dd7bf.css?body=1" for ::1 at 2015-08-30 15:44:46 +0900
+
+
+Started GET "/assets/reviews.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-08-30 15:44:46 +0900
+
+
+Started GET "/assets/users.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-08-30 15:44:46 +0900
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2015-08-30 15:44:46 +0900
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for ::1 at 2015-08-30 15:44:46 +0900
+
+
+Started GET "/assets/jquery_ujs.self-ca5248a2fad13d6bd58ea121318d642f195f0b2dd818b30615f785ff365e8d1f.js?body=1" for ::1 at 2015-08-30 15:44:46 +0900
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2015-08-30 15:44:46 +0900
+
+
+Started GET "/assets/authors.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-08-30 15:44:46 +0900
+
+
+Started GET "/assets/books.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-08-30 15:44:46 +0900
+
+
+Started GET "/assets/fan_comments.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-08-30 15:44:46 +0900
+
+
+Started GET "/assets/hello.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-08-30 15:44:46 +0900
+
+
+Started GET "/assets/reviews.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-08-30 15:44:46 +0900
+
+
+Started GET "/assets/users.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-08-30 15:44:46 +0900
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2015-08-30 15:44:46 +0900
+
+
+Started GET "/assets/favicon-e7a669637e9dae789f1e41ddf44ba30e66f8236ef77e99dee8701ab6b1befe82.ico" for ::1 at 2015-08-30 15:44:46 +0900
+
+
+Started GET "/hello/index" for ::1 at 2015-08-30 15:44:58 +0900
+Processing by HelloController#index as HTML
+  Rendered text template (0.0ms)
+Completed 200 OK in 4ms (Views: 2.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/record/ph1" for ::1 at 2015-08-30 15:45:05 +0900
+Processing by RecordController#ph1 as HTML
+  [1m[35mBook Load (1.1ms)[0m  SELECT "books".* FROM "books" WHERE (publish = NULL and price >= NULL)
+  Rendered hello/list.html.erb within layouts/application (29.5ms)
+Completed 200 OK in 121440ms (Views: 884.6ms | ActiveRecord: 1.8ms)
+
+
+Started GET "/record/find" for ::1 at 2015-08-30 15:47:06 +0900
+Processing by RecordController#find as HTML
+  [1m[36mBook Load (1.3ms)[0m  [1mSELECT "books".* FROM "books" WHERE "books"."id" IN (2, 5, 10)[0m
+  Rendered hello/list.html.erb within layouts/application (180.1ms)
+Completed 200 OK in 1093ms (Views: 991.4ms | ActiveRecord: 4.0ms)
+
+
+Started GET "/record/ph1" for ::1 at 2015-08-30 15:47:09 +0900
+Processing by RecordController#ph1 as HTML
+  [1m[35mBook Load (0.6ms)[0m  SELECT "books".* FROM "books" WHERE (publish = NULL and price >= NULL)
+  Rendered hello/list.html.erb within layouts/application (15.7ms)
+Completed 200 OK in 742ms (Views: 734.8ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/record/find" for ::1 at 2015-08-30 15:47:13 +0900
+Processing by RecordController#find as HTML
+  [1m[36mBook Load (8.0ms)[0m  [1mSELECT "books".* FROM "books" WHERE "books"."id" IN (2, 5, 10)[0m
+  Rendered hello/list.html.erb within layouts/application (152.5ms)
+Completed 200 OK in 869ms (Views: 848.7ms | ActiveRecord: 8.0ms)
+
+
+Started GET "/record/keyword" for ::1 at 2015-08-30 15:50:16 +0900
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by RecordController#keyword as HTML
+  Rendered record/keyword.html.erb within layouts/application (3.9ms)
+Completed 200 OK in 286ms (Views: 276.2ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/record/ph1" for ::1 at 2015-08-30 15:50:30 +0900
+Processing by RecordController#ph1 as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"ll9oOIEa9uPZUbbeipcVxnqa0idneV0fKYjysFy4TzwiFXZND91uLuSkfAGu/AdTKCbJZRqu40Qww/R6nZ6ZOw==", "publish"=>"技術評論社", "price"=>"1000", "commit"=>"検索"}
+  [1m[35mBook Load (0.2ms)[0m  SELECT "books".* FROM "books" WHERE "books"."publish" = ?  [["publish", ""]]
+  [1m[36mBook Load (2.4ms)[0m  [1mSELECT "books".* FROM "books" WHERE (publish = '技術評論社' and price >= '1000')[0m
+  Rendered hello/list.html.erb within layouts/application (189.5ms)
+Completed 200 OK in 427172ms (Views: 664.7ms | ActiveRecord: 10.7ms)
+
+
+Started POST "/record/ph1" for ::1 at 2015-08-30 15:57:58 +0900
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by RecordController#ph1 as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"ll9oOIEa9uPZUbbeipcVxnqa0idneV0fKYjysFy4TzwiFXZND91uLuSkfAGu/AdTKCbJZRqu40Qww/R6nZ6ZOw==", "publish"=>"技術評論社", "price"=>"1000", "commit"=>"検索"}
+  [1m[35mBook Load (0.2ms)[0m  SELECT "books".* FROM "books" WHERE (publish = '技術評論社' and price >= '1000')
+  Rendered hello/list.html.erb within layouts/application (29.7ms)
+Completed 200 OK in 302ms (Views: 289.2ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/record/keyword" for ::1 at 2015-08-30 15:58:27 +0900
+Processing by RecordController#keyword as HTML
+  Rendered record/keyword.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 53ms (Views: 52.1ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/record/ph1" for ::1 at 2015-08-30 15:58:37 +0900
+Processing by RecordController#ph1 as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"w4nDTxT4nXIGm0rzA5zkDcCjMoXUDv7sj/p4Zit6/sx3w906mj8FvztugCwn9/aYkh8px6nZQLeWsX6s6lwoyw==", "publish"=>"技術評論社", "price"=>"1000", "commit"=>"検索"}
+  [1m[36mBook Load (0.7ms)[0m  [1mSELECT "books".* FROM "books" WHERE (publish = '技術評論社' and price >= '1000')[0m
+  [1m[35mCACHE (0.4ms)[0m  SELECT "books".* FROM "books" WHERE (publish = '技術評論社' and price >= '1000')
+  Rendered hello/list.html.erb within layouts/application (180.4ms)
+Completed 200 OK in 104666ms (Views: 659.9ms | ActiveRecord: 1.6ms)
+
+
+Started POST "/record/ph1" for ::1 at 2015-08-30 16:05:11 +0900
+Processing by RecordController#ph1 as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"w4nDTxT4nXIGm0rzA5zkDcCjMoXUDv7sj/p4Zit6/sx3w906mj8FvztugCwn9/aYkh8px6nZQLeWsX6s6lwoyw==", "publish"=>"技術評論社", "price"=>"1000", "commit"=>"検索"}
+  [1m[36mBook Load (0.7ms)[0m  [1mSELECT "books".* FROM "books" WHERE (publish = '技術評論社' and price >= '1000')[0m
+  Rendered hello/list.html.erb within layouts/application (125.9ms)
+Completed 200 OK in 579ms (Views: 567.2ms | ActiveRecord: 2.2ms)
+
+
+Started GET "/record/select2" for ::1 at 2015-08-30 16:17:59 +0900
+Processing by RecordController#select2 as HTML
+  Rendered hello/list.html.erb within layouts/application (10.6ms)
+Completed 500 Internal Server Error in 27ms (ActiveRecord: 0.0ms)
+
+ActionView::Template::Error (undefined method `each' for nil:NilClass):
+    4: 		<th>出版社</th><th>刊行日</th><th>CD-ROM</th>
+    5: 	</tr>
+    6: 
+    7: <% @books.each do |book| %>
+    8: 	<tr>
+    9: 		<td style="background-color:<%= cycle('#FFffFF','#FFff99') %>">
+   10: 			<%= book.isbn %></td>
+  app/views/hello/list.html.erb:7:in `_app_views_hello_list_html_erb___1604015467507878735_70100815336780'
+  app/controllers/record_controller.rb:52:in `select2'
+
+
+  Rendered /Users/okuda_natsumi/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (148.4ms)
+  Rendered /Users/okuda_natsumi/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (38.6ms)
+  Rendered /Users/okuda_natsumi/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (4.2ms)
+  Rendered /Users/okuda_natsumi/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (259.1ms)
+  Rendered /Users/okuda_natsumi/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (1.6ms)
+  Rendered /Users/okuda_natsumi/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (1.0ms)
+  Rendered /Users/okuda_natsumi/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.9ms)
+  Rendered /Users/okuda_natsumi/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (1.1ms)
+  Rendered /Users/okuda_natsumi/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (71.1ms)
+  Rendered /Users/okuda_natsumi/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.9ms)
+  Rendered /Users/okuda_natsumi/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (1.1ms)
+  Rendered /Users/okuda_natsumi/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (169.4ms)
+
+
+Started GET "/record/select2" for ::1 at 2015-08-30 16:18:45 +0900
+Processing by RecordController#select2 as HTML
+  [1m[35mBook Load (2.1ms)[0m  SELECT DISTINCT "books"."publish" FROM "books"  ORDER BY "books"."publish" ASC
+  Rendered hello/list.html.erb within layouts/application (44.3ms)
+Completed 500 Internal Server Error in 64ms (ActiveRecord: 3.8ms)
+
+ActionView::Template::Error (missing attribute: isbn):
+     7: <% @books.each do |book| %>
+     8: 	<tr>
+     9: 		<td style="background-color:<%= cycle('#FFffFF','#FFff99') %>">
+    10: 			<%= book.isbn %></td>
+    11: 		<td style="background-color:<%= current_cycle %>">
+    12: 		<td><%= book.title %></td>
+    13: 		<td><%= book.price %></td>
+  app/views/hello/list.html.erb:10:in `block in _app_views_hello_list_html_erb___1604015467507878735_70100815336780'
+  app/views/hello/list.html.erb:7:in `_app_views_hello_list_html_erb___1604015467507878735_70100815336780'
+  app/controllers/record_controller.rb:52:in `select2'
+
+
+  Rendered /Users/okuda_natsumi/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (171.1ms)
+  Rendered /Users/okuda_natsumi/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (37.9ms)
+  Rendered /Users/okuda_natsumi/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (2.9ms)
+  Rendered /Users/okuda_natsumi/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (267.0ms)
+  Rendered /Users/okuda_natsumi/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (1.0ms)
+  Rendered /Users/okuda_natsumi/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (1.0ms)
+  Rendered /Users/okuda_natsumi/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (1.1ms)
+  Rendered /Users/okuda_natsumi/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (1.0ms)
+  Rendered /Users/okuda_natsumi/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (68.1ms)
+  Rendered /Users/okuda_natsumi/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (1.0ms)
+  Rendered /Users/okuda_natsumi/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (1.0ms)
+  Rendered /Users/okuda_natsumi/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (148.2ms)
+
+
+Started GET "/record/select2" for ::1 at 2015-08-30 16:19:22 +0900
+Processing by RecordController#select2 as HTML
+  Rendered hello/list.html.erb within layouts/application (13.0ms)
+Completed 500 Internal Server Error in 26ms (ActiveRecord: 0.0ms)
+
+ActionView::Template::Error (undefined method `each' for nil:NilClass):
+    4: 		<th>出版社</th><th>刊行日</th><th>CD-ROM</th>
+    5: 	</tr>
+    6: 
+    7: <% @books.each do |book| %>
+    8: 	<tr>
+    9: 		<td style="background-color:<%= cycle('#FFffFF','#FFff99') %>">
+   10: 			<%= book.isbn %></td>
+  app/views/hello/list.html.erb:7:in `_app_views_hello_list_html_erb___1604015467507878735_70100815336780'
+  app/controllers/record_controller.rb:52:in `select2'
+
+
+  Rendered /Users/okuda_natsumi/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (160.2ms)
+  Rendered /Users/okuda_natsumi/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (44.8ms)
+  Rendered /Users/okuda_natsumi/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (2.7ms)
+  Rendered /Users/okuda_natsumi/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (261.4ms)
+  Rendered /Users/okuda_natsumi/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (1.1ms)
+  Rendered /Users/okuda_natsumi/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (8.6ms)
+  Rendered /Users/okuda_natsumi/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (1.0ms)
+  Rendered /Users/okuda_natsumi/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.9ms)
+  Rendered /Users/okuda_natsumi/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (76.6ms)
+  Rendered /Users/okuda_natsumi/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (1.0ms)
+  Rendered /Users/okuda_natsumi/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (1.3ms)
+  Rendered /Users/okuda_natsumi/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (156.4ms)
+
+
+Started GET "/record/select2" for ::1 at 2015-08-30 16:19:40 +0900
+Processing by RecordController#select2 as HTML
+Completed 500 Internal Server Error in 25ms (ActiveRecord: 0.0ms)
+
+ActionView::MissingTemplate (Missing template record/select2, application/select2 with {:locale=>[:en], :formats=>[:html], :variants=>[], :handlers=>[:erb, :builder, :raw, :ruby, :coffee, :jbuilder]}. Searched in:
+  * "/Users/okuda_natsumi/ruby_on_rails/app/views"
+):
+  actionview (4.2.1) lib/action_view/path_set.rb:46:in `find'
+  actionview (4.2.1) lib/action_view/lookup_context.rb:121:in `find'
+  actionview (4.2.1) lib/action_view/renderer/abstract_renderer.rb:18:in `find_template'
+  actionview (4.2.1) lib/action_view/renderer/template_renderer.rb:40:in `determine_template'
+  actionview (4.2.1) lib/action_view/renderer/template_renderer.rb:8:in `render'
+  actionview (4.2.1) lib/action_view/renderer/renderer.rb:42:in `render_template'
+  actionview (4.2.1) lib/action_view/renderer/renderer.rb:23:in `render'
+  actionview (4.2.1) lib/action_view/rendering.rb:100:in `_render_template'
+  actionpack (4.2.1) lib/action_controller/metal/streaming.rb:217:in `_render_template'
+  actionview (4.2.1) lib/action_view/rendering.rb:83:in `render_to_body'
+  actionpack (4.2.1) lib/action_controller/metal/rendering.rb:32:in `render_to_body'
+  actionpack (4.2.1) lib/action_controller/metal/renderers.rb:37:in `render_to_body'
+  actionpack (4.2.1) lib/abstract_controller/rendering.rb:25:in `render'
+  actionpack (4.2.1) lib/action_controller/metal/rendering.rb:16:in `render'
+  actionpack (4.2.1) lib/action_controller/metal/instrumentation.rb:44:in `block (2 levels) in render'
+  activesupport (4.2.1) lib/active_support/core_ext/benchmark.rb:12:in `block in ms'
+  /Users/okuda_natsumi/.rbenv/versions/2.2.2/lib/ruby/2.2.0/benchmark.rb:303:in `realtime'
+  activesupport (4.2.1) lib/active_support/core_ext/benchmark.rb:12:in `ms'
+  actionpack (4.2.1) lib/action_controller/metal/instrumentation.rb:44:in `block in render'
+  actionpack (4.2.1) lib/action_controller/metal/instrumentation.rb:87:in `cleanup_view_runtime'
+  activerecord (4.2.1) lib/active_record/railties/controller_runtime.rb:25:in `cleanup_view_runtime'
+  actionpack (4.2.1) lib/action_controller/metal/instrumentation.rb:43:in `render'
+  actionpack (4.2.1) lib/action_controller/metal/implicit_render.rb:10:in `default_render'
+  actionpack (4.2.1) lib/action_controller/metal/implicit_render.rb:5:in `send_action'
+  actionpack (4.2.1) lib/abstract_controller/base.rb:198:in `process_action'
+  actionpack (4.2.1) lib/action_controller/metal/rendering.rb:10:in `process_action'
+  actionpack (4.2.1) lib/abstract_controller/callbacks.rb:20:in `block in process_action'
+  activesupport (4.2.1) lib/active_support/callbacks.rb:117:in `call'
+  activesupport (4.2.1) lib/active_support/callbacks.rb:117:in `call'
+  activesupport (4.2.1) lib/active_support/callbacks.rb:555:in `block (2 levels) in compile'
+  activesupport (4.2.1) lib/active_support/callbacks.rb:505:in `call'
+  activesupport (4.2.1) lib/active_support/callbacks.rb:505:in `call'
+  activesupport (4.2.1) lib/active_support/callbacks.rb:92:in `_run_callbacks'
+  activesupport (4.2.1) lib/active_support/callbacks.rb:776:in `_run_process_action_callbacks'
+  activesupport (4.2.1) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (4.2.1) lib/abstract_controller/callbacks.rb:19:in `process_action'
+  actionpack (4.2.1) lib/action_controller/metal/rescue.rb:29:in `process_action'
+  actionpack (4.2.1) lib/action_controller/metal/instrumentation.rb:32:in `block in process_action'
+  activesupport (4.2.1) lib/active_support/notifications.rb:164:in `block in instrument'
+  activesupport (4.2.1) lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+  activesupport (4.2.1) lib/active_support/notifications.rb:164:in `instrument'
+  actionpack (4.2.1) lib/action_controller/metal/instrumentation.rb:30:in `process_action'
+  actionpack (4.2.1) lib/action_controller/metal/params_wrapper.rb:250:in `process_action'
+  activerecord (4.2.1) lib/active_record/railties/controller_runtime.rb:18:in `process_action'
+  actionpack (4.2.1) lib/abstract_controller/base.rb:137:in `process'
+  actionview (4.2.1) lib/action_view/rendering.rb:30:in `process'
+  actionpack (4.2.1) lib/action_controller/metal.rb:196:in `dispatch'
+  actionpack (4.2.1) lib/action_controller/metal/rack_delegation.rb:13:in `dispatch'
+  actionpack (4.2.1) lib/action_controller/metal.rb:237:in `block in action'
+  actionpack (4.2.1) lib/action_dispatch/routing/route_set.rb:74:in `call'
+  actionpack (4.2.1) lib/action_dispatch/routing/route_set.rb:74:in `dispatch'
+  actionpack (4.2.1) lib/action_dispatch/routing/route_set.rb:43:in `serve'
+  actionpack (4.2.1) lib/action_dispatch/journey/router.rb:43:in `block in serve'
+  actionpack (4.2.1) lib/action_dispatch/journey/router.rb:30:in `each'
+  actionpack (4.2.1) lib/action_dispatch/journey/router.rb:30:in `serve'
+  actionpack (4.2.1) lib/action_dispatch/routing/route_set.rb:819:in `call'
+  rack (1.6.4) lib/rack/etag.rb:24:in `call'
+  rack (1.6.4) lib/rack/conditionalget.rb:25:in `call'
+  rack (1.6.4) lib/rack/head.rb:13:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/params_parser.rb:27:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/flash.rb:260:in `call'
+  rack (1.6.4) lib/rack/session/abstract/id.rb:225:in `context'
+  rack (1.6.4) lib/rack/session/abstract/id.rb:220:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/cookies.rb:560:in `call'
+  activerecord (4.2.1) lib/active_record/query_cache.rb:36:in `call'
+  activerecord (4.2.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:649:in `call'
+  activerecord (4.2.1) lib/active_record/migration.rb:378:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.2.1) lib/active_support/callbacks.rb:88:in `call'
+  activesupport (4.2.1) lib/active_support/callbacks.rb:88:in `_run_callbacks'
+  activesupport (4.2.1) lib/active_support/callbacks.rb:776:in `_run_call_callbacks'
+  activesupport (4.2.1) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (4.2.1) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/reloader.rb:73:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/remote_ip.rb:78:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  web-console (2.2.1) lib/web_console/middleware.rb:39:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.1) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.1) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.1) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.1) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.1) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.1) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/static.rb:113:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.1) lib/rails/engine.rb:518:in `call'
+  railties (4.2.1) lib/rails/application.rb:164:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.4) lib/rack/handler/webrick.rb:88:in `service'
+  /Users/okuda_natsumi/.rbenv/versions/2.2.2/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /Users/okuda_natsumi/.rbenv/versions/2.2.2/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /Users/okuda_natsumi/.rbenv/versions/2.2.2/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+  Rendered /Users/okuda_natsumi/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (161.4ms)
+  Rendered /Users/okuda_natsumi/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (36.2ms)
+  Rendered /Users/okuda_natsumi/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (3.2ms)
+  Rendered /Users/okuda_natsumi/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/missing_template.html.erb within rescues/layout (255.4ms)
+  Rendered /Users/okuda_natsumi/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (1.3ms)
+  Rendered /Users/okuda_natsumi/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (1.2ms)
+  Rendered /Users/okuda_natsumi/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (1.0ms)
+  Rendered /Users/okuda_natsumi/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.9ms)
+  Rendered /Users/okuda_natsumi/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (59.4ms)
+  Rendered /Users/okuda_natsumi/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (8.4ms)
+  Rendered /Users/okuda_natsumi/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (1.1ms)
+  Rendered /Users/okuda_natsumi/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (149.8ms)
+
+
+Started GET "/record/select2" for ::1 at 2015-08-30 16:21:03 +0900
+Processing by RecordController#select2 as HTML
+  [1m[36mBook Load (0.5ms)[0m  [1mSELECT DISTINCT "books"."publish" FROM "books"  ORDER BY "books"."publish" ASC[0m
+  Rendered record/select2.html.erb within layouts/application (56.6ms)
+Completed 200 OK in 701ms (Views: 693.5ms | ActiveRecord: 2.6ms)
+
+
+Started GET "/assets/hello.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-08-30 16:21:04 +0900
+
+
+Started GET "/assets/books.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-08-30 16:21:04 +0900
+
+
+Started GET "/assets/fan_comments.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-08-30 16:21:04 +0900
+
+
+Started GET "/assets/authors.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-08-30 16:21:04 +0900
+
+
+Started GET "/assets/scaffolds.self-30ec6cfef9aef97477b967b376433e27081b633287b7abdf422be36f515dd7bf.css?body=1" for ::1 at 2015-08-30 16:21:04 +0900
+
+
+Started GET "/assets/reviews.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-08-30 16:21:04 +0900
+
+
+Started GET "/assets/users.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-08-30 16:21:04 +0900
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2015-08-30 16:21:04 +0900
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for ::1 at 2015-08-30 16:21:04 +0900
+
+
+Started GET "/assets/jquery_ujs.self-ca5248a2fad13d6bd58ea121318d642f195f0b2dd818b30615f785ff365e8d1f.js?body=1" for ::1 at 2015-08-30 16:21:04 +0900
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2015-08-30 16:21:04 +0900
+
+
+Started GET "/assets/authors.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-08-30 16:21:04 +0900
+
+
+Started GET "/assets/books.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-08-30 16:21:04 +0900
+
+
+Started GET "/assets/fan_comments.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-08-30 16:21:04 +0900
+
+
+Started GET "/assets/hello.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-08-30 16:21:04 +0900
+
+
+Started GET "/assets/users.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-08-30 16:21:04 +0900
+
+
+Started GET "/assets/reviews.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-08-30 16:21:04 +0900
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2015-08-30 16:21:05 +0900
+
+
+Started GET "/record/offsets" for ::1 at 2015-08-30 16:52:49 +0900
+
+AbstractController::ActionNotFound (The action 'offsets' could not be found for RecordController):
+  actionpack (4.2.1) lib/abstract_controller/base.rb:132:in `process'
+  actionview (4.2.1) lib/action_view/rendering.rb:30:in `process'
+  actionpack (4.2.1) lib/action_controller/metal.rb:196:in `dispatch'
+  actionpack (4.2.1) lib/action_controller/metal/rack_delegation.rb:13:in `dispatch'
+  actionpack (4.2.1) lib/action_controller/metal.rb:237:in `block in action'
+  actionpack (4.2.1) lib/action_dispatch/routing/route_set.rb:74:in `call'
+  actionpack (4.2.1) lib/action_dispatch/routing/route_set.rb:74:in `dispatch'
+  actionpack (4.2.1) lib/action_dispatch/routing/route_set.rb:43:in `serve'
+  actionpack (4.2.1) lib/action_dispatch/journey/router.rb:43:in `block in serve'
+  actionpack (4.2.1) lib/action_dispatch/journey/router.rb:30:in `each'
+  actionpack (4.2.1) lib/action_dispatch/journey/router.rb:30:in `serve'
+  actionpack (4.2.1) lib/action_dispatch/routing/route_set.rb:819:in `call'
+  rack (1.6.4) lib/rack/etag.rb:24:in `call'
+  rack (1.6.4) lib/rack/conditionalget.rb:25:in `call'
+  rack (1.6.4) lib/rack/head.rb:13:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/params_parser.rb:27:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/flash.rb:260:in `call'
+  rack (1.6.4) lib/rack/session/abstract/id.rb:225:in `context'
+  rack (1.6.4) lib/rack/session/abstract/id.rb:220:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/cookies.rb:560:in `call'
+  activerecord (4.2.1) lib/active_record/query_cache.rb:36:in `call'
+  activerecord (4.2.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:649:in `call'
+  activerecord (4.2.1) lib/active_record/migration.rb:378:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.2.1) lib/active_support/callbacks.rb:88:in `call'
+  activesupport (4.2.1) lib/active_support/callbacks.rb:88:in `_run_callbacks'
+  activesupport (4.2.1) lib/active_support/callbacks.rb:776:in `_run_call_callbacks'
+  activesupport (4.2.1) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (4.2.1) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/reloader.rb:73:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/remote_ip.rb:78:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  web-console (2.2.1) lib/web_console/middleware.rb:39:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.1) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.1) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.1) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.1) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.1) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.1) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/static.rb:113:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.1) lib/rails/engine.rb:518:in `call'
+  railties (4.2.1) lib/rails/application.rb:164:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.4) lib/rack/handler/webrick.rb:88:in `service'
+  /Users/okuda_natsumi/.rbenv/versions/2.2.2/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /Users/okuda_natsumi/.rbenv/versions/2.2.2/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /Users/okuda_natsumi/.rbenv/versions/2.2.2/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+  Rendered /Users/okuda_natsumi/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/unknown_action.html.erb within rescues/layout (2.5ms)
+  Rendered /Users/okuda_natsumi/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (2.8ms)
+  Rendered /Users/okuda_natsumi/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (2.5ms)
+  Rendered /Users/okuda_natsumi/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (1.8ms)
+  Rendered /Users/okuda_natsumi/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (1.8ms)
+  Rendered /Users/okuda_natsumi/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (99.6ms)
+  Rendered /Users/okuda_natsumi/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (1.6ms)
+  Rendered /Users/okuda_natsumi/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (1.9ms)
+  Rendered /Users/okuda_natsumi/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (222.6ms)
+
+
+Started GET "/record/offset" for ::1 at 2015-08-30 16:52:53 +0900
+Processing by RecordController#offset as HTML
+  [1m[35mBook Load (1.3ms)[0m  SELECT  "books".* FROM "books"  ORDER BY "books"."published" DESC LIMIT 3 OFFSET 4
+  Rendered hello/list.html.erb within layouts/application (382.7ms)
+Completed 200 OK in 1345ms (Views: 1315.1ms | ActiveRecord: 4.8ms)
+
+
+Started GET "/record/page" for ::1 at 2015-08-30 16:55:52 +0900
+Processing by RecordController#page as HTML
+  [1m[36mBook Load (1.1ms)[0m  [1mSELECT  "books".* FROM "books"  ORDER BY "books"."published" DESC LIMIT 3 OFFSET 0[0m
+  Rendered hello/list.html.erb within layouts/application (239.1ms)
+Completed 200 OK in 1117ms (Views: 1099.5ms | ActiveRecord: 3.7ms)
+
+
+Started GET "/record/page/2" for ::1 at 2015-08-30 16:56:00 +0900
+Processing by RecordController#page as HTML
+  Parameters: {"id"=>"2"}
+  [1m[35mBook Load (0.8ms)[0m  SELECT  "books".* FROM "books"  ORDER BY "books"."published" DESC LIMIT 3 OFFSET 3
+  Rendered hello/list.html.erb within layouts/application (182.1ms)
+Completed 200 OK in 1085ms (Views: 1077.7ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/record/page/3" for ::1 at 2015-08-30 16:56:06 +0900
+Processing by RecordController#page as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mBook Load (0.8ms)[0m  [1mSELECT  "books".* FROM "books"  ORDER BY "books"."published" DESC LIMIT 3 OFFSET 6[0m
+  Rendered hello/list.html.erb within layouts/application (146.6ms)
+Completed 200 OK in 876ms (Views: 862.6ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/record/page/4" for ::1 at 2015-08-30 16:56:11 +0900
+Processing by RecordController#page as HTML
+  Parameters: {"id"=>"4"}
+  [1m[35mBook Load (0.9ms)[0m  SELECT  "books".* FROM "books"  ORDER BY "books"."published" DESC LIMIT 3 OFFSET 9
+  Rendered hello/list.html.erb within layouts/application (68.6ms)
+Completed 200 OK in 752ms (Views: 746.1ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/record/last" for ::1 at 2015-08-30 16:57:07 +0900
+Processing by RecordController#last as HTML
+  [1m[36mBook Load (0.7ms)[0m  [1mSELECT  "books".* FROM "books"  ORDER BY "books"."published" ASC LIMIT 1[0m
+  Rendered hello/list.html.erb within layouts/application (5.5ms)
+Completed 500 Internal Server Error in 68ms (ActiveRecord: 2.1ms)
+
+ActionView::Template::Error (undefined method `each' for nil:NilClass):
+    4: 		<th>出版社</th><th>刊行日</th><th>CD-ROM</th>
+    5: 	</tr>
+    6: 
+    7: <% @books.each do |book| %>
+    8: 	<tr>
+    9: 		<td style="background-color:<%= cycle('#FFffFF','#FFff99') %>">
+   10: 			<%= book.isbn %></td>
+  app/views/hello/list.html.erb:7:in `_app_views_hello_list_html_erb___1604015467507878735_70100815336780'
+  app/controllers/record_controller.rb:68:in `last'
+
+
+  Rendered /Users/okuda_natsumi/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (174.1ms)
+  Rendered /Users/okuda_natsumi/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (39.2ms)
+  Rendered /Users/okuda_natsumi/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (3.9ms)
+  Rendered /Users/okuda_natsumi/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (289.6ms)
+  Rendered /Users/okuda_natsumi/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (2.1ms)
+  Rendered /Users/okuda_natsumi/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (1.0ms)
+  Rendered /Users/okuda_natsumi/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (1.0ms)
+  Rendered /Users/okuda_natsumi/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (1.1ms)
+  Rendered /Users/okuda_natsumi/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (68.3ms)
+  Rendered /Users/okuda_natsumi/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (1.2ms)
+  Rendered /Users/okuda_natsumi/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (9.2ms)
+  Rendered /Users/okuda_natsumi/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (171.0ms)
+
+
+Started GET "/record/last" for ::1 at 2015-08-30 16:57:21 +0900
+Processing by RecordController#last as HTML
+  [1m[35mBook Load (0.7ms)[0m  SELECT  "books".* FROM "books"  ORDER BY "books"."published" ASC LIMIT 1
+  Rendered hello/list.html.erb within layouts/application (10.1ms)
+Completed 500 Internal Server Error in 67ms (ActiveRecord: 2.2ms)
+
+ActionView::Template::Error (undefined method `each' for #<Book:0x007f833e719918>):
+    4: 		<th>出版社</th><th>刊行日</th><th>CD-ROM</th>
+    5: 	</tr>
+    6: 
+    7: <% @books.each do |book| %>
+    8: 	<tr>
+    9: 		<td style="background-color:<%= cycle('#FFffFF','#FFff99') %>">
+   10: 			<%= book.isbn %></td>
+  app/views/hello/list.html.erb:7:in `_app_views_hello_list_html_erb___1604015467507878735_70100815336780'
+  app/controllers/record_controller.rb:68:in `last'
+
+
+  Rendered /Users/okuda_natsumi/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (178.6ms)
+  Rendered /Users/okuda_natsumi/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (39.5ms)
+  Rendered /Users/okuda_natsumi/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (3.5ms)
+  Rendered /Users/okuda_natsumi/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (285.2ms)
+  Rendered /Users/okuda_natsumi/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (1.1ms)
+  Rendered /Users/okuda_natsumi/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (1.4ms)
+  Rendered /Users/okuda_natsumi/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.9ms)
+  Rendered /Users/okuda_natsumi/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (1.0ms)
+  Rendered /Users/okuda_natsumi/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (70.0ms)
+  Rendered /Users/okuda_natsumi/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (1.0ms)
+  Rendered /Users/okuda_natsumi/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (1.2ms)
+  Rendered /Users/okuda_natsumi/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (142.3ms)
+
+
+Started GET "/record/last" for ::1 at 2015-08-30 16:57:45 +0900
+Processing by RecordController#last as HTML
+  [1m[36mBook Load (0.8ms)[0m  [1mSELECT  "books".* FROM "books"  ORDER BY "books"."published" ASC LIMIT 1[0m
+Completed 500 Internal Server Error in 65ms (ActiveRecord: 2.5ms)
+
+ActionView::MissingTemplate (Missing template hello/show with {:locale=>[:en], :formats=>[:html], :variants=>[], :handlers=>[:erb, :builder, :raw, :ruby, :coffee, :jbuilder]}. Searched in:
+  * "/Users/okuda_natsumi/ruby_on_rails/app/views"
+):
+  app/controllers/record_controller.rb:68:in `last'
+
+
+  Rendered /Users/okuda_natsumi/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (198.9ms)
+  Rendered /Users/okuda_natsumi/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (45.1ms)
+  Rendered /Users/okuda_natsumi/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (4.5ms)
+  Rendered /Users/okuda_natsumi/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/missing_template.html.erb within rescues/layout (318.6ms)
+  Rendered /Users/okuda_natsumi/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (1.5ms)
+  Rendered /Users/okuda_natsumi/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (1.3ms)
+  Rendered /Users/okuda_natsumi/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (1.1ms)
+  Rendered /Users/okuda_natsumi/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (1.3ms)
+  Rendered /Users/okuda_natsumi/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (82.6ms)
+  Rendered /Users/okuda_natsumi/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (1.2ms)
+  Rendered /Users/okuda_natsumi/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (1.3ms)
+  Rendered /Users/okuda_natsumi/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (165.2ms)
+
+
+Started GET "/record/last" for ::1 at 2015-08-30 16:58:00 +0900
+Processing by RecordController#last as HTML
+  [1m[35mBook Load (1.0ms)[0m  SELECT  "books".* FROM "books"  ORDER BY "books"."published" ASC LIMIT 1
+  Rendered books/show.html.erb within layouts/application (15.0ms)
+Completed 200 OK in 636ms (Views: 577.0ms | ActiveRecord: 3.5ms)
+
+
+Started GET "/assets/fan_comments.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-08-30 16:58:02 +0900
+
+
+Started GET "/assets/hello.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-08-30 16:58:02 +0900
+
+
+Started GET "/assets/authors.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-08-30 16:58:02 +0900
+
+
+Started GET "/assets/books.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-08-30 16:58:02 +0900
+
+
+Started GET "/assets/scaffolds.self-30ec6cfef9aef97477b967b376433e27081b633287b7abdf422be36f515dd7bf.css?body=1" for ::1 at 2015-08-30 16:58:02 +0900
+
+
+Started GET "/assets/reviews.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-08-30 16:58:02 +0900
+
+
+Started GET "/assets/users.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-08-30 16:58:02 +0900
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2015-08-30 16:58:02 +0900
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for ::1 at 2015-08-30 16:58:02 +0900
+
+
+Started GET "/assets/jquery_ujs.self-ca5248a2fad13d6bd58ea121318d642f195f0b2dd818b30615f785ff365e8d1f.js?body=1" for ::1 at 2015-08-30 16:58:02 +0900
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2015-08-30 16:58:02 +0900
+
+
+Started GET "/assets/authors.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-08-30 16:58:02 +0900
+
+
+Started GET "/assets/books.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-08-30 16:58:02 +0900
+
+
+Started GET "/assets/hello.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-08-30 16:58:02 +0900
+
+
+Started GET "/assets/fan_comments.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-08-30 16:58:02 +0900
+
+
+Started GET "/assets/reviews.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-08-30 16:58:03 +0900
+
+
+Started GET "/assets/users.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-08-30 16:58:03 +0900
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2015-08-30 16:58:03 +0900
+
+
+Started GET "/record/groupby" for ::1 at 2015-08-30 16:59:44 +0900
+Processing by RecordController#groupby as HTML
+  [1m[36mBook Load (5.2ms)[0m  [1mSELECT publish,AGV(price) as avg_price FROM "books" GROUP BY "books"."publish"[0m
+SQLite3::SQLException: no such function: AGV: SELECT publish,AGV(price) as avg_price FROM "books" GROUP BY "books"."publish"
+  Rendered record/groupby.html.erb within layouts/application (51.1ms)
+Completed 500 Internal Server Error in 87ms (ActiveRecord: 6.8ms)
+
+ActionView::Template::Error (SQLite3::SQLException: no such function: AGV: SELECT publish,AGV(price) as avg_price FROM "books" GROUP BY "books"."publish"):
+    2: <tr>
+    3:   <th>出版社</th><th>価格</th>
+    4: </tr>
+    5: <% @books.each do |book| %>
+    6:   <tr>
+    7:     <td><%= book.publish %></td>
+    8:     <td><%= book.avg_price %>円</td>
+  app/views/record/groupby.html.erb:5:in `_app_views_record_groupby_html_erb___2433787596777128638_70100839401920'
+
+
+  Rendered /Users/okuda_natsumi/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (403.5ms)
+  Rendered /Users/okuda_natsumi/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (102.3ms)
+  Rendered /Users/okuda_natsumi/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (5.0ms)
+  Rendered /Users/okuda_natsumi/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (600.2ms)
+  Rendered /Users/okuda_natsumi/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (1.9ms)
+  Rendered /Users/okuda_natsumi/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (2.0ms)
+  Rendered /Users/okuda_natsumi/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (1.7ms)
+  Rendered /Users/okuda_natsumi/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (1.6ms)
+  Rendered /Users/okuda_natsumi/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (89.5ms)
+  Rendered /Users/okuda_natsumi/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (1.6ms)
+  Rendered /Users/okuda_natsumi/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (2.1ms)
+  Rendered /Users/okuda_natsumi/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (213.3ms)
+
+
+Started GET "/record/groupby" for ::1 at 2015-08-30 17:01:47 +0900
+Processing by RecordController#groupby as HTML
+  [1m[35mBook Load (0.8ms)[0m  SELECT publish, AVG(price) as avg_price FROM "books" GROUP BY "books"."publish"
+  Rendered record/groupby.html.erb within layouts/application (84.2ms)
+Completed 200 OK in 1150ms (Views: 1125.8ms | ActiveRecord: 3.6ms)
+
+
+Started GET "/assets/authors.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-08-30 17:01:50 +0900
+
+
+Started GET "/assets/fan_comments.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-08-30 17:01:50 +0900
+
+
+Started GET "/assets/books.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-08-30 17:01:50 +0900
+
+
+Started GET "/assets/hello.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-08-30 17:01:50 +0900
+
+
+Started GET "/assets/reviews.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-08-30 17:01:50 +0900
+
+
+Started GET "/assets/scaffolds.self-30ec6cfef9aef97477b967b376433e27081b633287b7abdf422be36f515dd7bf.css?body=1" for ::1 at 2015-08-30 17:01:51 +0900
+
+
+Started GET "/assets/users.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-08-30 17:01:51 +0900
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2015-08-30 17:01:51 +0900
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for ::1 at 2015-08-30 17:01:51 +0900
+
+
+Started GET "/assets/jquery_ujs.self-ca5248a2fad13d6bd58ea121318d642f195f0b2dd818b30615f785ff365e8d1f.js?body=1" for ::1 at 2015-08-30 17:01:51 +0900
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2015-08-30 17:01:51 +0900
+
+
+Started GET "/assets/authors.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-08-30 17:01:51 +0900
+
+
+Started GET "/assets/books.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-08-30 17:01:51 +0900
+
+
+Started GET "/assets/fan_comments.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-08-30 17:01:51 +0900
+
+
+Started GET "/assets/hello.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-08-30 17:01:51 +0900
+
+
+Started GET "/assets/reviews.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-08-30 17:01:51 +0900
+
+
+Started GET "/assets/users.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-08-30 17:01:51 +0900
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2015-08-30 17:01:51 +0900
+
+
+Started GET "/record/havingby" for ::1 at 2015-08-30 17:04:15 +0900
+Processing by RecordController#havingby as HTML
+  [1m[36mBook Load (0.8ms)[0m  [1mSELECT publish, AVG(price) as avg_price FROM "books" GROUP BY "books"."publish" HAVING AVG(price) >= 2500[0m
+  Rendered record/groupby.html.erb within layouts/application (95.8ms)
+Completed 200 OK in 1158ms (Views: 1109.5ms | ActiveRecord: 11.9ms)
+
+
+Started GET "/record/where2" for ::1 at 2015-08-30 17:05:59 +0900
+Processing by RecordController#where2 as HTML
+  [1m[35mBook Load (1.2ms)[0m  SELECT "books".* FROM "books" WHERE "books"."publish" = ?  ORDER BY "books"."published" ASC  [["publish", "技術評論社"]]
+  Rendered books/index.html.erb within layouts/application (81.7ms)
+Completed 200 OK in 885ms (Views: 841.8ms | ActiveRecord: 3.6ms)
+
+
+Started GET "/record/unscope2" for ::1 at 2015-08-30 17:21:04 +0900
+Processing by RecordController#unscope2 as HTML
+  [1m[36mBook Load (0.7ms)[0m  [1mSELECT "books"."isbn", "books"."title" FROM "books" WHERE "books"."publish" = ?  ORDER BY "books"."price" ASC[0m  [["publish", "技術評論社"]]
+  Rendered books/index.html.erb within layouts/application (56.0ms)
+Completed 500 Internal Server Error in 97ms (ActiveRecord: 10.9ms)
+
+ActionView::Template::Error (missing attribute: price):
+    20:       <tr>
+    21:         <td><%= book.isbn %></td>
+    22:         <td><%= book.title %></td>
+    23:         <td><%= book.price %></td>
+    24:         <td><%= book.publish %></td>
+    25:         <td><%= book.published %></td>
+    26:         <td><%= book.cd %></td>
+  app/views/books/index.html.erb:23:in `block in _app_views_books_index_html_erb___1404523320939691420_70100838797760'
+  app/views/books/index.html.erb:19:in `_app_views_books_index_html_erb___1404523320939691420_70100838797760'
+  app/controllers/record_controller.rb:94:in `unscope2'
+
+
+  Rendered /Users/okuda_natsumi/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (266.7ms)
+  Rendered /Users/okuda_natsumi/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (64.8ms)
+  Rendered /Users/okuda_natsumi/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (4.1ms)
+  Rendered /Users/okuda_natsumi/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (415.8ms)
+  Rendered /Users/okuda_natsumi/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (2.3ms)
+  Rendered /Users/okuda_natsumi/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (1.7ms)
+  Rendered /Users/okuda_natsumi/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (1.5ms)
+  Rendered /Users/okuda_natsumi/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (1.2ms)
+  Rendered /Users/okuda_natsumi/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (86.8ms)
+  Rendered /Users/okuda_natsumi/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (1.9ms)
+  Rendered /Users/okuda_natsumi/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (1.2ms)
+  Rendered /Users/okuda_natsumi/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (194.4ms)
+
+
+Started GET "/record/unscope2" for ::1 at 2015-08-30 17:21:49 +0900
+Processing by RecordController#unscope2 as HTML
+  [1m[35mBook Load (0.8ms)[0m  SELECT "books".* FROM "books" WHERE "books"."publish" = ?  ORDER BY "books"."price" ASC  [["publish", "技術評論社"]]
+  Rendered books/index.html.erb within layouts/application (67.3ms)
+Completed 200 OK in 880ms (Views: 844.1ms | ActiveRecord: 3.3ms)
+
+
+Started GET "/assets/fan_comments.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-08-30 17:21:51 +0900
+
+
+Started GET "/assets/authors.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-08-30 17:21:51 +0900
+
+
+Started GET "/assets/hello.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-08-30 17:21:51 +0900
+
+
+Started GET "/assets/reviews.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-08-30 17:21:51 +0900
+
+
+Started GET "/assets/books.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-08-30 17:21:51 +0900
+
+
+Started GET "/assets/scaffolds.self-30ec6cfef9aef97477b967b376433e27081b633287b7abdf422be36f515dd7bf.css?body=1" for ::1 at 2015-08-30 17:21:51 +0900
+
+
+Started GET "/assets/users.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-08-30 17:21:51 +0900
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2015-08-30 17:21:51 +0900
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for ::1 at 2015-08-30 17:21:51 +0900
+
+
+Started GET "/assets/jquery_ujs.self-ca5248a2fad13d6bd58ea121318d642f195f0b2dd818b30615f785ff365e8d1f.js?body=1" for ::1 at 2015-08-30 17:21:52 +0900
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2015-08-30 17:21:52 +0900
+
+
+Started GET "/assets/authors.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-08-30 17:21:52 +0900
+
+
+Started GET "/assets/books.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-08-30 17:21:52 +0900
+
+
+Started GET "/assets/fan_comments.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-08-30 17:21:52 +0900
+
+
+Started GET "/assets/hello.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-08-30 17:21:52 +0900
+
+
+Started GET "/assets/users.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-08-30 17:21:52 +0900
+
+
+Started GET "/assets/reviews.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-08-30 17:21:52 +0900
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2015-08-30 17:21:52 +0900
+
+
+Started GET "/record/none" for ::1 at 2015-08-30 17:25:05 +0900
+Processing by RecordController#none as HTML
+  Rendered books/index.html.erb within layouts/application (2.3ms)
+Completed 200 OK in 1094ms (Views: 1077.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/record/none/all" for ::1 at 2015-08-30 17:25:18 +0900
+Processing by RecordController#none as HTML
+  Parameters: {"id"=>"all"}
+  [1m[36mBook Load (13.2ms)[0m  [1mSELECT "books".* FROM "books"[0m
+  Rendered books/index.html.erb within layouts/application (257.1ms)
+Completed 200 OK in 1287ms (Views: 1253.5ms | ActiveRecord: 26.7ms)
+
+
+Started GET "/record/none/all" for ::1 at 2015-08-30 17:25:24 +0900
+Processing by RecordController#none as HTML
+  Parameters: {"id"=>"all"}
+  [1m[35mBook Load (0.9ms)[0m  SELECT "books".* FROM "books"
+  Rendered books/index.html.erb within layouts/application (115.3ms)
+Completed 200 OK in 1286ms (Views: 1278.0ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/assets/authors.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-08-30 17:25:26 +0900
+
+
+Started GET "/assets/fan_comments.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-08-30 17:25:26 +0900
+
+
+Started GET "/assets/reviews.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-08-30 17:25:26 +0900
+
+
+Started GET "/assets/scaffolds.self-30ec6cfef9aef97477b967b376433e27081b633287b7abdf422be36f515dd7bf.css?body=1" for ::1 at 2015-08-30 17:25:26 +0900
+
+
+Started GET "/assets/hello.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-08-30 17:25:26 +0900
+
+
+Started GET "/assets/books.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-08-30 17:25:26 +0900
+
+
+Started GET "/assets/users.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-08-30 17:25:26 +0900
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2015-08-30 17:25:26 +0900
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for ::1 at 2015-08-30 17:25:26 +0900
+
+
+Started GET "/assets/jquery_ujs.self-ca5248a2fad13d6bd58ea121318d642f195f0b2dd818b30615f785ff365e8d1f.js?body=1" for ::1 at 2015-08-30 17:25:26 +0900
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2015-08-30 17:25:27 +0900
+
+
+Started GET "/assets/authors.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-08-30 17:25:27 +0900
+
+
+Started GET "/assets/books.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-08-30 17:25:27 +0900
+
+
+Started GET "/assets/fan_comments.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-08-30 17:25:27 +0900
+
+
+Started GET "/assets/hello.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-08-30 17:25:27 +0900
+
+
+Started GET "/assets/reviews.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-08-30 17:25:27 +0900
+
+
+Started GET "/assets/users.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-08-30 17:25:27 +0900
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2015-08-30 17:25:27 +0900
+
+
+Started GET "/assets/favicon-e7a669637e9dae789f1e41ddf44ba30e66f8236ef77e99dee8701ab6b1befe82.ico" for ::1 at 2015-08-30 17:25:27 +0900
+
+
+Started GET "/record/none/new" for ::1 at 2015-08-30 17:25:33 +0900
+Processing by RecordController#none as HTML
+  Parameters: {"id"=>"new"}
+  [1m[36mBook Load (1.1ms)[0m  [1mSELECT  "books".* FROM "books"  ORDER BY published DESC LIMIT 5[0m
+  Rendered books/index.html.erb within layouts/application (69.4ms)
+Completed 200 OK in 1062ms (Views: 1054.1ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/record/none/cheap" for ::1 at 2015-08-30 17:25:40 +0900
+Processing by RecordController#none as HTML
+  Parameters: {"id"=>"cheap"}
+  [1m[35mBook Load (0.9ms)[0m  SELECT  "books".* FROM "books"  ORDER BY "books"."price" ASC LIMIT 5
+  Rendered books/index.html.erb within layouts/application (62.2ms)
+Completed 200 OK in 1095ms (Views: 1087.1ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/record/none" for ::1 at 2015-08-30 17:25:52 +0900
+Processing by RecordController#none as HTML
+  Rendered books/index.html.erb within layouts/application (2.5ms)
+Completed 200 OK in 1021ms (Views: 1014.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/record/pluck" for ::1 at 2015-08-30 17:27:36 +0900
+Processing by RecordController#pluck as HTML
+  [1m[36m (0.7ms)[0m  [1mSELECT "books"."title", "books"."price" FROM "books" WHERE "books"."publish" = ?[0m  [["publish", "技術評論社"]]
+  Rendered text template (0.2ms)
+Completed 200 OK in 46ms (Views: 7.9ms | ActiveRecord: 1.8ms)
+
+
+Started GET "/record/exsits" for ::1 at 2015-08-30 17:29:06 +0900
+
+SyntaxError (/Users/okuda_natsumi/ruby_on_rails/app/controllers/record_controller.rb:118: syntax error, unexpected keyword_end):
+  app/controllers/record_controller.rb:118: syntax error, unexpected keyword_end
+
+
+  Rendered /Users/okuda_natsumi/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (155.4ms)
+  Rendered /Users/okuda_natsumi/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (44.9ms)
+  Rendered /Users/okuda_natsumi/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (5.8ms)
+  Rendered /Users/okuda_natsumi/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (278.4ms)
+  Rendered /Users/okuda_natsumi/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (9.1ms)
+  Rendered /Users/okuda_natsumi/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (1.5ms)
+  Rendered /Users/okuda_natsumi/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (1.3ms)
+  Rendered /Users/okuda_natsumi/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (1.2ms)
+  Rendered /Users/okuda_natsumi/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (79.9ms)
+  Rendered /Users/okuda_natsumi/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (1.3ms)
+  Rendered /Users/okuda_natsumi/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (1.3ms)
+  Rendered /Users/okuda_natsumi/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (167.3ms)
+
+
+Started GET "/record/exists" for ::1 at 2015-08-30 17:29:12 +0900
+
+SyntaxError (/Users/okuda_natsumi/ruby_on_rails/app/controllers/record_controller.rb:118: syntax error, unexpected keyword_end):
+  app/controllers/record_controller.rb:118: syntax error, unexpected keyword_end
+
+
+  Rendered /Users/okuda_natsumi/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (146.1ms)
+  Rendered /Users/okuda_natsumi/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (34.5ms)
+  Rendered /Users/okuda_natsumi/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (7.7ms)
+  Rendered /Users/okuda_natsumi/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (264.7ms)
+  Rendered /Users/okuda_natsumi/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (1.5ms)
+  Rendered /Users/okuda_natsumi/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (1.7ms)
+  Rendered /Users/okuda_natsumi/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (1.2ms)
+  Rendered /Users/okuda_natsumi/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (1.4ms)
+  Rendered /Users/okuda_natsumi/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (79.3ms)
+  Rendered /Users/okuda_natsumi/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (1.3ms)
+  Rendered /Users/okuda_natsumi/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (1.4ms)
+  Rendered /Users/okuda_natsumi/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (166.3ms)
+
+
+Started GET "/record/exists" for ::1 at 2015-08-30 17:29:42 +0900
+Processing by RecordController#exists as HTML
+  [1m[35mBook Exists (1.0ms)[0m  SELECT  1 AS one FROM "books" WHERE "books"."publish" = ? LIMIT 1  [["publish", "技術評論社"]]
+  Rendered text template (0.2ms)
+Completed 200 OK in 64ms (Views: 3.4ms | ActiveRecord: 1.9ms)
+
+
+Started GET "/record/scape" for ::1 at 2015-08-30 17:34:08 +0900
+
+AbstractController::ActionNotFound (The action 'scape' could not be found for RecordController):
+  actionpack (4.2.1) lib/abstract_controller/base.rb:132:in `process'
+  actionview (4.2.1) lib/action_view/rendering.rb:30:in `process'
+  actionpack (4.2.1) lib/action_controller/metal.rb:196:in `dispatch'
+  actionpack (4.2.1) lib/action_controller/metal/rack_delegation.rb:13:in `dispatch'
+  actionpack (4.2.1) lib/action_controller/metal.rb:237:in `block in action'
+  actionpack (4.2.1) lib/action_dispatch/routing/route_set.rb:74:in `call'
+  actionpack (4.2.1) lib/action_dispatch/routing/route_set.rb:74:in `dispatch'
+  actionpack (4.2.1) lib/action_dispatch/routing/route_set.rb:43:in `serve'
+  actionpack (4.2.1) lib/action_dispatch/journey/router.rb:43:in `block in serve'
+  actionpack (4.2.1) lib/action_dispatch/journey/router.rb:30:in `each'
+  actionpack (4.2.1) lib/action_dispatch/journey/router.rb:30:in `serve'
+  actionpack (4.2.1) lib/action_dispatch/routing/route_set.rb:819:in `call'
+  rack (1.6.4) lib/rack/etag.rb:24:in `call'
+  rack (1.6.4) lib/rack/conditionalget.rb:25:in `call'
+  rack (1.6.4) lib/rack/head.rb:13:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/params_parser.rb:27:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/flash.rb:260:in `call'
+  rack (1.6.4) lib/rack/session/abstract/id.rb:225:in `context'
+  rack (1.6.4) lib/rack/session/abstract/id.rb:220:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/cookies.rb:560:in `call'
+  activerecord (4.2.1) lib/active_record/query_cache.rb:36:in `call'
+  activerecord (4.2.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:649:in `call'
+  activerecord (4.2.1) lib/active_record/migration.rb:378:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.2.1) lib/active_support/callbacks.rb:88:in `call'
+  activesupport (4.2.1) lib/active_support/callbacks.rb:88:in `_run_callbacks'
+  activesupport (4.2.1) lib/active_support/callbacks.rb:776:in `_run_call_callbacks'
+  activesupport (4.2.1) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (4.2.1) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/reloader.rb:73:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/remote_ip.rb:78:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  web-console (2.2.1) lib/web_console/middleware.rb:39:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.1) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.1) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.1) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.1) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.1) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.1) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/static.rb:113:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.1) lib/rails/engine.rb:518:in `call'
+  railties (4.2.1) lib/rails/application.rb:164:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.4) lib/rack/handler/webrick.rb:88:in `service'
+  /Users/okuda_natsumi/.rbenv/versions/2.2.2/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /Users/okuda_natsumi/.rbenv/versions/2.2.2/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /Users/okuda_natsumi/.rbenv/versions/2.2.2/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+  Rendered /Users/okuda_natsumi/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/unknown_action.html.erb within rescues/layout (1.8ms)
+  Rendered /Users/okuda_natsumi/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (1.6ms)
+  Rendered /Users/okuda_natsumi/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (1.3ms)
+  Rendered /Users/okuda_natsumi/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (1.4ms)
+  Rendered /Users/okuda_natsumi/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (1.2ms)
+  Rendered /Users/okuda_natsumi/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (77.5ms)
+  Rendered /Users/okuda_natsumi/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (1.4ms)
+  Rendered /Users/okuda_natsumi/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (1.5ms)
+  Rendered /Users/okuda_natsumi/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (176.7ms)
+
+
+Started GET "/record/scope" for ::1 at 2015-08-30 17:34:16 +0900
+Processing by RecordController#scope as HTML
+  [1m[36mBook Load (0.9ms)[0m  [1mSELECT  "books".* FROM "books" WHERE "books"."publish" = ?  ORDER BY "books"."published" DESC LIMIT 10[0m  [["publish", "技術評論社"]]
+  Rendered hello/list.html.erb within layouts/application (317.2ms)
+Completed 200 OK in 1056ms (Views: 1020.9ms | ActiveRecord: 3.4ms)
+
+
+Started GET "/record/def_scope" for ::1 at 2015-08-30 17:51:13 +0900
+Processing by RecordController#def_scope as HTML
+Completed 500 Internal Server Error in 42ms (ActiveRecord: 1.4ms)
+
+NoMethodError (undefined method `default_scppe' for #<Class:0x007f833a0eb450>):
+  app/models/review.rb:4:in `<class:Review>'
+  app/models/review.rb:1:in `<top (required)>'
+  app/controllers/record_controller.rb:126:in `def_scope'
+
+
+  Rendered /Users/okuda_natsumi/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (138.7ms)
+  Rendered /Users/okuda_natsumi/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (36.0ms)
+  Rendered /Users/okuda_natsumi/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (12.8ms)
+  Rendered /Users/okuda_natsumi/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (259.5ms)
+  Rendered /Users/okuda_natsumi/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (1.1ms)
+  Rendered /Users/okuda_natsumi/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (1.1ms)
+  Rendered /Users/okuda_natsumi/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (1.1ms)
+  Rendered /Users/okuda_natsumi/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.9ms)
+  Rendered /Users/okuda_natsumi/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (76.0ms)
+  Rendered /Users/okuda_natsumi/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (1.0ms)
+  Rendered /Users/okuda_natsumi/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (1.1ms)
+  Rendered /Users/okuda_natsumi/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (152.4ms)
+
+
+Started GET "/record/def_scope" for ::1 at 2015-08-30 17:51:48 +0900
+Processing by RecordController#def_scope as HTML
+Completed 500 Internal Server Error in 32ms (ActiveRecord: 1.1ms)
+
+NoMethodError (undefined method `default_scppe' for #<Class:0x007f834082ba48>):
+  app/models/review.rb:4:in `<class:Review>'
+  app/models/review.rb:1:in `<top (required)>'
+  app/controllers/record_controller.rb:126:in `def_scope'
+
+
+  Rendered /Users/okuda_natsumi/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (142.0ms)
+  Rendered /Users/okuda_natsumi/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (44.0ms)
+  Rendered /Users/okuda_natsumi/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (3.0ms)
+  Rendered /Users/okuda_natsumi/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (260.3ms)
+  Rendered /Users/okuda_natsumi/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (1.4ms)
+  Rendered /Users/okuda_natsumi/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (1.2ms)
+  Rendered /Users/okuda_natsumi/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.9ms)
+  Rendered /Users/okuda_natsumi/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.9ms)
+  Rendered /Users/okuda_natsumi/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (70.0ms)
+  Rendered /Users/okuda_natsumi/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (1.0ms)
+  Rendered /Users/okuda_natsumi/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (1.2ms)
+  Rendered /Users/okuda_natsumi/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (148.8ms)
+
+
+Started GET "/record/def_scope" for ::1 at 2015-08-30 17:52:18 +0900
+Processing by RecordController#def_scope as HTML
+  [1m[35mReview Load (0.9ms)[0m  SELECT "reviews".* FROM "reviews"  ORDER BY "reviews"."updated_at" DESC
+  Rendered text template (0.2ms)
+Completed 200 OK in 81ms (Views: 3.2ms | ActiveRecord: 3.6ms)
+
+
+Started GET "/record/def_scope" for ::1 at 2015-08-30 17:53:02 +0900
+Processing by RecordController#def_scope as HTML
+  [1m[36mReview Load (0.8ms)[0m  [1mSELECT "reviews".* FROM "reviews"  ORDER BY "reviews"."updated_at" DESC[0m
+  Rendered text template (0.2ms)
+Completed 200 OK in 83ms (Views: 3.1ms | ActiveRecord: 2.6ms)
+
+
+Started GET "/record/count" for ::1 at 2015-08-30 17:54:56 +0900
+Processing by RecordController#count as HTML
+  [1m[35m (0.5ms)[0m  SELECT COUNT(*) FROM "books" WHERE "books"."publish" = ?  [["publish", "技術評論社"]]
+  Rendered text template (0.2ms)
+Completed 200 OK in 39ms (Views: 3.0ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/record/average" for ::1 at 2015-08-30 17:56:51 +0900
+Processing by RecordController#average as HTML
+  [1m[36m (0.6ms)[0m  [1mSELECT AVG("books"."price") FROM "books" WHERE "books"."publish" = ?[0m  [["publish", "技術評論社"]]
+  Rendered text template (0.2ms)
+Completed 200 OK in 38ms (Views: 3.2ms | ActiveRecord: 1.6ms)
+
+
+Started GET "/record/groupby2" for ::1 at 2015-08-30 17:58:44 +0900
+Processing by RecordController#groupby2 as HTML
+  [1m[35m (0.6ms)[0m  SELECT AVG("books"."price") AS average_price, publish AS publish FROM "books" GROUP BY "books"."publish"
+  Rendered record/groupby2.html.erb within layouts/application (3.2ms)
+Completed 200 OK in 738ms (Views: 694.0ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/record/literal_sql" for ::1 at 2015-08-30 18:01:43 +0900
+Processing by RecordController#literal_sql as HTML
+  [1m[36mBook Load (0.7ms)[0m  [1mselect publish, avg(price) as avg_price from "books" group by publish having avg(price) >= 2500[0m
+  Rendered record/groupby.html.erb within layouts/application (2.9ms)
+Completed 200 OK in 633ms (Views: 582.8ms | ActiveRecord: 3.1ms)
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Migrating to CreateMembers (20150830111328)
+  [1m[35m (0.2ms)[0m  begin transaction
+  [1m[36m (0.5ms)[0m  [1mCREATE TABLE "members" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar, "email" varchar, "look_version" integer DEFAULT 0, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) [0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES (?)  [["version", "20150830111328"]]
+  [1m[36m (1.7ms)[0m  [1mcommit transaction[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.1ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+  [1m[36m (0.1ms)[0m  [1m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_authors_on_user_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_authors_on_user_id' AND type='index'
+[0m
+  [1m[35m (0.1ms)[0m              SELECT sql
+            FROM sqlite_master
+            WHERE name='index_authors_books_on_book_id_and_author_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_authors_books_on_book_id_and_author_id' AND type='index'
+
+  [1m[36m (0.1ms)[0m  [1m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_authors_books_on_author_id_and_book_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_authors_books_on_author_id_and_book_id' AND type='index'
+[0m
+  [1m[35m (0.1ms)[0m              SELECT sql
+            FROM sqlite_master
+            WHERE name='index_reviews_on_user_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_reviews_on_user_id' AND type='index'
+
+  [1m[36m (0.1ms)[0m  [1m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_reviews_on_book_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_reviews_on_book_id' AND type='index'
+[0m
+
+
+Started GET "/" for ::1 at 2015-08-30 23:11:37 +0900
+  [1m[35mActiveRecord::SchemaMigration Load (0.4ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+Processing by Rails::WelcomeController#index as HTML
+  Rendered /Users/okuda_natsumi/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/railties-4.2.1/lib/rails/templates/rails/welcome/index.html.erb (1.6ms)
+Completed 200 OK in 15ms (Views: 10.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/menber" for ::1 at 2015-08-30 23:11:44 +0900
+
+ActionController::RoutingError (No route matches [GET] "/menber"):
+  actionpack (4.2.1) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.2.1) lib/web_console/middleware.rb:39:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.1) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.1) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.1) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.1) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.1) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.1) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/static.rb:113:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.1) lib/rails/engine.rb:518:in `call'
+  railties (4.2.1) lib/rails/application.rb:164:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.4) lib/rack/handler/webrick.rb:88:in `service'
+  /Users/okuda_natsumi/.rbenv/versions/2.2.2/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /Users/okuda_natsumi/.rbenv/versions/2.2.2/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /Users/okuda_natsumi/.rbenv/versions/2.2.2/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+  Rendered /Users/okuda_natsumi/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (9.9ms)
+  Rendered /Users/okuda_natsumi/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/routes/_route.html.erb (44.8ms)
+  Rendered /Users/okuda_natsumi/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/routes/_table.html.erb (31.1ms)
+  Rendered /Users/okuda_natsumi/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (5.3ms)
+  Rendered /Users/okuda_natsumi/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (525.9ms)
+  Rendered /Users/okuda_natsumi/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (1.7ms)
+  Rendered /Users/okuda_natsumi/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (1.1ms)
+  Rendered /Users/okuda_natsumi/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (1.0ms)
+  Rendered /Users/okuda_natsumi/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (1.1ms)
+  Rendered /Users/okuda_natsumi/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (81.3ms)
+  Rendered /Users/okuda_natsumi/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (1.2ms)
+  Rendered /Users/okuda_natsumi/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (1.4ms)
+  Rendered /Users/okuda_natsumi/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (193.7ms)
+
+
+Started GET "/member" for ::1 at 2015-08-30 23:11:49 +0900
+
+ActionController::RoutingError (No route matches [GET] "/member"):
+  actionpack (4.2.1) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.2.1) lib/web_console/middleware.rb:39:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.1) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.1) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.1) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.1) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.1) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.1) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/static.rb:113:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.1) lib/rails/engine.rb:518:in `call'
+  railties (4.2.1) lib/rails/application.rb:164:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.4) lib/rack/handler/webrick.rb:88:in `service'
+  /Users/okuda_natsumi/.rbenv/versions/2.2.2/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /Users/okuda_natsumi/.rbenv/versions/2.2.2/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /Users/okuda_natsumi/.rbenv/versions/2.2.2/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+  Rendered /Users/okuda_natsumi/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (17.8ms)
+  Rendered /Users/okuda_natsumi/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/routes/_route.html.erb (46.6ms)
+  Rendered /Users/okuda_natsumi/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/routes/_table.html.erb (4.0ms)
+  Rendered /Users/okuda_natsumi/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (14.8ms)
+  Rendered /Users/okuda_natsumi/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (452.5ms)
+  Rendered /Users/okuda_natsumi/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (1.6ms)
+  Rendered /Users/okuda_natsumi/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (1.2ms)
+  Rendered /Users/okuda_natsumi/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (1.6ms)
+  Rendered /Users/okuda_natsumi/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (1.2ms)
+  Rendered /Users/okuda_natsumi/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (87.3ms)
+  Rendered /Users/okuda_natsumi/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (1.0ms)
+  Rendered /Users/okuda_natsumi/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (1.0ms)
+  Rendered /Users/okuda_natsumi/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (173.5ms)
+
+
+Started GET "/member/1" for ::1 at 2015-08-30 23:12:11 +0900
+
+ActionController::RoutingError (No route matches [GET] "/member/1"):
+  actionpack (4.2.1) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.2.1) lib/web_console/middleware.rb:39:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.1) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.1) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.1) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.1) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.1) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.1) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/static.rb:113:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.1) lib/rails/engine.rb:518:in `call'
+  railties (4.2.1) lib/rails/application.rb:164:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.4) lib/rack/handler/webrick.rb:88:in `service'
+  /Users/okuda_natsumi/.rbenv/versions/2.2.2/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /Users/okuda_natsumi/.rbenv/versions/2.2.2/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /Users/okuda_natsumi/.rbenv/versions/2.2.2/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+  Rendered /Users/okuda_natsumi/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (26.9ms)
+  Rendered /Users/okuda_natsumi/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/routes/_route.html.erb (62.1ms)
+  Rendered /Users/okuda_natsumi/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/routes/_table.html.erb (6.2ms)
+  Rendered /Users/okuda_natsumi/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (8.5ms)
+  Rendered /Users/okuda_natsumi/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (542.8ms)
+  Rendered /Users/okuda_natsumi/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (1.8ms)
+  Rendered /Users/okuda_natsumi/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (1.2ms)
+  Rendered /Users/okuda_natsumi/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (11.3ms)
+  Rendered /Users/okuda_natsumi/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (1.3ms)
+  Rendered /Users/okuda_natsumi/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (85.4ms)
+  Rendered /Users/okuda_natsumi/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (1.2ms)
+  Rendered /Users/okuda_natsumi/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (1.2ms)
+  Rendered /Users/okuda_natsumi/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (172.3ms)
+
+
+Started GET "/members" for ::1 at 2015-08-30 23:12:18 +0900
+Processing by MembersController#index as HTML
+  [1m[36mMember Load (0.6ms)[0m  [1mSELECT "members".* FROM "members"[0m
+  Rendered members/index.html.erb within layouts/application (28.9ms)
+Completed 200 OK in 1652ms (Views: 1639.1ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/assets/members.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-08-30 23:12:20 +0900
+
+
+Started GET "/assets/members.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-08-30 23:12:20 +0900
