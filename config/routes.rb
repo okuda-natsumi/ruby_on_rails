@@ -1,14 +1,17 @@
+require 'TimeConstraint'
 Rails.application.routes.draw do
   
   resources :users
   resources :members
-  resources :books
+  resources :books, format: false 
   resources :fan_comments
   resources :reviews
   resources :authors
   resources :users
   resources :books
   match ':controller(/:action(/:id))', via: [ :get, :post, :patch ]
+  
+  
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
