@@ -1,4 +1,9 @@
 class CtrlController < ApplicationController
+  before_action :auth, only: :index
+ 
+  def index
+    render text: 'indexやで'
+  end
   def para
     render text: 'idパラメータ：' + params[:id]
   end
@@ -82,5 +87,15 @@ class CtrlController < ApplicationController
   def session_rec
     session[:email] = params[:email]
     render text: 'セッションを保存しました'
+  end
+
+  private
+  def auth
+    name = 'yyamada'
+    passwd = '8cb2237d0679ca88db6464eac60da96345513964'
+    authenticate_or_request_with_http_basic('Railsbook') do |n,p|
+      n == name &&
+        Digest::SHA1.hexdigest(p) == passwd
+    end
   end
 end
